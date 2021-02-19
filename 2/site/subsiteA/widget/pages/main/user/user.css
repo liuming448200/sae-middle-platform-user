@@ -1,0 +1,139 @@
+.user-container .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.user-container .head {
+  padding-bottom: 10px;
+  background-color: #f0eff5;
+}
+
+.user-container .head > a {
+  background: #ffffff;
+}
+
+.user-container .header-btn > i.fa-circle {
+  position: absolute;
+  margin-left: -6px;
+  margin-top: -3px;
+  font-size: 12px;
+  color: red;
+}
+
+.user-container table td {
+  vertical-align: middle;
+}
+
+.user-container .media-body {
+  height: 64px;
+  vertical-align: middle;
+  width: auto;
+}
+
+.user-container .media-object {
+  width: 64px;
+  height: 64px;
+  max-width: none;
+}
+
+.user-container .well {
+  margin-bottom: 0;
+  border: 0;
+  padding: 10px 15px;
+  background-color: #ffffff;
+  display: block;
+}
+
+.user-container .arrow {
+  font-size: 18px;
+  text-align: right;
+}
+
+.user-container .list-outer {
+  padding-bottom: 10px;
+  background: #f0eff5;
+}
+
+.user-container .list-group {
+  background: #ffffff;
+}
+
+.user-container .list-group:last-child {
+  margin-bottom: 0;
+}
+
+.user-container .list-group-item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+  border: 0;
+  border-bottom: 1px solid #dddddd;
+  border-radius: 0;
+}
+
+.user-container a.list-group-item {
+  background-color: #ffffff;
+}
+
+.user-container .list-group-item:last-child {
+  border-bottom: 0;
+}
+
+.user-container .list-group-item.list-horizontal {
+  padding: 0;
+}
+
+.user-container .list-group-item > table {
+  width: 100%;
+}
+
+.user-container .list-group-item.list-horizontal > table > tbody > tr > td {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.user-container .list-group-item > table > tbody > tr > td .block {
+  display: block;
+  padding: 8px;
+  border-right: 1px solid #dddddd;
+}
+
+.user-container .list-group-item > table > tbody > tr > td:last-child .block {
+  border-right: 0;
+}
+
+.user-container .list-outer:nth-child(2) .list-group-item:nth-of-type(1) .item-title > i {
+  color: #5BD2BF;
+}
+
+.user-container .list-outer:nth-child(3) .list-group-item:nth-of-type(1) .item-title > i {
+  color: #3EA2BC;
+}
+
+.user-container .list-outer:nth-child(4) .list-group-item:nth-of-type(1) .item-title > i {
+  color: #A560A2;
+}
+
+.user-container .list-outer:nth-child(4) .list-group-item:nth-of-type(2) .item-title > i {
+  color: #D96EA7;
+}
+
+.user-container .list-outer:nth-child(2) .list-group-item > table > tbody > tr > td:nth-child(1) .block h3 i {
+  color: #6ED0FF;
+}
+
+.user-container .list-outer:nth-child(2) .list-group-item > table > tbody > tr > td:nth-child(2) .block h3 i {
+  color: #FEB068;
+}
+
+.user-container .list-outer:nth-child(2) .list-group-item > table > tbody > tr > td:nth-child(3) .block h3 i {
+  color: #8985C8;
+}
+
+.user-container .list-outer:nth-child(3) .list-group-item > table > tbody > tr > td:nth-child(1) .block h3 i {
+  color: #00AEF3;
+}
+
+.user-container .list-outer:nth-child(3) .list-group-item > table > tbody > tr > td:nth-child(2) .block h3 i {
+  color: #CCB69E;
+}

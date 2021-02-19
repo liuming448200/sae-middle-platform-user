@@ -1,0 +1,18 @@
+.instmore-container .course-container .list-container .list-group-item {
+	border-bottom: 1px solid #dddddd;
+}
+
+.instmore-container .course-container .list-container .media-body .time {
+	font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+
+.instmore-container .course-container .list-container .media-body .time .label {
+	line-height: inherit;
+}
+
+.instmore-container .course-container .list-container .media-body .target {
+	color: #737373;
+  font-size: 12px;
+}

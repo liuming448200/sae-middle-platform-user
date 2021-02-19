@@ -1,0 +1,20 @@
+<!--
+    @require "imgcrop.css"
+-->
+
+<div class="imgcrop-container">
+	<header class="header-container navbar-fixed-top">
+    <a class="header-btn header-pos-left" href="javascript:;" ng-click="back()">
+      <i class="fa fa-chevron-left"></i>
+    </a>
+    <a class="header-btn header-pos-right" href="javascript:;" ng-click="save()">
+      <i class="fa fa-floppy-o" aria-hidden="true"></i>
+    </a>
+    <div class="title">图片裁切</div>
+  </header>
+  <div class="container">
+  	<div class="cropArea">
+	    <img-crop image="myImage" result-image="myCroppedImage" result-image-format="image/jpeg"></img-crop>
+	  </div>
+  </div>
+</div>

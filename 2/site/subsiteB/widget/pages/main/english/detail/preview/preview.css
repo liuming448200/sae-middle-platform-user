@@ -1,0 +1,9 @@
+.preview-container .inner-container {
+  margin: 5px 0;
+  border: 1px dashed #ddd;
+  padding: 5px;
+}
+
+.preview-container i.fa-volume-up {
+  color: #85b0ff;
+}

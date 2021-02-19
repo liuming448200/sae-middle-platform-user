@@ -1,0 +1,11 @@
+.pay-container .tips-outer {
+	margin-top: 30px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.pay-container .tips-outer > img {
+	margin: auto;
+	width: 50px;
+	height: 50px;
+}

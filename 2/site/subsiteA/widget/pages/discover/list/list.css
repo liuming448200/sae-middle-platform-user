@@ -1,0 +1,41 @@
+.discover-container .list-container .list-group-item {
+  margin-bottom: 0;
+  border: 0;
+}
+
+.discover-container .list-container .thumbnail {
+  padding: 0;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.discover-container .list-container .thumbnail > img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.discover-container .list-container .thumbnail > .cover-layer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	border-radius: 4px;
+}
+
+.discover-container .list-container .thumbnail > .cover-layer-color {
+	background-color: #050a09;
+  opacity: .36;
+}
+
+.discover-container .list-container .thumbnail > .cover-layer > table {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	color: #ffffff;
+	font-size: 22px;
+}
+
+.discover-container .list-container .thumbnail > .cover-layer > table > tbody > tr > td {
+	vertical-align: middle;
+}

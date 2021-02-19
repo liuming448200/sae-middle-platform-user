@@ -1,0 +1,157 @@
+<!--
+    @require "review.css"
+-->
+
+<div class="review-container">
+	<header class="header-container navbar-fixed-top">
+    <a class="header-btn header-pos-left" href="javascript:;" ui-sref="main.user">
+      <i class="fa fa-times"></i>
+    </a>
+    <div class="title">活动回顾</div>
+  </header>
+  <div class="container">
+		<ul>
+			<rd-widget>
+				<rd-widget-body classes="no-padding" loading="loading" failing="failing" empty="empty">
+					<div scroll-trigger="loadMore()" trigger-run trigger-at-end trigger-persist trigger-active="!(loading || failing || empty || busy || lazy || finish || scrollDisabled)">
+						<li class="list-group-item">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>
+                      风度小骑士
+                    </td>
+                    <td>
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                            <td>时间：2017-06-28</td>
+                          </tr>
+                          <tr>
+                            <td>地点：北京市顺义区意大利农场</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                    <td>
+                      <button class="btn btn-default" disabled>参加</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li class="list-group-item">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>
+                      风度小骑士
+                    </td>
+                    <td>
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                            <td>时间：2017-06-28</td>
+                          </tr>
+                          <tr>
+                            <td>地点：北京市顺义区意大利农场</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                    <td>
+                      <button class="btn btn-default" disabled>参加</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li class="list-group-item">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>
+                      风度小骑士
+                    </td>
+                    <td>
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                            <td>时间：2017-06-28</td>
+                          </tr>
+                          <tr>
+                            <td>地点：北京市顺义区意大利农场</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                    <td>
+                      <button class="btn btn-default" disabled>参加</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li class="list-group-item">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>
+                      风度小骑士
+                    </td>
+                    <td>
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                            <td>时间：2017-06-28</td>
+                          </tr>
+                          <tr>
+                            <td>地点：北京市顺义区意大利农场</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                    <td>
+                      <button class="btn btn-default" disabled>参加</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li class="list-group-item">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>
+                      风度小骑士
+                    </td>
+                    <td>
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                            <td>时间：2017-06-28</td>
+                          </tr>
+                          <tr>
+                            <td>地点：北京市顺义区意大利农场</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                    <td>
+                      <button class="btn btn-default" disabled>参加</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <div class="scroll-loading" ng-show="busy">
+			        <i class="fa fa-spinner fa-pulse"></i><span>加载中...</span>
+			      </div>
+			      <div class="scroll-loadfail" ng-show="lazy">加载失败，请检查网络连接...</div>
+			      <div class="scroll-loadfinish" ng-show="finish">没有更多了</div>
+					</div>
+				</rd-widget-body>
+			</rd-widget>
+		</ul>
+  </div>
+</div>

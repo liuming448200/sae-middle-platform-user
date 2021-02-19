@@ -1,0 +1,125 @@
+.score-container .chargedetail-container .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.score-container .chargedetail-container .container .detail {
+	background-color: #f0eff5;
+  padding-bottom: 10px;
+}
+
+.score-container .chargedetail-container .container .detail .outer {
+  background: #ffffff;
+}
+
+.score-container .chargedetail-container .container .q-div {
+	position: relative;
+}
+
+.score-container .chargedetail-container .container .q-div img {
+	width: 100%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.score-container .chargedetail-container .container .q-div .q-con {
+	position: absolute;
+  bottom: 3%;
+  left: 3%;
+  text-align: center;
+}
+
+.score-container .chargedetail-container .container .q-div .q-con .q-name {
+  display: block;
+  font-size: 1.3rem;
+  color: #fff;
+  line-height: 1.8rem;
+  height: 1.8rem;
+}
+
+.score-container .chargedetail-container .container .q-info {
+  background-color: #fff;
+  padding: 0 15px;
+  height: 3.6rem;
+  overflow: hidden;
+  border-bottom: 1px solid #eaeaed;
+}
+
+.score-container .chargedetail-container .container .q-info .yelp {
+	float: left;
+  display: inline-block;
+  color: #5cb85c;
+  line-height: 3.6rem;
+}
+
+.score-container .chargedetail-container .container .q-info button {
+  float: right;
+  width: 30%;
+  height: 2.8rem;
+  margin-top: .4rem;
+  display: inline-block;
+  outline: 0;
+  border: 1px solid #eaeaed;
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 2rem;
+  text-align: center;
+  border-radius: .5rem;
+}
+
+.score-container .chargedetail-container .container .q-info button.yel {
+  background-color: #5cb85c;
+}
+
+.score-container .chargedetail-container .container .q-info button.gray {
+  background-color: #eaeaed;
+}
+
+.score-container .chargedetail-container .container .pb2 {
+	padding-bottom: 2rem;
+  background-color: #ffffff;
+}
+
+.score-container .chargedetail-container .container .quan-details {
+	padding: 2rem 15px 0;
+  color: #60606c;
+}
+
+.score-container .chargedetail-container .container .quan-details dt {
+	font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+.score-container .chargedetail-container .container .quan-details dd {
+	font-size: 1rem;
+  line-height: 1.8rem;
+}
+
+.score-container .chargedetail-container .container .imp-notice {
+  position: relative;
+  padding: 1.5rem;
+  background-color: #ffffff;
+}
+
+.score-container .chargedetail-container .container .imp-notice p {
+  font-size: 1.05rem;
+  line-height: 1.8rem;
+  color: #93939e;
+  border: 1px dotted #cccccc;
+  padding: 1.5rem 1rem 1rem 1rem;
+}
+
+.score-container .chargedetail-container .container .imp-notice .imp-title {
+  color: #93939e;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  height: 1.2rem;
+  width: 6rem;
+  text-align: center;
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  margin-left: -3rem;
+  background-color: #ffffff;
+}

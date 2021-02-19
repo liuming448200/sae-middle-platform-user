@@ -1,0 +1,31 @@
+<!--
+    @require "verifycode.css"
+-->
+
+<div class="verifycode-container">
+  <header class="header-container navbar-fixed-top">
+    <a class="header-btn header-pos-left" href="javascript:;" ui-sref="setting.phone.newphone">
+      <i class="fa fa-chevron-left"></i>
+    </a>
+    <div class="title">绑定手机</div>
+  </header>
+  <div class="container">
+    <div class="content-container">
+      <div class="well">
+        <span class="help-block">请输入<i>{{mobile}}</i>收到的短信校验码</span>
+        <form class="form-horizontal" role="form" name="checkVerifyCodeForm" novalidate ng-submit="checkVerifyCodeSubmit()">
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input type="text" class="form-control" name="verifyCode" ng-model="verifyCode" ng-trim="true" required ng-minlength="6" ng-maxlength="6" placeholder="请输入短信校验码">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-12" style="text-align: center;">
+              <button type="submit" class="btn btn-success">确定</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,133 @@
+<!--
+    @require "institution.css"
+-->
+
+<div class="institution-container">
+	<header class="header-container navbar-fixed-top">
+  	<a class="header-btn header-pos-left" style="width:77px; padding:16px 0;" ui-sref="city">
+  		<span>{{cityName}}</span>
+      <i class="fa fa-angle-down" aria-hidden="true"></i>
+    </a>
+    <a class="header-btn header-pos-right" href="javascript:;" ng-click="search()">
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </a>
+    <div class="title">学校列表</div>
+  </header>
+  <div class="container">
+		<rd-widget>
+      <rd-widget-body classes="no-padding" loading="loading" failing="failing" empty="empty">
+        <div scroll-trigger="loadMore()" trigger-run trigger-at-end trigger-persist trigger-active="!(loading || failing || empty || busy || lazy || finish || scrollDisabled)">
+          <a ui-sref="institution" class="list-group-item">
+            <div class="media">
+              <div class="pull-left">
+                <img class="media-object" src="static/images/default.jpg" alt="缩略图">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">纽约国际儿童俱乐部西红门鸿坤中心</h4>
+                <div class="service">
+                  <span class="label label-primary">早教</span>
+                  <span class="label label-info">英语培训</span>
+                  <span class="label label-warning">绘本阅读</span>
+                  <span class="label label-danger">托管</span>
+                </div>
+                <p class="address">北京市大兴区西红门鸿坤购物中心三层</p>
+                <div class="pos clearfix">
+                  <p class="pull-right">
+                    <span class="dis">500m</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a ui-sref="institution" class="list-group-item">
+            <div class="media">
+              <div class="pull-left">
+                <img class="media-object" src="static/images/default.jpg" alt="">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">纽约国际儿童俱乐部西红门鸿坤中心</h4>
+                <div class="service">
+                  <span class="label label-primary">早教</span>
+                  <span class="label label-info">英语培训</span>
+                  <span class="label label-warning">绘本阅读</span>
+                </div>
+                <p class="address">北京市大兴区西红门鸿坤购物中心三层</p>
+                <div class="pos clearfix">
+                  <p class="pull-right">
+                    <span class="dis">500m</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a ui-sref="institution" class="list-group-item">
+            <div class="media">
+              <div class="pull-left">
+                <img class="media-object" src="static/images/default.jpg" alt="">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">纽约国际儿童俱乐部西红门鸿坤中心</h4>
+                <div class="service">
+                  <span class="label label-primary">早教</span>
+                  <span class="label label-info">英语培训</span>
+                </div>
+                <p class="address">北京市大兴区西红门鸿坤购物中心三层</p>
+                <div class="pos clearfix">
+                  <p class="pull-right">
+                    <span class="dis">500m</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a ui-sref="institution" class="list-group-item">
+            <div class="media">
+              <div class="pull-left">
+                <img class="media-object" src="static/images/default.jpg" alt="">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">纽约国际儿童俱乐部西红门鸿坤中心</h4>
+                <div class="service">
+                  <span class="label label-primary">早教</span>
+                </div>
+                <p class="address">北京市大兴区西红门鸿坤购物中心三层</p>
+                <div class="pos clearfix">
+                  <p class="pull-right">
+                    <span class="dis">500m</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a ui-sref="institution" class="list-group-item">
+            <div class="media">
+              <div class="pull-left">
+                <img class="media-object" src="static/images/default.jpg" alt="">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">纽约国际儿童俱乐部西红门鸿坤中心</h4>
+                <div class="service">
+                  <span class="label label-primary">早教</span>
+                  <span class="label label-info">英语培训</span>
+                  <span class="label label-warning">绘本阅读</span>
+                  <span class="label label-danger">托管</span>
+                </div>
+                <p class="address">北京市大兴区西红门鸿坤购物中心三层</p>
+                <div class="pos clearfix">
+                  <p class="pull-right">
+                    <span class="dis">500m</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="scroll-loading" ng-show="busy">
+            <i class="fa fa-spinner fa-pulse"></i><span>加载中...</span>
+          </div>
+          <div class="scroll-loadfail" ng-show="lazy">加载失败，请检查网络连接...</div>
+          <div class="scroll-loadfinish" ng-show="finish">没有更多了</div>
+        </div>
+      </rd-widget-body>
+    </rd-widget>
+  </div>
+</div>

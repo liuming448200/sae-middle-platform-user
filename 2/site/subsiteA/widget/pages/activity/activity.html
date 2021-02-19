@@ -1,0 +1,177 @@
+<!--
+    @require "activity.css"
+-->
+
+<div class="activity-detail-container">
+	<header class="header-container navbar-fixed-top">
+    <a class="header-btn header-pos-left" ui-sref="institution.activity">
+      <i class="fa fa-chevron-left"></i>
+    </a>
+    <a class="header-btn header-pos-right" href="javascript:;" ng-click="share()" ng-hide="weixinFlag">
+      <i class="fa fa-share"></i>
+    </a>
+    <div class="title">活动详情</div>
+  </header>
+  <div class="container">
+    <div id="myCarousel" class="carousel slide">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="static/images/default.jpg" alt="轮播图1">
+        </div>
+        <div class="item">
+          <img src="static/images/default.jpg" alt="轮播图2">
+        </div>
+        <div class="item">
+          <img src="static/images/default.jpg" alt="轮播图3">
+        </div>
+      </div>
+      <a class="carousel-control left" href="javascript:;" data-target="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="carousel-control right" href="javascript:;" data-target="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div>
+    <div class="thumbnail">
+      <div class="caption">
+        <h3>风度小骑士</h3>
+        <p>释放天性，收获自信</p>
+        <div class="num clearfix">
+          <div class="pull-left">
+            <p class="price">
+              <span>消课：3节</span>
+              <span style="margin-left:10px;">材料费：<i class="fa fa-jpy" aria-hidden="true"></i>100</span>
+            </p>
+          </div>
+          <div class="pull-right">
+            <p>
+              <small>已报名额</small>
+              <span class="badge">5</span>
+            </p>
+          </div>
+        </div>
+        <div class="time clearfix">
+          <p class="pull-left" style="margin-right:5px;">报名截止倒计时</p>
+          <p class="pull-left"><span class="box">12</span>天</p>
+          <p class="pull-left"><span class="box">12</span>时</p>
+          <p class="pull-left"><span class="box">12</span>分</p>
+          <p class="pull-left"><span class="box">12</span>秒</p>
+        </div>
+      </div>
+    </div>
+    <div class="activity-overall">
+      <ul>
+        <li class="list-group-item">
+          <table>
+            <tr>
+              <td><img src="./images/icon-detail1.png" width="14"></td>
+              <td>2017-05-20 周六 9:00-10:45</td>
+            </tr>
+          </table>
+        </li>
+        <a class="list-group-item" href="javascript:;">
+          <table>
+            <tr>
+              <td><img src="./images/icon-detail2.png" width="14"></td>
+              <td>南宫风度马会</td>
+              <td class="text-right"><i class="fa fa-angle-right" aria-hidden="true"></i></td>
+            </tr>
+          </table>
+        </a>
+        <li class="list-group-item">
+          <table>
+            <tr>
+              <td><img src="./images/icon-detail3.png" width="14"></td>
+              <td>3岁以上孩子</td>
+            </tr>
+          </table>
+        </li>
+        <li class="list-group-item">
+          <table>
+            <tr>
+              <td><img src="./images/icon-detail4.png" width="14"></td>
+              <td>6组家庭</td>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </div>
+    <div class="more-detail">
+      <ul class="nav nav-tabs">
+        <li class="active">
+          <a href="javascript:;" data-toggle="tab" data-target="#introduce">活动介绍</a>
+        </li>
+        <li>
+          <a href="javascript:;" data-toggle="tab" data-target="#content">活动内容</a>
+        </li>
+        <li>
+          <a href="javascript:;" data-toggle="tab" data-target="#notice">注意事项</a>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane fade in active" id="introduce">
+          <article>
+            <div class="content">
+              <div class="page js-page on">
+                <p>春天到，家长们期盼已久的马术户外课终于来了，给孩子一个靠近马儿的机会，接近大自然，骑马既让孩子强健身体，又能培养孩子的胆识自信，自立能力。在骑乘中，与马儿的交流互动，更能让孩子性格开朗、有韧性、坚强。</p>
+                <p>马术是一所寓教于乐的户外运动！是一场“释放天性”和“收获自信”的体育项目！这场绽放天性的体验，这次高贵而又野性的生命蜕变，就在[马术小贵族运动体验]！从走马场的一刻起，孩子和家长必定会收获很多从未有过的惊喜和刻骨铭心的记忆！</p>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="tab-pane fade" id="content">
+          <article>
+            <div class="content">
+              <div class="page js-page on">
+                <p>1、马场参观</p>
+                <p>2、马房参观</p>
+                <p>3、马的知识讲解</p>
+                <p>4、喂马：俱乐部免费提供胡萝卜和苹果</p>
+                <p>5、试骑体验15分钟</p>
+                <p>6、与马匹合影</p>
+                <p>注：整个马场时间1.5小时</p>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="tab-pane fade" id="notice">
+          <article>
+            <div class="content">
+              <div class="page js-page on">
+                <p>1、马场不能大声喧哗与跑闹追逐。</p>
+                <p>2、不要站在马的后面。</p>
+                <p>3、家长要看护好孩子，马匹上下课和遛马频繁，注意马的走动。</p>
+                <p>4、没有马场工作人员陪同不能进入马厩（马房）。</p>
+                <p>5、开车进入马场要低于时速5公里，不能鸣笛。</p>
+              </div>
+             </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="pay">
+      <table>
+        <tr>
+          <td width="50%">
+            <table style="margin:auto;">
+              <tr>
+                <td>消课：</td>
+                <td><span>3</span>节</td>
+              </tr>
+              <tr>
+                <td>支付：</td>
+                <td><span>100</span>元</td>
+              </tr>
+            </table>
+          </td>
+          <td width="50%">
+            <button type="button" class="btn btn-warning btn-lg" ng-click="goOrder()">立即报名</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

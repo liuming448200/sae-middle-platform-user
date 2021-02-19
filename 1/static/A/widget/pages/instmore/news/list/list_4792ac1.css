@@ -1,0 +1,9 @@
+.instmore-container .news-container .list-container .list-group-item {
+	border-bottom: 1px solid #dddddd;
+}
+
+.instmore-container .news-container .list-container .media-body .time {
+	color: #737373;
+  font-size: 12px;
+  text-align: justify;
+}

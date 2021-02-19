@@ -1,0 +1,13 @@
+.reset-container .second-container .tips {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.reset-container .second-container .tips h1 {
+	padding-bottom: 10px;
+}
+
+.reset-container .second-container .tips h2 {
+	color: #5cb85c;
+}

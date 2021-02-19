@@ -1,0 +1,32 @@
+.song-container ul {
+  margin-top: 10px;
+  border-bottom: inherit !important;
+}
+
+.song-container li {
+  margin-bottom: 0 !important;
+  width: 50%;
+  text-align: center;
+}
+
+.song-container li:first-child a {
+  border-top-left-radius: 4px !important;
+  border-bottom-left-radius: 4px !important;
+}
+
+.song-container li a {
+  margin-right: 0 !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  border: 1px solid #5cb85c !important;
+}
+
+.song-container li:last-child a {
+  border-top-right-radius: 4px !important;
+  border-bottom-right-radius: 4px !important;
+}
+
+.song-container li.active a {
+  color: white !important;
+  background-color: #5cb85c !important;
+}

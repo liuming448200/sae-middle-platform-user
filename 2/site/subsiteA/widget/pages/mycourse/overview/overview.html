@@ -1,0 +1,94 @@
+<!--
+    @require "overview.css"
+-->
+
+<div class="overview-container">
+	<header class="header-container navbar-fixed-top">
+    <a class="header-btn header-pos-left" href="javascript:;" ui-sref="main.user">
+      <i class="fa fa-times"></i>
+    </a>
+    <div class="title">课程管理</div>
+  </header>
+  <div class="container">
+    <div class="head">
+      <div class="outer">
+        <table class="table">
+          <tr>
+            <td>
+              <div class="block">
+                <h3>144</h3>
+                <p>总课时</p>
+              </div>
+            </td>
+            <td>
+              <div class="block">
+                <h3>122</h3>
+                <p>剩余课时</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a ui-sref="mycourse.review" class="block">
+                <table>
+                  <tr>
+                    <td>
+                      <h3>22</h3>
+                      <p>已用课时</p>
+                    </td>
+                    <td>
+                      <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </td>
+                  </tr>
+                </table>
+              </a>
+            </td>
+            <td>
+              <a ui-sref="instmore.product">
+                <button class="btn btn-success">购买课程</button>
+              </a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="content-container">
+      <h3 class="text-center">已预约课程</h3>
+      <ul>
+        <li class="list-group-item" ng-repeat="course in reserveCourses">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td>
+                  {{course.course_name}}<br>
+                  {{course.reserve_course_date|timeDateFormat}}<br>
+                  {{course.schedule_course_time_start}}-{{course.schedule_course_time_stop}}<br>
+                  {{course.schedule_course_classroom}}
+                </td>
+                <td>
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <td>年龄：{{course.course_age_start}}-{{course.course_age_stop}}个月</td>
+                      </tr>
+                      <tr>
+                        <td>主教：{{course.course_teacher}}</td>
+                      </tr>
+                      <tr>
+                        <td>助教：{{course.course_assistant}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+                <td>
+                  <button class="btn btn-warning" ng-click="cancel(course)">取消</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </li>
+        <li class="list-group-item text-center" style="border-bottom:0;" ng-if="0 === reserveCourses.length">没有课程</li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+.institution-detail-container .activity-container .media-body .short {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+
+.institution-detail-container .activity-container .media-body .short .label {
+  line-height: inherit;
+}
+
+.institution-detail-container .activity-container .media-body .time {
+  color: #737373;
+  font-size: 12px;
+  text-align: justify;
+}
+
+.institution-detail-container .activity-container .media-body .number {
+	font-size: 14px;
+}
+
+.institution-detail-container .activity-container .media-body .number .left {
+	color: #ff6969;
+}

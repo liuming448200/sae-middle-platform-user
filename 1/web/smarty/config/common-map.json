@@ -1,0 +1,319 @@
+{
+    "res": {
+        "common:page/layout.tpl": {
+            "uri": "/template/common/page/layout.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "common:widget/common/combo/load-empty.js": {
+            "uri": "/static/common/widget/common/combo/load-empty_4f688b5.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "common:widget/common/combo/load-empty"
+            }
+        },
+        "common:widget/common/combo/load-fail.js": {
+            "uri": "/static/common/widget/common/combo/load-fail_854da86.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "common:widget/common/combo/load-fail"
+            }
+        },
+        "common:widget/common/combo/loading.js": {
+            "uri": "/static/common/widget/common/combo/loading_b79e71c.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "common:widget/common/combo/loading"
+            }
+        },
+        "common:widget/common/combo/toast.js": {
+            "uri": "/static/common/widget/common/combo/toast_f1d5ccd.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "common:widget/common/combo/toast"
+            },
+            "deps": [
+                "common:widget/common/combo/widget.less"
+            ]
+        },
+        "common:widget/common/combo/waiting.js": {
+            "uri": "/static/common/widget/common/combo/waiting_8412073.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "common:widget/common/combo/waiting"
+            },
+            "deps": [
+                "common:widget/common/combo/widget.less"
+            ]
+        },
+        "common:widget/common/combo/widget-body.js": {
+            "uri": "/static/common/widget/common/combo/widget-body_624e8de.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "common:widget/common/combo/widget-body"
+            }
+        },
+        "common:widget/common/combo/widget-footer.js": {
+            "uri": "/static/common/widget/common/combo/widget-footer_02407e7.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "common:widget/common/combo/widget-footer"
+            }
+        },
+        "common:widget/common/combo/widget-header.js": {
+            "uri": "/static/common/widget/common/combo/widget-header_8ec6265.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "common:widget/common/combo/widget-header"
+            }
+        },
+        "common:widget/common/combo/widget.js": {
+            "uri": "/static/common/widget/common/combo/widget_e7b7067.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "common:widget/common/combo/widget"
+            },
+            "deps": [
+                "common:widget/common/combo/widget-header.js",
+                "common:widget/common/combo/widget-body.js",
+                "common:widget/common/combo/widget-footer.js",
+                "common:widget/common/combo/loading.js",
+                "common:widget/common/combo/load-fail.js",
+                "common:widget/common/combo/load-empty.js",
+                "common:widget/common/combo/widget.less"
+            ]
+        },
+        "common:widget/common/combo/widget.less": {
+            "uri": "/static/common/widget/common/combo/widget_1d43954.css",
+            "type": "css"
+        },
+        "common:widget/common/fileupload/fileupload.js": {
+            "uri": "/static/common/widget/common/fileupload/fileupload_b7d770a.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "common:widget/common/fileupload/fileupload"
+            }
+        },
+        "common:widget/common/lazyImg/lazyImg.js": {
+            "uri": "/static/common/widget/common/lazyImg/lazyImg_9b7a0ee.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "common:widget/common/lazyImg/lazyImg"
+            }
+        },
+        "common:widget/common/mobile/touchEnd.js": {
+            "uri": "/static/common/widget/common/mobile/touchEnd_c367db9.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "common:widget/common/mobile/touchEnd"
+            }
+        },
+        "common:widget/common/mobile/touchStart.js": {
+            "uri": "/static/common/widget/common/mobile/touchStart_4ebb8c2.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "common:widget/common/mobile/touchStart"
+            }
+        },
+        "common:widget/common/pagination/pagination.css": {
+            "uri": "/static/common/widget/common/pagination/pagination_90c15ac.css",
+            "type": "css"
+        },
+        "common:widget/common/pagination/pagination.js": {
+            "uri": "/static/common/widget/common/pagination/pagination_31de486.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "common:widget/common/pagination/pagination"
+            },
+            "deps": [
+                "common:widget/common/pagination/pagination.css"
+            ]
+        },
+        "common:widget/common/picupload/picupload.js": {
+            "uri": "/static/common/widget/common/picupload/picupload_5668965.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "common:widget/common/picupload/picupload"
+            }
+        },
+        "common:widget/dialogService/dialogService.js": {
+            "uri": "/static/common/widget/dialogService/dialogService_2778de7.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "common:widget/dialogService/dialogService"
+            }
+        },
+        "common:widget/footer/footer.less": {
+            "uri": "/static/common/widget/footer/footer_3f5ffe5.css",
+            "type": "css"
+        },
+        "common:widget/footer/footer.tpl": {
+            "uri": "common/widget/footer/footer.tpl",
+            "type": "tpl",
+            "deps": [
+                "common:widget/footer/footer.less"
+            ]
+        },
+        "common:widget/header/header.less": {
+            "uri": "/static/common/widget/header/header_d433c4a.css",
+            "type": "css"
+        },
+        "common:widget/header/header.tpl": {
+            "uri": "common/widget/header/header.tpl",
+            "type": "tpl",
+            "deps": [
+                "common:widget/header/header.less"
+            ]
+        },
+        "common:widget/uploadFileService/uploadFileService.js": {
+            "uri": "/static/common/widget/uploadFileService/uploadFileService_a38395a.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "common:widget/uploadFileService/uploadFileService"
+            }
+        },
+        "common:widget/userInterceptor/userInterceptor.js": {
+            "uri": "/static/common/widget/userInterceptor/userInterceptor_ef09d45.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "common:widget/userInterceptor/userInterceptor"
+            }
+        },
+        "common:static/css/layout.less": {
+            "uri": "/static/common/css/layout_b4723a3.css",
+            "type": "css"
+        },
+        "common:static/css/reset.css": {
+            "uri": "/static/common/css/reset_9d8300d.css",
+            "type": "css"
+        },
+        "common:static/js/detect.js": {
+            "uri": "/static/common/js/detect_112d953.js",
+            "type": "js"
+        },
+        "common:static/js/mod.js": {
+            "uri": "/static/common/js/mod_98df795.js",
+            "type": "js"
+        },
+        "common:bower_components/rdash-ui/dist/css/rdash.css": {
+            "uri": "/static/common/bower_components/rdash-ui/dist/css/rdash_f2ae525.css",
+            "type": "css"
+        },
+        "common:bower_components/bootstrap/less/bootstrap.less": {
+            "uri": "/static/common/bower_components/bootstrap/less/bootstrap_ba915f9.css",
+            "type": "css"
+        },
+        "common:bower_components/font-awesome/css/font-awesome.css": {
+            "uri": "/static/common/bower_components/font-awesome/css/font-awesome_477d403.css",
+            "type": "css"
+        },
+        "common:bower_components/jquery-ui/themes/smoothness/jquery-ui.css": {
+            "uri": "/static/common/bower_components/jquery-ui/themes/smoothness/jquery-ui_60e8edf.css",
+            "type": "css"
+        },
+        "common:bower_components/ng-img-crop/compile/unminified/ng-img-crop.css": {
+            "uri": "/static/common/bower_components/ng-img-crop/compile/unminified/ng-img-crop_8ffb4f1.css",
+            "type": "css"
+        },
+        "common:bower_components/videogular-themes-default/videogular.css": {
+            "uri": "/static/common/bower_components/videogular-themes-default/videogular_1f70d80.css",
+            "type": "css",
+            "extras": {}
+        },
+        "common:bower_components/angular-chart.js/dist/angular-chart.css": {
+            "uri": "/static/common/bower_components/angular-chart.js/dist/angular-chart_3f61e18.css",
+            "type": "css"
+        },
+        "common:bower_components/angular/angular.js": {
+            "uri": "/static/common/bower_components/angular/angular_afb04ee.js",
+            "type": "js"
+        },
+        "common:bower_components/angular-sanitize/angular-sanitize.js": {
+            "uri": "/static/common/bower_components/angular-sanitize/angular-sanitize_805e2ef.js",
+            "type": "js"
+        },
+        "common:bower_components/videogular/videogular.js": {
+            "uri": "/static/common/bower_components/videogular/videogular_69778c1.js",
+            "type": "js"
+        },
+        "common:bower_components/videogular-controls/vg-controls.js": {
+            "uri": "/static/common/bower_components/videogular-controls/vg-controls_24570f7.js",
+            "type": "js"
+        },
+        "common:bower_components/videogular-buffering/vg-buffering.js": {
+            "uri": "/static/common/bower_components/videogular-buffering/vg-buffering_938ae7f.js",
+            "type": "js"
+        },
+        "common:bower_components/videogular-overlay-play/vg-overlay-play.js": {
+            "uri": "/static/common/bower_components/videogular-overlay-play/vg-overlay-play_95f906b.js",
+            "type": "js"
+        },
+        "common:bower_components/videogular-poster/vg-poster.js": {
+            "uri": "/static/common/bower_components/videogular-poster/vg-poster_2a3ebf5.js",
+            "type": "js"
+        },
+        "common:bower_components/angular-bootstrap/ui-bootstrap-tpls.js": {
+            "uri": "/static/common/bower_components/angular-bootstrap/ui-bootstrap-tpls_6a63593.js",
+            "type": "js"
+        },
+        "common:bower_components/angular-cookies/angular-cookies.js": {
+            "uri": "/static/common/bower_components/angular-cookies/angular-cookies_8596847.js",
+            "type": "js"
+        },
+        "common:bower_components/angular-animate/angular-animate.js": {
+            "uri": "/static/common/bower_components/angular-animate/angular-animate_34c5596.js",
+            "type": "js"
+        },
+        "common:bower_components/ui-router/release/angular-ui-router.js": {
+            "uri": "/static/common/bower_components/ui-router/release/angular-ui-router_3273839.js",
+            "type": "js"
+        },
+        "common:bower_components/jquery/dist/jquery.js": {
+            "uri": "/static/common/bower_components/jquery/dist/jquery_2bf49d8.js",
+            "type": "js"
+        },
+        "common:bower_components/scrollup/dist/jquery.scrollUp.js": {
+            "uri": "/static/common/bower_components/scrollup/dist/jquery.scrollUp_f98e711.js",
+            "type": "js"
+        },
+        "common:bower_components/jquery-ui/jquery-ui.js": {
+            "uri": "/static/common/bower_components/jquery-ui/jquery-ui_664ce91.js",
+            "type": "js"
+        },
+        "common:bower_components/bootstrap/dist/js/bootstrap.js": {
+            "uri": "/static/common/bower_components/bootstrap/dist/js/bootstrap_fb81549.js",
+            "type": "js"
+        },
+        "common:bower_components/ng-img-crop/compile/unminified/ng-img-crop.js": {
+            "uri": "/static/common/bower_components/ng-img-crop/compile/unminified/ng-img-crop_a02de8c.js",
+            "type": "js",
+            "deps": [
+                "common:bower_components/ng-img-crop/compile/unminified/ng-img-crop.css"
+            ]
+        },
+        "common:bower_components/scroll-trigger/dist/scroll-trigger.js": {
+            "uri": "/static/common/bower_components/scroll-trigger/dist/scroll-trigger_b81091e.js",
+            "type": "js"
+        },
+        "common:bower_components/angular-md5/angular-md5.js": {
+            "uri": "/static/common/bower_components/angular-md5/angular-md5_be07cd1.js",
+            "type": "js"
+        },
+        "common:bower_components/Chart.js/Chart.js": {
+            "uri": "/static/common/bower_components/Chart.js/Chart_5efc234.js",
+            "type": "js"
+        },
+        "common:bower_components/angular-chart.js/dist/angular-chart.js": {
+            "uri": "/static/common/bower_components/angular-chart.js/dist/angular-chart_ebaf01d.js",
+            "type": "js",
+            "deps": [
+                "angular",
+                "chart.js",
+                "common:bower_components/angular-chart.js/dist/angular-chart.css"
+            ]
+        }
+    },
+    "pkg": {}
+}

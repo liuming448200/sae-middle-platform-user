@@ -1,0 +1,24 @@
+.instmore-container .list-group-item {
+	margin-bottom: 0;
+  border: 0;
+}
+
+.instmore-container .list-group-item:first-child {
+	border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.instmore-container .list-group-item:last-child {
+	border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.instmore-container .media > .pull-left {
+	width: 100px;
+  height: 75px;
+}
+
+.instmore-container .media-object {
+	width: 100%;
+  height: 100%;
+}

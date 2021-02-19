@@ -1,0 +1,76 @@
+<!--
+    @require "institution.css"
+-->
+
+<div class="institution-detail-container">
+	<header class="header-container navbar-fixed-top">
+    <a class="header-btn header-pos-left" ui-sref="main.institution">
+      <i class="fa fa-chevron-left"></i>
+    </a>
+    <a class="header-btn header-pos-right" style="color:red;" href="javascript:;" data-toggle="modal" data-target="#menuModal">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </a>
+    <div class="title">纽约国际儿童俱乐部西红门鸿坤中心</div>
+  </header>
+  <div class="container">
+    <ul class="nav nav-tabs">
+      <li ui-sref-active="active">
+        <a ui-sref="institution.course">课程体系</a>
+      </li>
+      <li ui-sref-active="active">
+        <a ui-sref="institution.activity">亲子活动</a>
+      </li>
+    </ul>
+  	<div class="content-container">
+      <div ui-view></div>
+    </div>
+  </div>
+  <div class="modal fade" id="menuModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <ul class="sidebar">
+        <li>
+          <a ui-sref="instmore.news({from:$state.current.name})" ng-click="closeModal()">
+            <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+            <h4>最新动态</h4>
+          </a>
+        </li>
+        <li>
+          <a ui-sref="instmore.course({from:$state.current.name})" ng-click="closeModal()">
+            <i class="fa fa-life-ring" aria-hidden="true"></i>
+            <h4>课程介绍</h4>
+          </a>
+        </li>
+        <li>
+          <a ui-sref="instmore.product({from:$state.current.name})" ng-click="closeModal()">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <h4>购买课程</h4>
+          </a>
+        </li>
+        <li>
+          <a ui-sref="instmore.teachers({from:$state.current.name})" ng-click="closeModal()">
+            <i class="fa fa-users" aria-hidden="true"></i>
+            <h4>师资力量</h4>
+          </a>
+        </li>
+        <li>
+          <a ui-sref="instmore.environment({from:$state.current.name})" ng-click="closeModal()">
+            <i class="fa fa-picture-o" aria-hidden="true"></i>
+            <h4>教学环境</h4>
+          </a>
+        </li>
+        <li>
+          <a ui-sref="instmore.instdetail({from:$state.current.name})" ng-click="closeModal()">
+            <i class="fa fa-film" aria-hidden="true"></i>
+            <h4>学校详情</h4>
+          </a>
+        </li>
+        <li>
+          <a ui-sref="instmore.brand({from:$state.current.name})" ng-click="closeModal()">
+            <i class="fa fa-certificate" aria-hidden="true"></i>
+            <h4>品牌故事</h4>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,6 @@
+.auth-container .actions-container, .auth-container .users-container, .auth-container .usergroups-container {
+	padding: 5px;
+	border: 1px solid #cccccc;
+	border-radius: 4px;
+	background-color: #FFFFFF;
+}

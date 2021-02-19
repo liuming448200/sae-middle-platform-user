@@ -1,0 +1,25 @@
+.myactivity-container .container {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.myactivity-container .table {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.myactivity-container .table > tbody > tr > td {
+  border-top: 0;
+  vertical-align: middle;
+  padding: 0;
+}
+
+.myactivity-container .list-group-item {
+  margin-bottom: 0;
+  border: 0;
+  border-bottom: 1px solid #dddddd;
+}
+
+.myactivity-container .list-group-item > table table {
+  text-align: left;
+}

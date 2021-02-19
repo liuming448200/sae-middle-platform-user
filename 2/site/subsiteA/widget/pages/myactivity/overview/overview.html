@@ -1,0 +1,74 @@
+<!--
+    @require "overview.css"
+-->
+
+<div class="overview-container">
+	<header class="header-container navbar-fixed-top">
+    <a class="header-btn header-pos-left" href="javascript:;" ui-sref="main.user">
+      <i class="fa fa-times"></i>
+    </a>
+    <div class="title">活动管理</div>
+  </header>
+  <div class="container">
+    <div class="head">
+      <div class="outer">
+        <table class="table">
+          <tr>
+            <td>
+              <a ui-sref="myactivity.review" class="block">
+                <table>
+                  <tr>
+                    <td>
+                      <h3>22</h3>
+                      <p>已完成活动</p>
+                    </td>
+                    <td>
+                      <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </td>
+                  </tr>
+                </table>
+              </a>
+            </td>
+            <td>
+            	<a ui-sref="institution.activity">
+              	<button class="btn btn-success">活动报名</button>
+              </a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="content-container">
+      <h3 class="text-center">已报名活动</h3>
+      <ul>
+        <li class="list-group-item" ng-repeat="activity in reserveActivities">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td>
+                  {{activity.activity_name}}
+                </td>
+                <td>
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <td>时间：{{activity.activity_date|timeDateFormat}}</td>
+                      </tr>
+                      <tr>
+                        <td>地点：{{activity.activity_address}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+                <td>
+                  <button class="btn btn-warning" ng-click="cancel(activity)">取消</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </li>
+        <li class="list-group-item text-center" style="border-bottom:0;" ng-if="0 === reserveActivities.length">没有活动</li>
+      </ul>
+    </div>
+  </div>
+</div>

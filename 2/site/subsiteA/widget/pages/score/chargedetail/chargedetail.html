@@ -1,0 +1,51 @@
+<!--
+    @require "chargedetail.css"
+-->
+
+<div class="chargedetail-container">
+	<header class="header-container navbar-fixed-top">
+    <a class="header-btn header-pos-left" ui-sref="score.availpoints({from:$stateParams.from})">
+      <i class="fa fa-times"></i>
+    </a>
+    <div class="title">商品详情</div>
+  </header>
+  <div class="container">
+  	<div class="detail">
+      <div class="outer">
+    		<div class="q-div">
+    			<img src="static/images/default.jpg">
+    			<div class="q-con">
+    				<span class="q-name">10元课时包券</span>
+    			</div>
+    		</div>
+    		<div class="q-info">
+    			<span class="yelp">50积分</span>
+    			<!-- 黄色背景：class="yel"  灰色背景：class="gray" -->
+    			<button class="yel btn-change" ng-click="charge()" ng-class="{gray:!!$stateParams.from}" ng-disabled="!!$stateParams.from">兑换</button>
+    		</div>
+      </div>
+  	</div>
+  	<div class="pb2">
+  		<dl class="quan-details">
+  			<dt>使用说明</dt>
+  			<dd>
+  				有效期：领取日起1个月内有效<br>
+  				使用条件：无订单金额使用限制，限领取人手机号使用
+  			</dd>
+  		</dl>
+  		<dl class="quan-details">
+  			<dt>注意事项</dt>
+  			<dd>
+  				1.优惠券请在有效期内使用，代金券不可兑换、找零、开具发票、转让；<br>
+  				2.已兑换商品的对应积分不可退回；<br>
+  				3.积分兑换记录可在积分明细中查询；<br>
+  				4.兑换成功后，可在兑换记录中查询，或在神州专车平台“我的钱包”中查看。
+  			</dd>
+  		</dl>
+  	</div>
+  	<div class="imp-notice">
+  		<p>兑换商品前，请仔细阅读商品详情页面的“使用说明”及“注意事项”等相关内容。商品一经兑换，概不退还积分，请您理解。活动由神州租车提供，与设备生产商Apple Inc.公司无关。</p>
+  		<span class="imp-title">重要说明</span>
+  	</div>
+  </div>
+</div>

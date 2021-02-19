@@ -1,0 +1,41 @@
+<!--
+    @require "list.css"
+-->
+
+<div class="list-container">
+  <div class="row">
+  	<div class="col-xs-12">
+  		<rd-widget>
+  			<rd-widget-header icon="fa-tasks" title="应用列表">
+	        
+	      </rd-widget-header>
+	      <rd-widget-body classes="no-padding" loading="loading" failing="failing" empty="empty">
+	      	<div class="table-responsive">
+	      		<table class="table">
+	      			<thead>
+	      				<tr>
+	      					<th>应用名称</th>
+	      					<th>app_key</th>
+	      					<th>创建时间</th>
+	      					<th>更新时间</th>
+	      				</tr>
+	      			</thead>
+	      			<tbody>
+	      				<tr ng-repeat="item in list">
+	      					<td>{{item.app_role}}</td>
+	      					<td>{{item.app_key}}</td>
+	      					<td>{{item.create_time}}</td>
+	      					<td>{{item.update_time}}</td>
+	      				</tr>
+	      			</tbody>
+	      		</table>
+	      	</div>
+	      </rd-widget-body>
+	      <rd-widget-footer>
+	      	<rd-pagination conf="paginationConf"></rd-pagination>
+	        <div class="clearfix"></div>
+	      </rd-widget-footer>
+  		</rd-widget>
+  	</div>
+  </div>
+</div>

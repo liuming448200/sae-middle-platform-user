@@ -1,0 +1,29 @@
+.city-container .ui-autocomplete {
+  left: 0 !important;
+  top: 55px !important;
+  width: 100% !important;
+  max-height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.city-container .ui-widget.ui-widget-content {
+  border: 0;
+}
+
+.city-container .ui-menu .ui-autocomplete-type {
+  font-weight: bold;
+  padding: 10px 15px;
+  line-height: 1.5;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.city-container .ui-menu .ui-menu-item {
+  border-bottom: 1px solid #aaaaaa;
+  padding: 0;
+}
+
+.city-container .ui-menu .ui-menu-item > a {
+  display: block;
+  padding: 10px 15px;
+}

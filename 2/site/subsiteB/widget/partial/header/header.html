@@ -1,0 +1,54 @@
+<!--
+    @require "header.less"
+-->
+
+<div class="row header" ng-class="{'open': toggle}">
+    <div class="col-xs-12">
+        <div class="user pull-right">
+            <div class="item dropdown" uib-dropdown>
+                <a href="#" class="dropdown-toggle" uib-dropdown-toggle>
+                    <img src="./img/avatar.jpg">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li class="dropdown-header">
+                        {{user.username}}
+                    </li>
+                    <li class="divider"></li>
+                    <li class="link">
+                        <a href="#">
+                            个人设置
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li class="link">
+                        <a href="javascript:;" ng-click="exit()">
+                            退出
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="item dropdown" uib-dropdown>
+                <a href="#" class="dropdown-toggle" uib-dropdown-toggle>
+                    <i class="fa fa-bell-o"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li class="dropdown-header">
+                        通知
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#">新订单</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="meta">
+            <div class="page">
+                控制台
+            </div>
+            <div class="breadcrumb-links">
+                总览
+            </div>
+        </div>
+    </div>
+</div>

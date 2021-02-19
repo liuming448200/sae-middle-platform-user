@@ -1,0 +1,117 @@
+<!--
+  @require "sidebar.less"
+-->
+
+<div id="sidebar-wrapper">
+  <ul class="sidebar" style="padding-bottom:40px;">
+    <li class="sidebar-main">
+      <a ng-click="toggleSidebar()">
+        方向教育后台
+        <span class="menu-icon glyphicon glyphicon-transfer"></span>
+      </a>
+    </li>
+    <li class="sidebar-title"><span>导航</span></li>
+    <li class="sidebar-list" ui-sref-active="active">
+      <a href="javascript:;" ui-sref="main.index">总览 <span class="menu-icon fa fa-tachometer"></span></a>
+    </li>
+    <li class="sidebar-list" ui-sref-active="active">
+      <a href="javascript:;" ui-sref="main.story">讲故事 <span class="menu-icon fa fa-book"></span></a>
+    </li>
+    <li class="sidebar-list" ui-sref-active="active">
+      <a href="javascript:;" ng-click="toggleEnglish()">
+      学英语 <span class="menu-icon fa fa-language"></span><i class="fa fa-angle-down" aria-hidden="true" ng-hide="toggleenglish"></i><i class="fa fa-angle-up" aria-hidden="true" ng-show="toggleenglish"></i></a>
+      <ul ng-show="toggleenglish">
+        <li><a ui-sref="main.english.type">单词分类</a></li>
+        <li><a ui-sref="main.english.detail">单词列表</a></li>
+      </ul>
+    </li>
+    <li class="sidebar-list" ui-sref-active="active">
+      <a href="javascript:;" ng-click="toggleSong()">
+      唱儿歌 <span class="menu-icon fa fa fa-music"></span><i class="fa fa-angle-down" aria-hidden="true" ng-hide="togglesong"></i><i class="fa fa-angle-up" aria-hidden="true" ng-show="togglesong"></i></a>
+      <ul ng-show="togglesong">
+        <li><a ui-sref="main.song.chinese">中文歌</a></li>
+        <li><a ui-sref="main.song.english">英文歌</a></li>
+      </ul>
+    </li>
+    <li class="sidebar-list" ui-sref-active="active">
+      <a href="javascript:;" ui-sref="main.course">选课程 <span class="menu-icon fa fa-shopping-bag"></span></a>
+    </li>
+    <li class="sidebar-list" ui-sref-active="active">
+      <a href="javascript:;" ui-sref="main.activity">要参加 <span class="menu-icon fa fa-tasks"></span></a>
+    </li>
+    <li class="sidebar-list" ui-sref-active="active">
+      <a href="javascript:;" ng-click="toggleAuth()">
+      授权管理 <span class="menu-icon fa fa-unlock-alt"></span><i class="fa fa-angle-down" aria-hidden="true" ng-hide="toggleauth"></i><i class="fa fa-angle-up" aria-hidden="true" ng-show="toggleauth"></i></a>
+      <ul ng-show="toggleauth">
+        <li><a ui-sref="main.auth.menu">菜单管理</a></li>
+        <li><a ui-sref="main.auth.action">权限管理</a></li>
+        <li><a ui-sref="main.auth.usergroup">用户组管理</a></li>
+        <li><a ui-sref="main.auth.user">用户管理</a></li>
+      </ul>
+    </li>
+    <li class="sidebar-list" ui-sref-active="active">
+      <a href="javascript:;" ng-click="toggleBase()">
+      基础数据 <span class="menu-icon fa fa-database"></span><i class="fa fa-angle-down" aria-hidden="true" ng-hide="togglebase"></i><i class="fa fa-angle-up" aria-hidden="true" ng-show="togglebase"></i></a>
+      <ul ng-show="togglebase">
+        <li><a ui-sref="main.base.application">应用管理</a></li>
+        <li><a ui-sref="main.base.content">内容管理</a></li>
+      </ul>
+    </li>
+    <li class="sidebar-list" ui-sref-active="active">
+      <a href="javascript:;" ng-click="toggleTrade()">
+      交易管理 <span class="menu-icon fa fa-credit-card"></span><i class="fa fa-angle-down" aria-hidden="true" ng-hide="toggletrade"></i><i class="fa fa-angle-up" aria-hidden="true" ng-show="toggletrade"></i></a>
+      <ul ng-show="toggletrade">
+        <li><a ui-sref="main.base.application">订单管理</a></li>
+        <li><a ui-sref="main.base.content">退单管理</a></li>
+      </ul>
+    </li>
+    <li class="sidebar-list" ui-sref-active="active">
+      <a href="javascript:;" ng-click="toggleFinance()">
+      财务管理 <span class="menu-icon fa fa-money"></span><i class="fa fa-angle-down" aria-hidden="true" ng-hide="togglefinance"></i><i class="fa fa-angle-up" aria-hidden="true" ng-show="togglefinance"></i></a>
+      <ul ng-show="togglefinance">
+        <li><a ui-sref="main.base.application">对账管理</a></li>
+        <li><a ui-sref="main.base.content">预算管理</a></li>
+      </ul>
+    </li>
+    <li class="sidebar-list" ui-sref-active="active">
+      <a href="javascript:;" ng-click="toggleComment()">
+      点评管理 <span class="menu-icon fa fa-comments"></span><i class="fa fa-angle-down" aria-hidden="true" ng-hide="togglecomment"></i><i class="fa fa-angle-up" aria-hidden="true" ng-show="togglecomment"></i></a>
+      <ul ng-show="togglecomment">
+        <li><a ui-sref="main.base.application">点评审核</a></li>
+      </ul>
+    </li>
+    <li class="sidebar-list" ui-sref-active="active">
+      <a href="javascript:;" ng-click="toggleMessage()">
+      消息中心 <span class="menu-icon fa fa-envelope"></span><i class="fa fa-angle-down" aria-hidden="true" ng-hide="togglemessage"></i><i class="fa fa-angle-up" aria-hidden="true" ng-show="togglemessage"></i></a>
+      <ul ng-show="togglemessage">
+        <li><a ui-sref="main.base.application">站内信管理</a></li>
+      </ul>
+    </li>
+    <li class="sidebar-list" ui-sref-active="active">
+      <a href="javascript:;" ui-sref="main.story">会员管理 <span class="menu-icon fa fa-users"></span></a>
+    </li>
+    <li class="sidebar-list" ui-sref-active="active">
+      <a href="javascript:;" ui-sref="main.story">优惠券管理 <span class="menu-icon fa fa-gift"></span></a>
+    </li>
+    <li class="sidebar-list" ui-sref-active="active">
+      <a href="javascript:;" ui-sref="main.story">营销管理 <span class="menu-icon fa fa-rocket"></span></a>
+    </li>
+  </ul>
+  <div class="sidebar-footer">
+    <div class="col-xs-4">
+      <a href="http://fangxiang.applinzi.com" target="_blank">
+        前台
+      </a>
+    </div>
+    <div class="col-xs-4">
+      <a href="#">
+        帮助文档
+      </a>
+    </div>
+    <div class="col-xs-4">
+      <a href="#">
+        常见问题
+      </a>
+    </div>
+  </div>
+</div>

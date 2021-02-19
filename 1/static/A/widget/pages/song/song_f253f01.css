@@ -1,0 +1,13 @@
+.song-detail-container h3 {
+  font-size: 24.5px;
+  line-height: 40px;
+  font-weight: 500;
+}
+
+.song-detail-container audio {
+  max-width: 100%;
+}
+
+.song-detail-container #sense {
+  word-wrap: break-word;
+}

@@ -1,0 +1,198 @@
+<!--
+    @require "pointdetail.css"
+-->
+
+<div class="pointdetail-container">
+	<header class="header-container navbar-fixed-top">
+    <a class="header-btn header-pos-left" ui-sref="score.availpoints">
+      <i class="fa fa-times"></i>
+    </a>
+    <div class="title">积分明细</div>
+  </header>
+  <div class="container">
+    <div class="head">
+      <table class="table">
+        <tbody>
+          <tr>
+            <td>时间</td>
+            <td>来源</td>
+            <td>积分数</td>
+            <td>有效期</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <ul>
+      <rd-widget>
+        <rd-widget-body classes="no-padding" loading="loading" failing="failing" empty="empty">
+          <div scroll-trigger="loadMore()" trigger-run trigger-at-end trigger-persist trigger-active="!(loading || failing || empty || busy || lazy || finish || scrollDisabled)">
+            <li class="list-group-item">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>
+                      <p>2017-07-10</p>
+                      <p>10:05:53</p>
+                    </td>
+                    <td>
+                      <p>购买课程</p>
+                      <p>72课时</p>
+                    </td>
+                    <td>
+                      <p>+100</p>
+                    </td>
+                    <td>
+                      <p>2017-07-10</p>
+                      <p>10:05:53</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li class="list-group-item">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>
+                      <p>2017-07-10</p>
+                      <p>10:05:53</p>
+                    </td>
+                    <td>
+                      <p>报名活动</p>
+                      <p>风度小骑士</p>
+                    </td>
+                    <td>
+                      <p>+100</p>
+                    </td>
+                    <td>
+                      <p>2017-07-10</p>
+                      <p>10:05:53</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li class="list-group-item">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>
+                      <p>2017-07-10</p>
+                      <p>10:05:53</p>
+                    </td>
+                    <td>
+                      <p>购买课程</p>
+                      <p>72课时</p>
+                    </td>
+                    <td>
+                      <p>+100</p>
+                    </td>
+                    <td>
+                      <p>2017-07-10</p>
+                      <p>10:05:53</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li class="list-group-item">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>
+                      <p>2017-07-10</p>
+                      <p>10:05:53</p>
+                    </td>
+                    <td>
+                      <p>购买课程</p>
+                      <p>72课时</p>
+                    </td>
+                    <td>
+                      <p>+100</p>
+                    </td>
+                    <td>
+                      <p>2017-07-10</p>
+                      <p>10:05:53</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li class="list-group-item">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>
+                      <p>2017-07-10</p>
+                      <p>10:05:53</p>
+                    </td>
+                    <td>
+                      <p>购买课程</p>
+                      <p>72课时</p>
+                    </td>
+                    <td>
+                      <p>+100</p>
+                    </td>
+                    <td>
+                      <p>2017-07-10</p>
+                      <p>10:05:53</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li class="list-group-item">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>
+                      <p>2017-07-10</p>
+                      <p>10:05:53</p>
+                    </td>
+                    <td>
+                      <p>积分兑换</p>
+                      <p>10元课时包券</p>
+                    </td>
+                    <td>
+                      <p>-100</p>
+                    </td>
+                    <td>
+                      <p>-</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li class="list-group-item">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>
+                      <p>2017-07-10</p>
+                      <p>10:05:53</p>
+                    </td>
+                    <td>
+                      <p>积分兑换</p>
+                      <p>10元活动券</p>
+                    </td>
+                    <td>
+                      <p>-100</p>
+                    </td>
+                    <td>
+                      <p>-</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <div class="scroll-loading" ng-show="busy">
+              <i class="fa fa-spinner fa-pulse"></i><span>加载中...</span>
+            </div>
+            <div class="scroll-loadfail" ng-show="lazy">加载失败，请检查网络连接...</div>
+            <div class="scroll-loadfinish" ng-show="finish">没有更多了</div>
+          </div>
+        </rd-widget-body>
+      </rd-widget>
+    </ul>
+  </div>
+</div>

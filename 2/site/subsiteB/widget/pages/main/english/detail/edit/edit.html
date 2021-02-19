@@ -1,0 +1,54 @@
+<!--
+    @require "edit.css"
+-->
+
+<div class="edit-container">
+	<div class="row">
+		<div class="col-xs-12">
+			<rd-widget>
+				<rd-widget-body loading="loading" failing="failing" empty="empty">
+					<form role="form" name="editWordForm" novalidate ng-submit="editWordPreview()">
+						<div class="form-group">
+							<label for="english">单词</label>
+							<input type="text" class="form-control" id="english" name="english" ng-model="word.english" ng-trim="true" required ng-maxlength="30" placeholder="请输入单词">
+						</div>
+						<div class="form-group">
+							<label for="chinese">单词释义</label>
+							<input type="text" class="form-control" id="chinese" name="chinese" ng-model="word.chinese" ng-trim="true" required ng-maxlength="30" placeholder="请输入单词释义">
+						</div>
+						<div class="form-group">
+							<label for="category">单词分类</label>
+							<select class="form-control" id="category" name="category" ng-model="word.category_id" ng-options="item.category_id as item.english for item in word.categories" required>
+								
+							</select>
+							<div ng-show="lazy" style="color: red;">加载单词分类失败</div>
+						</div>
+						<div class="form-group">
+				      <label for="example_en">例句</label>
+				      <textarea class="form-control" rows="5" id="example_en" name="example_en" ng-model="word.example_en" ng-trim="true" required ng-maxlength="500" placeholder="请输入例句"></textarea>
+				   	</div>
+				   	<div class="form-group">
+				      <label for="example_cn">例句翻译</label>
+				      <textarea class="form-control" rows="5" id="example_cn" name="example_cn" ng-model="word.example_cn" ng-trim="true" required ng-maxlength="500" placeholder="请输入例句翻译"></textarea>
+				   	</div>
+				   	<div class="form-group">
+				      <label for="inputpic">单词图片</label>
+				      <input type="file" id="inputpic" rd-picupload="myPic" accept="image/*">
+				      <p class="help-block">请上传以.jpg、.png或者.bmp结尾的单词图片</p>
+				      <img class="img-responsive" style="margin: 10px auto;" ng-src="{{word.pic}}" alt="{{word.picname}}">
+				      <button type="button" class="btn btn-info" ng-click="uploadPic()">上传</button>
+				   	</div>
+				   	<div class="form-group">
+		          <div style="text-align: center;">
+		          	<a ui-sref="main.english.detail.list">
+		          		<button type="button" class="btn btn-default">返回</button>
+		          	</a>
+		          	<button type="submit" class="btn btn-success">预览</button>
+		          </div>
+		        </div>
+					</form>
+				</rd-widget-body>
+			</rd-widget>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,75 @@
+.mycourse-container .overview-container .head  {
+  background-color: #f0eff5;
+  padding-bottom: 10px;
+}
+
+.mycourse-container .overview-container .head .outer {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #ffffff;
+}
+
+.mycourse-container .overview-container .head .table {
+  table-layout: fixed;
+}
+
+.mycourse-container .overview-container .head .table > tbody > tr > td {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.mycourse-container .overview-container .head .table > tbody > tr:first-child > td {
+  border-bottom: 1px solid #dddddd;
+}
+
+.mycourse-container .overview-container .head .table > tbody > tr:last-child > td {
+  border-bottom: 0;
+}
+
+.mycourse-container .overview-container .head .table > tbody > tr > td .block {
+  display: block;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.mycourse-container .overview-container .head .table > tbody > tr > td:first-child .block {
+  border-right: 1px solid #dddddd;
+}
+
+.mycourse-container .overview-container .head .table > tbody > tr > td .block > table {
+  width: 100%;
+  text-align: center;
+}
+
+.mycourse-container .overview-container .head .table > tbody > tr > td .block > table td {
+  vertical-align: middle;
+}
+
+.mycourse-container .overview-container .head .table > tbody > tr > td .block > table td:last-child {
+  position: relative;
+}
+
+.mycourse-container .overview-container .head .table > tbody > tr > td .block > table td:last-child > i {
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+  right: 0;
+}
+
+.mycourse-container .overview-container .content-container {
+  background-color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.mycourse-container .overview-container .content-container > h3 {
+  font-size: 18px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.mycourse-container .overview-container .list-group-item:first-child {
+  border-top: 1px solid #dddddd;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}

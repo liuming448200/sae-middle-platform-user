@@ -1,0 +1,30 @@
+<!--
+    @require "add.css"
+-->
+
+<div class="add-container">
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="well">
+				<form role="form" name="addWordCategoryForm" novalidate ng-submit="addWordCategorySubmit()">
+					<div class="form-group">
+						<label for="english">单词</label>
+						<input type="text" class="form-control" id="english" name="english" ng-model="word.english" ng-trim="true" required ng-maxlength="30" placeholder="请输入单词">
+					</div>
+					<div class="form-group">
+						<label for="chinese">单词翻译</label>
+						<input type="text" class="form-control" id="chinese" name="chinese" ng-model="word.chinese" ng-trim="true" required ng-maxlength="30" placeholder="请输入单词翻译">
+					</div>
+					<div class="form-group">
+	          <div style="text-align: center;">
+	          	<a ui-sref="main.english.type">
+	          		<button type="button" class="btn btn-default">返回</button>
+	          	</a>
+	            <button type="submit" class="btn btn-success">提交</button>
+	          </div>
+	        </div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

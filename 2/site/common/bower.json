@@ -1,0 +1,41 @@
+{
+  "name": "education",
+  "version": "0.0.0",
+  "authors": [
+    "liuming <liuduoduo.student@163.com>"
+  ],
+  "keywords": [
+    "fis",
+    "angular"
+  ],
+  "license": "BSD",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.5.7",
+    "angular-animate": "~1.5.7",
+    "angular-cookies": "~1.5.7",
+    "angular-bootstrap": "~1.3.3",
+    "bootstrap": "~3.3.6",
+    "font-awesome": "~4.6.3",
+    "angular-chart.js": "~0.10.2",
+    "rdash-ui": "~1.0.1",
+    "ui-router": "~0.3.1",
+    "scrollup": "~2.4.1",
+    "jquery-ui": "~1.11.4",
+    "videogular": "~1.4.4",
+    "videogular-themes-default": "~1.4.4",
+    "videogular-controls": "~1.4.4",
+    "videogular-buffering": "~1.4.4",
+    "videogular-overlay-play": "~1.4.4",
+    "videogular-poster": "~1.4.4",
+    "ng-img-crop": "ngImgCrop#~0.3.2",
+    "scroll-trigger": "~0.5.4",
+    "angular-md5": "~0.1.10"
+  }
+}

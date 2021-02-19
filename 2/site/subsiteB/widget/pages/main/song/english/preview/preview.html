@@ -1,0 +1,40 @@
+<!--
+    @require "preview.css"
+-->
+
+<div class="preview-container">
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="content-container">
+				<ul class="thumbnails">
+					<li class="span4">
+						<div class="thumbnail">
+							<img alt="{{song.name}}" ng-src="{{song.pic}}">
+              <div class="caption" style="text-align: center;">
+                <h3>{{song.name}}</h3>
+                <p class="help-block">source：network</p>
+                <p ng-repeat="item in items">
+                  <audio controls="controls" autoplay="autoplay" loop="loop">
+                    <source ng-src="{{item|trustSrc}}" type="audio/mpeg">
+                    <object height="30" width="300" data="{{item|trustSrc}}">
+                      <embed height="30" width="300" ng-src="{{item|trustSrc}}">
+                    </object>
+                  </audio>
+                </p>
+                <p style="margin: 15px 0;">
+                  <a class="btn btn-success" href="javascript:;" data-toggle="collapse" data-target="#sense">歌词</a>
+                </p>
+                <p id="sense" class="collapse" ng-bind-html="song.content|unescapeHTMLFilterNoSpace"></p>
+              </div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="bottom-btn-group">
+        <button type="button" class="btn btn-default" ng-click="back()">返回</button>
+        <button type="button" class="btn btn-success" ng-click="submit()">提交</button>
+        <button type="button" class="btn btn-danger" ng-click="deleteSong()" ng-show="song_id">删除</button>
+      </div>
+		</div>
+	</div>
+</div>

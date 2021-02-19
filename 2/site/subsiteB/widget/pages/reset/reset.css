@@ -1,0 +1,49 @@
+.reset-container {
+	height: 100%;
+	background-color: #5cb85c;
+}
+
+.reset-container h1 {
+	font-size: 36px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	color: #FFFFFF;
+}
+
+.reset-container > table {
+	height: 100%;
+	width: 100%;
+}
+
+.reset-container > table td {
+	vertical-align: middle;
+	text-align: center;
+}
+
+.reset-container > table .well {
+	display: inline-block;
+}
+
+.reset-container .next-btn {
+	text-align: center;
+}
+
+.reset-container .next-btn button {
+	width: 80%;
+}
+
+.reset-container .confirm-btn {
+	text-align: center;
+}
+
+.reset-container .confirm-btn button {
+	width: 80%;
+}
+
+.reset-container .down-container {
+	text-align: center;
+}
+
+.reset-container .down-container button {
+	color: #5cb85c;
+}

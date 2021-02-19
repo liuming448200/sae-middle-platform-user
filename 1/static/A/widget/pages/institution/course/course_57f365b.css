@@ -1,0 +1,14 @@
+.institution-detail-container .media-body .time {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+
+.institution-detail-container .media-body .time .label {
+  line-height: inherit;
+}
+
+.institution-detail-container .media-body .target {
+  color: #737373;
+  font-size: 12px;
+}

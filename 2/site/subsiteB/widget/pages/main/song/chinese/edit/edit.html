@@ -1,0 +1,53 @@
+<!--
+    @require "edit.css"
+-->
+
+<div class="edit-container">
+	<div class="row">
+		<div class="col-xs-12">
+			<rd-widget>
+				<rd-widget-body loading="loading" failing="failing" empty="empty">
+					<form role="form" name="editSongForm" novalidate ng-submit="editSongPreview()">
+						<div class="form-group">
+							<label for="name">儿歌名称</label>
+							<input type="text" class="form-control" id="name" name="name" ng-model="song.name" ng-trim="true" required ng-maxlength="50" placeholder="请输入儿歌名称">
+						</div>
+						<div class="form-group">
+							<label for="content">儿歌歌词</label>
+							<textarea class="form-control" rows="10" id="content" name="content" ng-model="song.content" required ng-maxlength="4000" placeholder="请输入儿歌歌词"></textarea>
+						</div>
+						<div class="form-group">
+							<label for="inputfile">儿歌歌曲</label>
+							<input type="file" id="inputfile" rd-fileupload="myFile" accept="audio/*">
+							<p class="help-block">请上传以.mp3结尾的儿童歌曲</p>
+							<p style="margin-bottom: 10px;" ng-repeat="item in items">
+	              <audio controls>
+	                <source ng-src="{{item|trustSrc}}" type="audio/mpeg">
+	                <object height="30" width="300" data="{{item|trustSrc}}">
+	                  <embed height="30" width="300" ng-src="{{item|trustSrc}}">
+	                </object>
+	              </audio>
+	            </p>
+	            <button type="button" class="btn btn-info" ng-click="uploadFile()">上传歌曲</button>
+						</div>
+						<div class="form-group">
+				      <label for="inputpic">儿歌图片</label>
+				      <input type="file" id="inputpic" rd-picupload="myPic" accept="image/*">
+				      <p class="help-block">请上传以.jpg、.png或者.bmp结尾的故事图片</p>
+				      <img class="img-responsive" style="margin: 10px auto;" ng-src="{{song.pic}}" alt="{{song.picname}}">
+				      <button type="button" class="btn btn-info" ng-click="uploadPic()">上传</button>
+				   	</div>
+				   	<div class="form-group">
+		          <div style="text-align: center;">
+		          	<a ui-sref="main.song.chinese.list">
+		          		<button type="button" class="btn btn-default">返回</button>
+		          	</a>
+		            <button type="submit" class="btn btn-success">预览</button>
+		          </div>
+		        </div>
+					</form>
+				</rd-widget>
+			</rd-widget>
+		</div>
+	</div>
+</div>

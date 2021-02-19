@@ -1,0 +1,157 @@
+<!--
+    @require "memberlevel.css"
+-->
+
+<div class="memberlevel-container">
+	<header class="header-container navbar-fixed-top">
+    <a class="header-btn header-pos-left" ui-sref="setting.all">
+      <i class="fa fa-chevron-left"></i>
+    </a>
+    <div class="title">会员级别</div>
+  </header>
+  <div class="container">
+  	<div class="head">
+      <div class="outer">
+        <div class="rule-outer clearfix">
+          <a ui-sref="score.pointrule({from:$state.current.name})" class="rule-link">
+            <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+            <span>如何升级</span>
+          </a>
+        </div>
+        <div class="member-ph">
+          <div class="img-common img-pu img-size img-pos"></div>
+        </div>
+        <div class="member-info">
+          <table>
+            <tr>
+              <td>
+                <a href="javascript:;" ng-click="getTotalPoints()">
+                  <div>135</div>
+                  <div>累计积分</div>
+                </a>
+              </td>
+              <td>
+                <a ui-sref="score.availpoints({from:$state.current.name})">
+                  <div>135</div>
+                  <div>可用积分</div>
+                </a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="level-pt">
+          <div class="levelbar">
+            <p class="lvnum">
+              <span style="padding-left:39%;">
+                <i>135</i>/150
+              </span>
+            </p>
+            <div class="bar-box">
+              <img class="level-bar" src="./images/level_bar.png">
+              <span class="yelbar" style="width:46%;"></span>
+            </div>
+            <ul class="lvname">
+              <li>普卡</li>
+              <li>银卡</li>
+              <li>金卡</li>
+              <li>白金卡</li>
+              <li>钻石卡</li>
+            </ul>
+            <p class="attxt">距下一等级还需15分！会员等级有效期 2018.6.5</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="title">累计积分</div>
+      <div class="total-list">
+        <rd-widget>
+          <rd-widget-body classes="no-padding" loading="loading" failing="failing" empty="empty">
+            <div scroll-trigger="loadMore()" trigger-run trigger-at-end trigger-persist trigger-active="!(loading || failing || empty || busy || lazy || finish || scrollDisabled)">
+              <div class="po-li">
+                <div class="riqi">
+                  <span class="date">2017-07-08</span>
+                </div>
+                <div class="details">
+                  <i class="point-icon"></i>
+                  <span class="det1">购买课程返积分</span>
+                  <span class="det2">
+                    订单编号：<i>14992287234913</i>
+                  </span>
+                </div>
+                <div class="ppoint">
+                  <span><i>+31</i>积分</span>
+                </div>
+              </div>
+              <div class="po-li">
+                <div class="riqi">
+                  <span class="date">2017-06-08</span>
+                </div>
+                <div class="details">
+                  <i class="point-icon"></i>
+                  <span class="det1">报名活动返积分</span>
+                  <span class="det2">
+                    订单编号：<i>14966300118520</i>
+                  </span>
+                </div>
+                <div class="ppoint">
+                  <span><i>+35</i>积分</span>
+                </div>
+              </div>
+              <div class="po-li">
+                <div class="riqi">
+                  <span class="date">2017-06-05</span>
+                </div>
+                <div class="details">
+                  <i class="point-icon"></i>
+                  <span class="det1">购买课程返积分</span>
+                  <span class="det2">
+                    订单编号：<i>14962887944903</i>
+                  </span>
+                </div>
+                <div class="ppoint">
+                  <span><i>+69</i>积分</span>
+                </div>
+              </div>
+              <div class="po-li">
+                <div class="riqi">
+                  <span class="date">2017-06-05</span>
+                </div>
+                <div class="details">
+                  <i class="point-icon"></i>
+                  <span class="det1">购买课程返积分</span>
+                  <span class="det2">
+                    订单编号：<i>14962887944903</i>
+                  </span>
+                </div>
+                <div class="ppoint">
+                  <span><i>+69</i>积分</span>
+                </div>
+              </div>
+              <div class="po-li">
+                <div class="riqi">
+                  <span class="date">2017-06-05</span>
+                </div>
+                <div class="details">
+                  <i class="point-icon"></i>
+                  <span class="det1">购买课程返积分</span>
+                  <span class="det2">
+                    订单编号：<i>14962887944903</i>
+                  </span>
+                </div>
+                <div class="ppoint">
+                  <span><i>+69</i>积分</span>
+                </div>
+              </div>
+              <div class="scroll-loading" ng-show="busy">
+                <i class="fa fa-spinner fa-pulse"></i><span>加载中...</span>
+              </div>
+              <div class="scroll-loadfail" ng-show="lazy">加载失败，请检查网络连接...</div>
+              <div class="scroll-loadfinish" ng-show="finish">没有更多了</div>
+            </div>
+          </rd-widget-body>
+        </rd-widget>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,257 @@
+.score-container .memberlevel-container .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.score-container .memberlevel-container .head {
+	text-align: center;
+	background-color: #f0eff5;
+	padding-bottom: 10px;
+}
+
+.score-container .memberlevel-container .head .outer {
+  padding: 10px;
+  background: #ffffff;
+}
+
+.score-container .memberlevel-container .head .rule-outer {
+  height: 30px;
+  overflow: hidden;
+}
+
+.score-container .memberlevel-container .head .rule-link {
+	display: block;
+	float: right;
+	height: 30px;
+	color: #93939e;
+}
+
+.score-container .memberlevel-container .head .rule-link i {
+	line-height: 30px;
+}
+
+.score-container .memberlevel-container .head .rule-link span {
+	display: inline-block;
+  font-size: 12px;
+  line-height: 30px;
+  color: #93939e;
+}
+
+.score-container .memberlevel-container .head .member-ph {
+	margin-bottom: 10px;
+}
+
+.score-container .memberlevel-container .head .img-pu {
+	background-image: url(./images/pu_ph.png);
+}
+
+.score-container .memberlevel-container .head .img-yin {
+	background-image: url(./images/yin_ph.png);
+}
+
+.score-container .memberlevel-container .head .img-jin {
+	background-image: url(./images/jin_ph.png);
+}
+
+.score-container .memberlevel-container .head .img-baijin {
+	background-image: url(./images/baijin_ph.png);
+}
+
+.score-container .memberlevel-container .head .img-zuanshi {
+	background-image: url(./images/zuanshi_ph.png);
+}
+
+.score-container .memberlevel-container .head .img-size {
+	width: 72px;
+	height: 72px;
+}
+
+.score-container .memberlevel-container .head .img-pos {
+	margin: auto;
+}
+
+.score-container .memberlevel-container .head .member-info {
+	margin-bottom: 15px;
+}
+
+.score-container .memberlevel-container .head .member-info > table {
+	margin: auto;
+	text-align: center;
+}
+
+.score-container .memberlevel-container .head .member-info > table td {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border-top: 1px solid #cccccc;
+}
+
+.score-container .memberlevel-container .head .member-info > table td a {
+	display: block;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.score-container .memberlevel-container .head .member-info > table td:first-child a {
+	border-right: 1px solid #cccccc;
+}
+
+.score-container .memberlevel-container .head .level-pt {
+	padding: 0 5px;
+}
+
+.score-container .memberlevel-container .head .levelbar .lvnum {
+	color: #fabe00;
+  text-align: left;
+}
+
+.score-container .memberlevel-container .head .levelbar .lvnum span {
+  display: inline-block;
+  padding-left: 0;
+  width: 100%;
+}
+
+.score-container .memberlevel-container .head .levelbar .lvnum i {
+	font-style: normal;
+}
+
+.score-container .memberlevel-container .head .bar-box {
+	margin-top: 10px;
+  position: relative;
+  background-color: #273645;
+  height: 12px;
+}
+
+.score-container .memberlevel-container .head .bar-box img {
+	width: 100%;
+  vertical-align: top;
+  height: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.score-container .memberlevel-container .head .bar-box .yelbar {
+	background-color: #fabe00;
+  display: inline-block;
+  width: 0;
+  max-width: 100%;
+  height: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.score-container .memberlevel-container .head .levelbar .lvname {
+	color: #93939e;
+  overflow: hidden;
+  margin: 10px 0 15px;
+}
+
+.score-container .memberlevel-container .head .levelbar .lvname li {
+	display: inline-block;
+  width: 25%;
+  font-size: 12px;
+  text-align: center;
+  float: left;
+}
+
+.score-container .memberlevel-container .head .levelbar .lvname li:first-child {
+	width: 12.5%;
+  text-align: left;
+}
+
+.score-container .memberlevel-container .head .levelbar .lvname li:last-child {
+	width: 12.5%;
+  text-align: right;
+}
+
+.score-container .memberlevel-container .head .levelbar .attxt {
+  font-size: 12px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.score-container .memberlevel-container .content {
+	background-color: #ffffff;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.score-container .memberlevel-container .content .title {
+	border-bottom: 1px solid #eaeaed;
+  line-height: 2;
+  color: #60606c;
+  text-align: center;
+}
+
+.score-container .memberlevel-container .content .total-list {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	position: relative;
+}
+
+.score-container .memberlevel-container .content .total-list .po-li {
+	height: 48px;
+	overflow: hidden;
+}
+
+.score-container .memberlevel-container .content .total-list .po-li .riqi {
+	color: #93939e;
+  float: left;
+}
+
+.score-container .memberlevel-container .content .total-list .po-li .riqi .date {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+}
+
+.score-container .memberlevel-container .content .total-list .po-li .details {
+	float: left;
+  position: relative;
+  padding-left: 10px;
+  border-left: 1px solid #eaeaed;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  margin-left: 8px;
+}
+
+.score-container .memberlevel-container .content .total-list .po-li .details .point-icon {
+	display: inline-block;
+  background: url(./images/member.png) no-repeat;
+  background-size: 150px 150px;
+	width: 14px;
+  height: 14px;
+  background-position: -16px 0;
+	position: absolute;
+  top: 0;
+  left: -8px;
+}
+
+.score-container .memberlevel-container .content .total-list .po-li i {
+	font-style: normal;
+}
+
+.score-container .memberlevel-container .content .total-list .po-li .details .det1 {
+	font-size: 12px;
+  color: #2f2f39;
+  display: block;
+  margin-top: -21px;
+}
+
+.score-container .memberlevel-container .content .total-list .po-li .details .det2 {
+	font-size: 12px;
+  color: #93939e;
+  display: block;
+}
+
+.score-container .memberlevel-container .content .total-list .po-li .ppoint {
+	float: right;
+  color: #fabe00;
+}
+
+.score-container .memberlevel-container .content .total-list .po-li .ppoint span {
+	font-size: 14px;
+}

@@ -1,0 +1,97 @@
+<!--
+    @require "detail.css"
+-->
+
+<div class="detail-container">
+	<header class="header-container navbar-fixed-top">
+    <a class="header-btn header-pos-left" ui-sref="myorder.course.list">
+      <i class="fa fa-times"></i>
+    </a>
+    <div class="title">课程订单详情</div>
+  </header>
+  <div class="container">
+  	<div class="order-status">
+  		<div class="unpay">
+	  		<h3 class="h3">等待支付</h3>
+        <h4 class="h4">
+          <span>金额：<i class="fa fa-jpy" aria-hidden="true"></i><strong class="price">12300</strong></span>
+        </h4>
+        <p class="help-block">逾期未支付，订单将自动取消</p>
+	  		<button class="btn btn-danger" ng-click="goPay()">继续支付</button>
+        <button class="btn btn-default" ng-click="cancel()">取消订单</button>
+  		</div>
+      <div class="pay-status" ng-show="">
+        <img class="img-responsive" src="static/images/success.png">
+        <h4 class="h4">服务中</h4>
+      </div>
+  	</div>
+  	<div class="pay-info">
+      <div class="outer">
+        <div class="pay-item">
+          <h2>请选择支付方式：</h2>
+        </div>
+        <a href="javascript:;" class="pay-item reset-item" ng-click="weixinPay()" ng-show="upHasWeixin">
+          <div class="clearfix">
+            <div class="img-common img-weixin pull-left"></div>
+            <div class="img-common pull-right" ng-class="selectWeixin?'img-selected':'img-unselected'"></div>
+            <h1 class="pay-text">微信支付</h1>
+          </div>
+        </a>
+        <a href="javascript:;" class="pay-item reset-item" ng-click="Alipay()" ng-show="upHasAlipay">
+          <div class="clearfix">
+            <div class="img-common img-alipay pull-left"></div>
+            <div class="img-common pull-right" ng-class="selectAlipay?'img-selected':'img-unselected'"></div>
+            <h1 class="pay-text">支付宝</h1>
+          </div>
+        </a>
+        <a href="javascript:;" class="reset-item collapsed" data-toggle="collapse" data-target="#collapseOne" ng-show="showMore">
+          <div class="more clearfix">
+            <div class="img-common img-more pull-left"></div>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+            <h1 class="pay-text">更多</h1>
+          </div>
+        </a>
+        <div id="collapseOne" class="collapse">
+          <a href="javascript:;" class="reset-item" ng-click="weixinPay()" ng-show="downHasWeixin">
+            <div class="clearfix">
+              <div class="img-common img-weixin pull-left"></div>
+              <div class="img-common pull-right" ng-class="selectWeixin?'img-selected':'img-unselected'"></div>
+              <h1 class="pay-text">微信支付</h1>
+            </div>
+          </a>
+          <a href="javascript:;" class="reset-item" ng-click="Alipay()" ng-show="downHasAlipay">
+            <div class="clearfix">
+              <div class="img-common img-alipay pull-left"></div>
+              <div class="img-common pull-right" ng-class="selectAlipay?'img-selected':'img-unselected'"></div>
+              <h1 class="pay-text">支付宝</h1>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  	<div class="order-info">
+      <ul>
+        <li class="list-group-item">
+          纽约国际儿童俱乐部西红门鸿坤中心
+        </li>
+        <li class="list-group-item">
+          课程：早教36课时包
+        </li>
+        <li class="list-group-item">
+          有效期：2017-05-20 至 2018-05-19
+        </li>
+      </ul>
+  	</div>
+  	<div class="order-extra">
+  		<ul>
+        <li class="list-group-item">
+          订单编号：1234567890123456789
+        </li>
+        <li class="list-group-item">
+          下单时间：2017-06-19 09:50:48
+        </li>
+      </ul>
+  	</div>
+  </div>
+</div>

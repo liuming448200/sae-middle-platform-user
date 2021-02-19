@@ -1,0 +1,20 @@
+<!--
+    @require "main.css"
+-->
+
+<div class="main-container">
+	<div id="page-wrapper" ng-class="{'open': toggle}" ng-cloak>
+    <!-- Sidebar -->
+    <link rel="import" href="../../partial/sidebar/sidebar.html?__inline"/>
+    <!-- End Sidebar -->
+    <div id="content-wrapper">
+      <div class="page-content">
+        <!-- Header Bar -->
+        <link rel="import" href="../../partial/header/header.html?__inline"/>
+        <!-- End Header Bar -->
+        <!-- Main Content -->
+        <div class="main-content" ui-view></div>
+      </div><!-- End Page Content -->
+    </div><!-- End Content Wrapper -->
+  </div><!-- End Page Wrapper -->
+</div>

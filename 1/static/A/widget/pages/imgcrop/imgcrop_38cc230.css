@@ -1,0 +1,11 @@
+.imgcrop-container {
+	background-color: #E4E4E4;
+}
+
+.imgcrop-container .container {
+	padding-top: 0;
+}
+
+.imgcrop-container .cropArea {
+	overflow: hidden;
+}

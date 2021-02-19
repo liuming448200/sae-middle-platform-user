@@ -1,0 +1,8 @@
+#page-wrapper .row {
+	margin-left: 0;
+  margin-right: 0;
+}
+
+#page-wrapper .row > div {
+	margin-bottom: 15px;
+}

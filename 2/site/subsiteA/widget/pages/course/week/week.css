@@ -1,0 +1,17 @@
+.course-detail-container .week-container .header .title {
+	line-height: 22px;
+	font-size: 14px;
+}
+
+.course-detail-container .week-container .table-responsive > .table > thead > tr > th.in {
+  background-color: #5cb85c;
+}
+
+.course-detail-container .week-container .table-responsive > .table > thead > tr > th > a {
+	display: block;
+	font-size: 14px;
+}
+
+.course-detail-container .week-container .table-responsive > .table > thead > tr > th.in > a {
+  color: white;
+}

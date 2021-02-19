@@ -1,0 +1,20 @@
+.course-detail-container .month-container .oneday {
+	width: 30px;
+	height: 30px;
+	margin: auto;
+	text-align: center;
+	border-radius: 50%;
+	position: relative;
+}
+
+.course-detail-container .month-container .oneday.active {
+	background-color: #f5f5f5;
+}
+
+.course-detail-container .month-container .oneday.in {
+  background-color: #5cb85c;
+}
+
+.course-detail-container .month-container .oneday.in a {
+	color: white;
+}

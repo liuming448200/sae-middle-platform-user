@@ -1,0 +1,189 @@
+.myorder-container header .title a {
+	color: #5cb85c;
+}
+
+.myorder-container header .title a i {
+  color: #ff6969;
+}
+
+.myorder-container .zc_order_filtrate {
+	width: 100%;
+  position: fixed;
+  top: 55px;
+  left: 0;
+  background: #fff;
+  z-index: 20;
+}
+
+.myorder-container .zc_order_filtrate .list-group-item {
+  margin-bottom: 0;
+  border: 0;
+  border-bottom: 1px solid #dddddd;
+}
+
+.myorder-container .zc_order_filtrate .list-group-item:last-child {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.myorder-container .zc_order_filtrate .list-group-item i {
+	font-size: 20px;
+	color: #5cb85c;
+}
+
+.myorder-container .content-container .list-group-item {
+	margin-top: 10px;
+  margin-bottom: 10px;
+	padding: 0;
+	border-radius: 6px;
+}
+
+.myorder-container .content-container .list-group-item:first-child {
+	margin-top: 0;
+}
+
+.myorder-container .content-container .list-group-item > a {
+	padding-left: 10px;
+	padding-right: 10px;
+	display: block;
+	overflow: hidden;
+	border-radius: 6px;
+	position: relative;
+}
+
+.myorder-container .content-container .list-group-item > a .title {
+	padding: 12px 0;
+  padding-right: 50px;
+}
+
+.myorder-container .content-container .list-group-item > a .info {
+	padding: 15px 0;
+  border-top: 1px solid #E4E4E4;
+}
+
+.myorder-container .content-container .list-group-item > a .info > table {
+  width: 100%;
+}
+
+.myorder-container .content-container .list-group-item > a p {
+	font-size: 14px;
+}
+
+.myorder-container .content-container .list-group-item > a p span {
+	font-size: 12px;
+  color: #999;
+}
+
+.myorder-container .content-container .list-group-item > a .status {
+	position: absolute;
+  right: 10px;
+  top: 12px;
+  font-size: 12px;
+}
+
+.myorder-container .content-container .list-group-item > a i {
+  color: #cbcbcb;
+}
+
+.myorder-container .order-status,
+.myorder-container .order-info,
+.myorder-container .pay-info,
+.myorder-container .order-extra {
+	background-color: #f0eff5;
+  padding-bottom: 10px;
+}
+
+.myorder-container .order-extra {
+  padding-bottom: 0;
+}
+
+.myorder-container .order-status > div {
+  background: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.myorder-container .order-status > div > img {
+  margin: auto;
+  width: 50px;
+  height: 50px;
+}
+
+.myorder-container .pay-info .outer {
+  background: #ffffff;
+	padding: 10px 15px;
+}
+
+.myorder-container .pay-info .pay-item {
+	margin-bottom: 10px;
+}
+
+.myorder-container .pay-info .reset-item {
+  display: block;
+  background-color: #F7F7F7;
+  padding: 10px;
+}
+
+.myorder-container .pay-info .reset-item:last-of-type {
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.myorder-container .pay-info .reset-item.collapsed {
+  border-bottom: 0;
+}
+
+.myorder-container .pay-info .img-common {
+  width: 30px;
+  height: 30px;
+  background-size: 100% 100%;
+}
+
+.myorder-container .pay-info .pay-text {
+  height: 30px;
+  line-height: 30px;
+  margin-left: 40px;
+}
+
+.myorder-container .pay-info .more {
+  position: relative;
+}
+
+.myorder-container .pay-info .more i {
+  position: absolute;
+  right: 7px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 22px;
+}
+
+.myorder-container .pay-info .outer > a i:first-of-type {
+  display: none;
+}
+
+.myorder-container .pay-info .outer > a i:last-of-type {
+  display: inline-block;
+}
+
+.myorder-container .pay-info .outer > a.collapsed i:first-of-type {
+  display: inline-block;
+}
+
+.myorder-container .pay-info .outer > a.collapsed i:last-of-type {
+  display: none;
+}
+
+.myorder-container .order-info > ul,
+.myorder-container .order-extra > ul {
+  background: #ffffff;
+	padding-left: 15px;
+  padding-right: 15px;
+}
+
+.myorder-container .price {
+  color: #ff6969;
+}
+
+.myorder-container i.fa-jpy {
+  font-size: 12px;
+}

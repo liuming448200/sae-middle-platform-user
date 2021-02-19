@@ -1,0 +1,194 @@
+.activity-detail-container .container {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 47px;
+}
+
+.activity-detail-container .carousel-inner > .item > img {
+  width: 100%;
+}
+
+.activity-detail-container .carousel-control {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  font-size: 52px;
+  font-weight: 100;
+  line-height: 26px;
+  color: #ffffff;
+  text-align: center;
+  background: #222222;
+  border: 3px solid #ffffff;
+  -webkit-border-radius: 23px;
+  -moz-border-radius: 23px;
+  border-radius: 23px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.activity-detail-container .carousel-control.left {
+  left: 15px;
+}
+
+.activity-detail-container .carousel-control.right {
+  right: 15px;
+}
+
+.activity-detail-container .container > .thumbnail {
+  padding: 0;
+  padding-bottom: 10px;
+  background: #f0eff5;
+  margin-bottom: 0;
+}
+
+.activity-detail-container .container > .thumbnail > .caption {
+  padding: 13px;
+  background: #ffffff;
+}
+
+.activity-detail-container .container > .thumbnail > .caption > h3 {
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.activity-detail-container .container > .thumbnail > .caption > p {
+  line-height: 22px;
+  font-size: 12px;
+  color: #999;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.activity-detail-container .container > .thumbnail > .caption > .num {
+  line-height: 30px;
+}
+
+.activity-detail-container .container > .thumbnail > .caption > .num .price {
+  color: #ff5500;
+  font-size: 12px;
+  letter-spacing: initial;
+}
+
+.activity-detail-container .container > .thumbnail > .caption > .num .badge {
+  font-size: 18px;
+  background-color: #E4393C;
+}
+
+.activity-detail-container .container > .thumbnail > .caption > .time {
+  font-size: 12px;
+  line-height: 30px;
+}
+
+.activity-detail-container .container > .thumbnail > .caption > .time .box {
+  padding: 5px;
+  background-color: #5cb85c;
+  color: #ffffff;
+  border-radius: 3px;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.activity-detail-container .activity-overall {
+  background-color: #f0eff5;
+  padding-bottom: 10px;
+}
+
+.activity-detail-container .activity-overall > ul {
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #ffffff;
+}
+
+.activity-detail-container .activity-overall .list-group-item {
+  margin-bottom: 0;
+  border: 0;
+  border-bottom: 1px solid #dddddd;
+  background-color: #ffffff;
+  padding: 15px 0;
+}
+
+.activity-detail-container .activity-overall .list-group-item:last-child {
+  border-bottom: 0;
+}
+
+.activity-detail-container .activity-overall .list-group-item > table {
+  width: 100%;
+}
+
+.activity-detail-container .activity-overall .list-group-item > table td {
+  vertical-align: middle;
+}
+
+.activity-detail-container .activity-overall .list-group-item > table td:first-child {
+  width: 24px;
+}
+
+.activity-detail-container .container > .more-detail {
+  background-color: #ffffff;
+}
+
+.activity-detail-container .container > .more-detail > .nav-tabs > li {
+  width: 33.33333333%;
+}
+
+.activity-detail-container .container > .more-detail > .nav-tabs > li > a {
+  margin-right: 0;
+  border: 0;
+  text-align: center;
+  background-color: transparent;
+}
+
+.activity-detail-container .container > .more-detail > .nav-tabs > li.active > a,
+.activity-detail-container .container > .more-detail > .nav-tabs > li.active > a:hover {
+  color: #5cb85c;
+  border-bottom: 1px solid #5cb85c;
+}
+
+.activity-detail-container .container > .more-detail > .tab-content {
+  padding: 15px;
+}
+
+.activity-detail-container .container > .more-detail > .tab-content #content p,
+.activity-detail-container .container > .more-detail > .tab-content #notice p {
+  text-indent: 0;
+}
+
+.activity-detail-container .footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1030;
+  text-align: center;
+  margin-top: 20px;
+  background-color: #FFFFFF;
+  border-top: 1px solid #e5e5e5;
+}
+
+.activity-detail-container .footer > .pay {
+  height: 46px;
+}
+
+.activity-detail-container .footer > .pay > table {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.activity-detail-container .footer > .pay > table td {
+  vertical-align: middle;
+}
+
+.activity-detail-container .footer > .pay > table span {
+  color:#01B7CF;
+}
+
+.activity-detail-container .footer > .pay > table button {
+  width: 100%;
+  border-radius: 0;
+  background-color: #5cb85c;
+  border-color: #5cb85c;
+}

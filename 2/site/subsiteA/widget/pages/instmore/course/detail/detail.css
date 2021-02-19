@@ -1,0 +1,42 @@
+.instmore-container .course-container .detail-container .videogular-container {
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.instmore-container .course-container .detail-container videogular {
+	visibility: hidden;
+}
+
+.instmore-container .course-container .detail-container videogular.show {
+	visibility: visible;
+}
+
+.instmore-container .course-container .detail-container videogular vg-media video {
+	height: auto;
+}
+
+.instmore-container .course-container .detail-container .videogular-container .container {
+	padding-top: 0 !important;
+}
+
+.instmore-container .course-container .detail-container videogular vg-poster img {
+	width: 100%;
+	max-height: inherit;
+}
+
+.instmore-container .course-container .detail-container .spe-img {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+.instmore-container .course-container .detail-container .img-play {
+	background-image: url(./images/play.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 10%;
+}

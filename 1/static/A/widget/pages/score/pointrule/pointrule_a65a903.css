@@ -1,0 +1,8 @@
+.score-container .pointrule-container .container {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.score-container .pointrule-container .container a {
+	color: #2b99ff;
+}

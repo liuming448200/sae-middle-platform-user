@@ -1,0 +1,48 @@
+<!--
+    @require "add.css"
+-->
+
+<div class="add-container">
+  <div class="row">
+  	<div class="col-xs-12">
+  		<div class="well">
+  			<form role="form" name="addUsergroupForm" novalidate ng-submit="addUsergroupSubmit()">
+  				<div class="form-group">
+						<label for="group_name">用户组名称</label>
+						<input type="text" class="form-control" id="group_name" name="group_name" ng-model="usergroup.group_name" ng-trim="true" required ng-maxlength="20" placeholder="请输入用户组名称">
+					</div>
+					<div class="form-group">
+						<label for="group_info">用户组信息</label>
+						<input type="text" class="form-control" id="group_info" name="group_info" ng-model="usergroup.group_info" ng-trim="true" required ng-maxlength="30" placeholder="请输入用户组信息">
+					</div>
+					<div class="form-group">
+						<label for="actions">选择权限</label>
+						<div class="actions-container">
+						 	<label class="checkbox-inline" ng-repeat="action in usergroup.allActions">
+					   		<input type="checkbox" id="inlineCheckbox{{action.action_id}}" name="actions" ng-model="action.selected"> {{action.action_name}}
+					   	</label>
+					   	<div ng-show="lazy" style="color: red;">加载权限列表失败</div>
+				   	</div>
+					</div>
+					<div class="form-group">
+						<label for="users">选择用户</label>
+						<div class="users-container">
+						 	<label class="checkbox-inline" ng-repeat="user in usergroup.allUsers">
+					   		<input type="checkbox" id="inlineCheckbox{{user.uid}}" name="users" ng-model="user.selected"> {{user.username}}
+					   	</label>
+					   	<div ng-show="relax" style="color: red;">加载用户列表失败</div>
+				   	</div>
+					</div>
+					<div class="form-group">
+	          <div style="text-align: center;">
+	          	<a ui-sref="main.auth.usergroup.list">
+	          		<button type="button" class="btn btn-default">返回</button>
+	          	</a>
+	            <button type="submit" class="btn btn-success">提交</button>
+	          </div>
+	        </div>
+  			</form>
+  		</div>
+  	</div>
+  </div>
+</div>

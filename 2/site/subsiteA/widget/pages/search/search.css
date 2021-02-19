@@ -1,0 +1,97 @@
+.search-container .header-container button {
+  color: #000000;
+  text-decoration: none;
+  font-size: 14px;
+  outline: none;
+}
+
+.search-container #search {
+  position: relative;
+  margin-left: 44px;
+  margin-right: 48px;
+  height: 54px;
+  padding: 10px;
+}
+
+.search-container #search label {
+  position: absolute;
+  left: 17px;
+  top: 19px;
+  color: #5cb85c;
+}
+
+.search-container #search #search-input,
+.search-container #search .hint {
+  padding-left: 23px;
+  padding-right: 15px;
+  border-radius: 23px;
+}
+
+.search-container #search #search-input {
+  height: 34px;
+  font-size: 14px;
+}
+
+.search-container #search .hint {
+  color: #aaa;
+}
+
+.search-container #search #search-clear {
+  text-decoration: none;
+  position: absolute;
+  right: 18px;
+  top: 19px;
+  color: #b3b3b3;
+}
+
+.search-container #search #search-clear:hover {
+  color: #8f8f8f;
+}
+
+.search-container .ui-autocomplete {
+  left: 0 !important;
+  top: 55px !important;
+  width: 100% !important;
+  max-height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.search-container .ui-widget.ui-widget-content {
+  border: 0;
+}
+
+.search-container .ui-menu .ui-autocomplete-type {
+  font-weight: bold;
+  padding: 10px 15px;
+  line-height: 1.5;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.search-container .ui-menu .ui-menu-item {
+  border-bottom: 1px solid #aaaaaa;
+  padding: 0;
+}
+
+.search-container .ui-menu .ui-menu-item > a {
+  display: block;
+  padding: 10px 15px;
+}
+
+.search-container .content-container .list-group .list-group-item {
+  padding: 0;
+}
+
+.search-container .content-container .list-group .list-group-item > a {
+  display: block;
+  padding: 10px 15px;
+}
+
+.search-container .content-container .panel-footer {
+  text-align: center;
+}
+
+.search-container .content-container .panel-footer button {
+  color: black;
+  text-decoration: none;
+}

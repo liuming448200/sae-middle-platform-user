@@ -1,0 +1,30 @@
+.login-container .content-container button {
+	width: 100%;
+}
+
+.login-container .content-container .line {
+	display: block;
+	height: 2px;
+	background-color: #000000;
+}
+
+.login-container .content-container table {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.login-container .content-container table td {
+	width: 60%;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.login-container .content-container table td:first-child, .login-container .content-container table td:last-child {
+	width: 20%;
+}
+
+.login-container .thirdAuth {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

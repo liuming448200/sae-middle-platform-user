@@ -1,0 +1,63 @@
+<!--
+    @require "login.css"
+-->
+
+<div class="login-container">
+	<header class="header-container navbar-fixed-top">
+    <a class="header-btn header-pos-left" href="javascript:;" ng-click="back()">
+      <i class="fa fa-chevron-left"></i>
+    </a>
+    <div class="title">登录</div>
+  </header>
+  <div class="container">
+  	<div class="content-container">
+  		<form class="form-horizontal" role="form" name="loginForm" novalidate ng-submit="loginSubmit()">
+        <div class="form-group">
+          <div class="col-sm-12">
+             <input type="text" class="form-control" id="username" name="username" ng-model="username" ng-trim="true" required placeholder="请输入手机号/用户名">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-12">
+             <input type="password" class="form-control" id="password" name="password" ng-model="password" ng-trim="true" required ng-minlength="6" ng-maxlength="16" placeholder="请输入登录密码">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-12" style="text-align: center;">
+            <button type="submit" class="btn btn-success">登录</button>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-12" style="text-align: center;">
+          	<a ui-sref="register">
+            	<button type="button" class="btn btn-success">还没有账号？免费注册</button>
+            </a>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-12" style="text-align: right;">
+          	<a ui-sref="reset">
+            	<button type="button" class="btn btn-link" style="text-align: right; color: #000000;">找回密码</button>
+            </a>
+          </div>
+        </div>
+        <div class="form-group thirdAuth" ng-show="">
+        	<div class="col-sm-12">
+            <table>
+            	<td>
+            		<i class="line"></i>
+            	</td>
+            	<td>
+            		使用第三方账号登录
+            	</td>
+            	<td>
+            		<i class="line"></i>
+            	</td>
+            </table>
+            <button type="button" class="btn btn-success">QQ登录</button>
+          </div>
+        </div>
+      </form>
+  	</div>
+  </div>
+</div>

@@ -1,0 +1,174 @@
+<!--
+    @require "chargerecord.css"
+-->
+
+<div class="chargerecord-container">
+	<header class="header-container navbar-fixed-top">
+    <a class="header-btn header-pos-left" ui-sref="score.availpoints({from:$stateParams.from})">
+      <i class="fa fa-times"></i>
+    </a>
+    <div class="title">兑换记录</div>
+  </header>
+  <div class="container">
+  	<div class="content-container">
+  		<ul>
+        <rd-widget>
+          <rd-widget-body classes="no-padding" loading="loading" failing="failing" empty="empty">
+            <div scroll-trigger="loadMore()" trigger-run trigger-at-end trigger-persist trigger-active="!(loading || failing || empty || busy || lazy || finish || scrollDisabled)">
+        			<li class="list-group-item">
+                <a ui-sref="score.chargedetail({from:$stateParams.from})" class="clearfix">
+                  <div class="quan-l">
+                    <table class="table-common">
+                      <tr>
+                        <td>
+                          <div class="circle">课</div>
+                        </td>
+                        <td>
+                        	<div class="qu-info">
+      			                <span class="qu-name">10元课时包券</span>
+      			                <span class="qu-exch">已用50积分兑换</span>
+      			                <span class="qu-date">2017-07-13 08:21:30</span>
+      				            </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="quan-r">
+                    <table class="table-common">
+                      <tr>
+                        <td>
+                          <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a ui-sref="score.chargedetail({from:$stateParams.from})" class="clearfix">
+                  <div class="quan-l">
+                    <table class="table-common">
+                      <tr>
+                        <td>
+                          <div class="circle">活</div>
+                        </td>
+                        <td>
+                        	<div class="qu-info">
+      			                <span class="qu-name">10元活动券</span>
+      			                <span class="qu-exch">已用50积分兑换</span>
+      			                <span class="qu-date">2017-07-13 08:21:30</span>
+      				            </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="quan-r">
+                    <table class="table-common">
+                      <tr>
+                        <td>
+                          <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a ui-sref="score.chargedetail({from:$stateParams.from})" class="clearfix">
+                  <div class="quan-l">
+                    <table class="table-common">
+                      <tr>
+                        <td>
+                          <div class="circle">课</div>
+                        </td>
+                        <td>
+                        	<div class="qu-info">
+      			                <span class="qu-name">10元课时包券</span>
+      			                <span class="qu-exch">已用50积分兑换</span>
+      			                <span class="qu-date">2017-07-13 08:21:30</span>
+      				            </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="quan-r">
+                    <table class="table-common">
+                      <tr>
+                        <td>
+                          <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a ui-sref="score.chargedetail({from:$stateParams.from})" class="clearfix">
+                  <div class="quan-l">
+                    <table class="table-common">
+                      <tr>
+                        <td>
+                          <div class="circle">课</div>
+                        </td>
+                        <td>
+                        	<div class="qu-info">
+      			                <span class="qu-name">10元课时包券</span>
+      			                <span class="qu-exch">已用50积分兑换</span>
+      			                <span class="qu-date">2017-07-13 08:21:30</span>
+      				            </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="quan-r">
+                    <table class="table-common">
+                      <tr>
+                        <td>
+                          <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a ui-sref="score.chargedetail({from:$stateParams.from})" class="clearfix">
+                  <div class="quan-l">
+                    <table class="table-common">
+                      <tr>
+                        <td>
+                          <div class="circle">课</div>
+                        </td>
+                        <td>
+                        	<div class="qu-info">
+      			                <span class="qu-name">10元课时包券</span>
+      			                <span class="qu-exch">已用50积分兑换</span>
+      			                <span class="qu-date">2017-07-13 08:21:30</span>
+      				            </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="quan-r">
+                    <table class="table-common">
+                      <tr>
+                        <td>
+                          <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </a>
+              </li>
+              <div class="scroll-loading" ng-show="busy">
+                <i class="fa fa-spinner fa-pulse"></i><span>加载中...</span>
+              </div>
+              <div class="scroll-loadfail" ng-show="lazy">加载失败，请检查网络连接...</div>
+              <div class="scroll-loadfinish" ng-show="finish">没有更多了</div>
+            </div>
+          </rd-widget-body>
+        </rd-widget>
+  		</ul>
+  	</div>
+  </div>
+</div>

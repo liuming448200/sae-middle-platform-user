@@ -1,0 +1,2274 @@
+{
+    "res": {
+        "A:page/index.tpl": {
+            "uri": "/template/A/page/index.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            },
+            "deps": [
+                "A:widget/main/main.js"
+            ]
+        },
+        "A:static/css/base.css": {
+            "uri": "/static/A/css/base_db9babf.css",
+            "type": "css"
+        },
+        "A:widget/baseAuth/baseAuth.js": {
+            "uri": "/static/A/widget/baseAuth/baseAuth_aafc70f.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/baseAuth/baseAuth"
+            }
+        },
+        "A:widget/config/config.js": {
+            "uri": "/static/A/widget/config/config_0212221.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/config/config"
+            }
+        },
+        "A:widget/main/main.js": {
+            "uri": "/static/A/widget/main/main_d0f4924.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/main/main"
+            },
+            "deps": [
+                "A:widget/router/router.js",
+                "A:widget/config/config.js",
+                "A:widget/UAdetect/UAdetect.js",
+                "A:widget/baseAuth/baseAuth.js",
+                "A:widget/webservice/webservice.js",
+                "A:widget/shareService/shareService.js",
+                "common:widget/common/combo/toast.js",
+                "common:widget/common/combo/widget.js",
+                "common:widget/common/combo/waiting.js",
+                "common:widget/common/lazyImg/lazyImg.js",
+                "common:widget/common/mobile/touchEnd.js",
+                "common:widget/common/mobile/touchStart.js",
+                "common:widget/common/picupload/picupload.js",
+                "common:widget/dialogService/dialogService.js",
+                "common:widget/common/fileupload/fileupload.js",
+                "common:widget/common/pagination/pagination.js",
+                "common:widget/userInterceptor/userInterceptor.js",
+                "common:widget/uploadFileService/uploadFileService.js"
+            ]
+        },
+        "A:widget/pages/activity/activity.async.js": {
+            "uri": "/static/A/widget/pages/activity/activity.async_3c4e2f0.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/activity/activity.async"
+            }
+        },
+        "A:widget/pages/activity/activity.css": {
+            "uri": "/static/A/widget/pages/activity/activity_f9d97bc.css",
+            "type": "css"
+        },
+        "A:widget/pages/activity/activity.js": {
+            "uri": "/static/A/widget/pages/activity/activity_cf288b3.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/activity/activity.async.js"
+                ],
+                "moduleId": "A:widget/pages/activity/activity"
+            },
+            "deps": [
+                "A:widget/pages/activity/activity.css"
+            ]
+        },
+        "A:widget/pages/child/add/add.async.js": {
+            "uri": "/static/A/widget/pages/child/add/add.async_806ee23.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/child/add/add.async"
+            }
+        },
+        "A:widget/pages/child/add/add.css": {
+            "uri": "/static/A/widget/pages/child/add/add_cda4888.css",
+            "type": "css"
+        },
+        "A:widget/pages/child/add/add.js": {
+            "uri": "/static/A/widget/pages/child/add/add_8887acd.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/child/add/add.async.js"
+                ],
+                "moduleId": "A:widget/pages/child/add/add"
+            },
+            "deps": [
+                "A:widget/pages/child/add/add.css"
+            ]
+        },
+        "A:widget/pages/child/child.css": {
+            "uri": "/static/A/widget/pages/child/child_d41d8cd.css",
+            "type": "css"
+        },
+        "A:widget/pages/child/child.js": {
+            "uri": "/static/A/widget/pages/child/child_2cffa64.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/child/child"
+            },
+            "deps": [
+                "A:widget/pages/child/list/list.js",
+                "A:widget/pages/child/add/add.js",
+                "A:widget/pages/child/edit/edit.js",
+                "A:widget/pages/child/child.css"
+            ]
+        },
+        "A:widget/pages/child/edit/edit.async.js": {
+            "uri": "/static/A/widget/pages/child/edit/edit.async_70dc2a4.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/child/edit/edit.async"
+            }
+        },
+        "A:widget/pages/child/edit/edit.css": {
+            "uri": "/static/A/widget/pages/child/edit/edit_cfabe37.css",
+            "type": "css"
+        },
+        "A:widget/pages/child/edit/edit.js": {
+            "uri": "/static/A/widget/pages/child/edit/edit_eefd109.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/child/edit/edit.async.js"
+                ],
+                "moduleId": "A:widget/pages/child/edit/edit"
+            },
+            "deps": [
+                "A:widget/pages/child/edit/edit.css"
+            ]
+        },
+        "A:widget/pages/child/list/list.async.js": {
+            "uri": "/static/A/widget/pages/child/list/list.async_df5633c.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/child/list/list.async"
+            }
+        },
+        "A:widget/pages/child/list/list.css": {
+            "uri": "/static/A/widget/pages/child/list/list_3e9d3c6.css",
+            "type": "css"
+        },
+        "A:widget/pages/child/list/list.js": {
+            "uri": "/static/A/widget/pages/child/list/list_e4468ec.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/child/list/list.async.js"
+                ],
+                "moduleId": "A:widget/pages/child/list/list"
+            },
+            "deps": [
+                "A:widget/pages/child/list/list.css"
+            ]
+        },
+        "A:widget/pages/city/city.async.js": {
+            "uri": "/static/A/widget/pages/city/city.async_9519147.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/city/city.async"
+            }
+        },
+        "A:widget/pages/city/city.css": {
+            "uri": "/static/A/widget/pages/city/city_27c80d5.css",
+            "type": "css"
+        },
+        "A:widget/pages/city/city.js": {
+            "uri": "/static/A/widget/pages/city/city_309c04a.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/city/city.async.js"
+                ],
+                "moduleId": "A:widget/pages/city/city"
+            },
+            "deps": [
+                "A:widget/pages/city/city.css"
+            ]
+        },
+        "A:widget/pages/coupon/coupon.css": {
+            "uri": "/static/A/widget/pages/coupon/coupon_54ed3c0.css",
+            "type": "css"
+        },
+        "A:widget/pages/coupon/coupon.js": {
+            "uri": "/static/A/widget/pages/coupon/coupon_ab5f973.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/coupon/coupon"
+            },
+            "deps": [
+                "A:widget/pages/coupon/current/current.js",
+                "A:widget/pages/coupon/past/past.js",
+                "A:widget/pages/coupon/select/select.js",
+                "A:widget/pages/coupon/coupon.css"
+            ]
+        },
+        "A:widget/pages/coupon/current/current.async.js": {
+            "uri": "/static/A/widget/pages/coupon/current/current.async_638a0b0.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/coupon/current/current.async"
+            }
+        },
+        "A:widget/pages/coupon/current/current.css": {
+            "uri": "/static/A/widget/pages/coupon/current/current_d41d8cd.css",
+            "type": "css"
+        },
+        "A:widget/pages/coupon/current/current.js": {
+            "uri": "/static/A/widget/pages/coupon/current/current_3073097.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/coupon/current/current.async.js"
+                ],
+                "moduleId": "A:widget/pages/coupon/current/current"
+            },
+            "deps": [
+                "A:widget/pages/coupon/current/current.css"
+            ]
+        },
+        "A:widget/pages/coupon/past/past.async.js": {
+            "uri": "/static/A/widget/pages/coupon/past/past.async_02254b5.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/coupon/past/past.async"
+            }
+        },
+        "A:widget/pages/coupon/past/past.css": {
+            "uri": "/static/A/widget/pages/coupon/past/past_d41d8cd.css",
+            "type": "css"
+        },
+        "A:widget/pages/coupon/past/past.js": {
+            "uri": "/static/A/widget/pages/coupon/past/past_1108d6b.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/coupon/past/past.async.js"
+                ],
+                "moduleId": "A:widget/pages/coupon/past/past"
+            },
+            "deps": [
+                "A:widget/pages/coupon/past/past.css"
+            ]
+        },
+        "A:widget/pages/coupon/select/select.async.js": {
+            "uri": "/static/A/widget/pages/coupon/select/select.async_36e528a.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/coupon/select/select.async"
+            }
+        },
+        "A:widget/pages/coupon/select/select.css": {
+            "uri": "/static/A/widget/pages/coupon/select/select_d41d8cd.css",
+            "type": "css"
+        },
+        "A:widget/pages/coupon/select/select.js": {
+            "uri": "/static/A/widget/pages/coupon/select/select_811224c.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/coupon/select/select.async.js"
+                ],
+                "moduleId": "A:widget/pages/coupon/select/select"
+            },
+            "deps": [
+                "A:widget/pages/coupon/select/select.css"
+            ]
+        },
+        "A:widget/pages/course/course.async.js": {
+            "uri": "/static/A/widget/pages/course/course.async_587d6f5.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/course/course.async"
+            }
+        },
+        "A:widget/pages/course/course.css": {
+            "uri": "/static/A/widget/pages/course/course_e486d65.css",
+            "type": "css"
+        },
+        "A:widget/pages/course/course.js": {
+            "uri": "/static/A/widget/pages/course/course_2fc4c87.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/course/course.async.js"
+                ],
+                "moduleId": "A:widget/pages/course/course"
+            },
+            "deps": [
+                "A:widget/pages/course/week/week.js",
+                "A:widget/pages/course/month/month.js",
+                "A:widget/pages/course/course.css"
+            ]
+        },
+        "A:widget/pages/course/month/month.async.js": {
+            "uri": "/static/A/widget/pages/course/month/month.async_90379d5.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/course/month/month.async"
+            }
+        },
+        "A:widget/pages/course/month/month.css": {
+            "uri": "/static/A/widget/pages/course/month/month_f127cc1.css",
+            "type": "css"
+        },
+        "A:widget/pages/course/month/month.js": {
+            "uri": "/static/A/widget/pages/course/month/month_ab7efca.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/course/month/month.async.js"
+                ],
+                "moduleId": "A:widget/pages/course/month/month"
+            },
+            "deps": [
+                "A:widget/pages/course/month/month.css"
+            ]
+        },
+        "A:widget/pages/course/week/week.async.js": {
+            "uri": "/static/A/widget/pages/course/week/week.async_395ed80.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/course/week/week.async"
+            }
+        },
+        "A:widget/pages/course/week/week.css": {
+            "uri": "/static/A/widget/pages/course/week/week_6506762.css",
+            "type": "css"
+        },
+        "A:widget/pages/course/week/week.js": {
+            "uri": "/static/A/widget/pages/course/week/week_a55ce24.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/course/week/week.async.js"
+                ],
+                "moduleId": "A:widget/pages/course/week/week"
+            },
+            "deps": [
+                "A:widget/pages/course/week/week.css"
+            ]
+        },
+        "A:widget/pages/discover/detail/detail.async.js": {
+            "uri": "/static/A/widget/pages/discover/detail/detail.async_323298a.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/discover/detail/detail.async"
+            }
+        },
+        "A:widget/pages/discover/detail/detail.css": {
+            "uri": "/static/A/widget/pages/discover/detail/detail_d41d8cd.css",
+            "type": "css"
+        },
+        "A:widget/pages/discover/detail/detail.js": {
+            "uri": "/static/A/widget/pages/discover/detail/detail_bad2457.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/discover/detail/detail.async.js"
+                ],
+                "moduleId": "A:widget/pages/discover/detail/detail"
+            },
+            "deps": [
+                "A:widget/pages/discover/detail/detail.css"
+            ]
+        },
+        "A:widget/pages/discover/discover.async.js": {
+            "uri": "/static/A/widget/pages/discover/discover.async_8b0d25c.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/discover/discover.async"
+            }
+        },
+        "A:widget/pages/discover/discover.css": {
+            "uri": "/static/A/widget/pages/discover/discover_61d02c3.css",
+            "type": "css"
+        },
+        "A:widget/pages/discover/discover.js": {
+            "uri": "/static/A/widget/pages/discover/discover_2a1826f.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/discover/discover.async.js"
+                ],
+                "moduleId": "A:widget/pages/discover/discover"
+            },
+            "deps": [
+                "A:widget/pages/discover/list/list.js",
+                "A:widget/pages/discover/detail/detail.js",
+                "A:widget/pages/discover/discover.css"
+            ]
+        },
+        "A:widget/pages/discover/list/list.async.js": {
+            "uri": "/static/A/widget/pages/discover/list/list.async_acc85b0.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/discover/list/list.async"
+            }
+        },
+        "A:widget/pages/discover/list/list.css": {
+            "uri": "/static/A/widget/pages/discover/list/list_9517f12.css",
+            "type": "css"
+        },
+        "A:widget/pages/discover/list/list.js": {
+            "uri": "/static/A/widget/pages/discover/list/list_0dad62c.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/discover/list/list.async.js"
+                ],
+                "moduleId": "A:widget/pages/discover/list/list"
+            },
+            "deps": [
+                "A:widget/pages/discover/list/list.css"
+            ]
+        },
+        "A:widget/pages/english/english.async.js": {
+            "uri": "/static/A/widget/pages/english/english.async_b55f99a.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/english/english.async"
+            }
+        },
+        "A:widget/pages/english/english.css": {
+            "uri": "/static/A/widget/pages/english/english_1aae03b.css",
+            "type": "css"
+        },
+        "A:widget/pages/english/english.js": {
+            "uri": "/static/A/widget/pages/english/english_6475b5b.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/english/english.async.js"
+                ],
+                "moduleId": "A:widget/pages/english/english"
+            },
+            "deps": [
+                "A:widget/pages/english/english.css"
+            ]
+        },
+        "A:widget/pages/growth/growth.async.js": {
+            "uri": "/static/A/widget/pages/growth/growth.async_f5fe298.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/growth/growth.async"
+            }
+        },
+        "A:widget/pages/growth/growth.css": {
+            "uri": "/static/A/widget/pages/growth/growth_d41d8cd.css",
+            "type": "css"
+        },
+        "A:widget/pages/growth/growth.js": {
+            "uri": "/static/A/widget/pages/growth/growth_972a125.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/growth/growth.async.js"
+                ],
+                "moduleId": "A:widget/pages/growth/growth"
+            },
+            "deps": [
+                "A:widget/pages/growth/growth.css"
+            ]
+        },
+        "A:widget/pages/imgcrop/imgcrop.async.js": {
+            "uri": "/static/A/widget/pages/imgcrop/imgcrop.async_354f71d.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/imgcrop/imgcrop.async"
+            }
+        },
+        "A:widget/pages/imgcrop/imgcrop.css": {
+            "uri": "/static/A/widget/pages/imgcrop/imgcrop_38cc230.css",
+            "type": "css"
+        },
+        "A:widget/pages/imgcrop/imgcrop.js": {
+            "uri": "/static/A/widget/pages/imgcrop/imgcrop_3fbf8f0.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/imgcrop/imgcrop.async.js"
+                ],
+                "moduleId": "A:widget/pages/imgcrop/imgcrop"
+            },
+            "deps": [
+                "A:widget/pages/imgcrop/imgService.js",
+                "A:widget/pages/imgcrop/imgcrop.css"
+            ]
+        },
+        "A:widget/pages/imgcrop/imgService.js": {
+            "uri": "/static/A/widget/pages/imgcrop/imgService_168accf.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/imgcrop/imgService"
+            }
+        },
+        "A:widget/pages/institution/activity/activity.async.js": {
+            "uri": "/static/A/widget/pages/institution/activity/activity.async_9e47c3a.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/institution/activity/activity.async"
+            }
+        },
+        "A:widget/pages/institution/activity/activity.css": {
+            "uri": "/static/A/widget/pages/institution/activity/activity_878f930.css",
+            "type": "css"
+        },
+        "A:widget/pages/institution/activity/activity.js": {
+            "uri": "/static/A/widget/pages/institution/activity/activity_c51960d.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/institution/activity/activity.async.js"
+                ],
+                "moduleId": "A:widget/pages/institution/activity/activity"
+            },
+            "deps": [
+                "A:widget/pages/institution/activity/activity.css"
+            ]
+        },
+        "A:widget/pages/institution/course/course.async.js": {
+            "uri": "/static/A/widget/pages/institution/course/course.async_59fdcd3.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/institution/course/course.async"
+            }
+        },
+        "A:widget/pages/institution/course/course.css": {
+            "uri": "/static/A/widget/pages/institution/course/course_57f365b.css",
+            "type": "css"
+        },
+        "A:widget/pages/institution/course/course.js": {
+            "uri": "/static/A/widget/pages/institution/course/course_a2f8070.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/institution/course/course.async.js"
+                ],
+                "moduleId": "A:widget/pages/institution/course/course"
+            },
+            "deps": [
+                "A:widget/pages/institution/course/course.css"
+            ]
+        },
+        "A:widget/pages/institution/institution.async.js": {
+            "uri": "/static/A/widget/pages/institution/institution.async_608b84b.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/institution/institution.async"
+            }
+        },
+        "A:widget/pages/institution/institution.css": {
+            "uri": "/static/A/widget/pages/institution/institution_93af4e4.css",
+            "type": "css"
+        },
+        "A:widget/pages/institution/institution.js": {
+            "uri": "/static/A/widget/pages/institution/institution_596afdc.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/institution/institution.async.js"
+                ],
+                "moduleId": "A:widget/pages/institution/institution"
+            },
+            "deps": [
+                "A:widget/pages/institution/course/course.js",
+                "A:widget/pages/institution/activity/activity.js",
+                "A:widget/pages/institution/institution.css"
+            ]
+        },
+        "A:widget/pages/instmore/brand/brand.async.js": {
+            "uri": "/static/A/widget/pages/instmore/brand/brand.async_905d355.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/instmore/brand/brand.async"
+            }
+        },
+        "A:widget/pages/instmore/brand/brand.css": {
+            "uri": "/static/A/widget/pages/instmore/brand/brand_a347565.css",
+            "type": "css"
+        },
+        "A:widget/pages/instmore/brand/brand.js": {
+            "uri": "/static/A/widget/pages/instmore/brand/brand_e68adae.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/instmore/brand/brand.async.js"
+                ],
+                "moduleId": "A:widget/pages/instmore/brand/brand"
+            },
+            "deps": [
+                "A:widget/pages/instmore/brand/brand.css"
+            ]
+        },
+        "A:widget/pages/instmore/course/course.async.js": {
+            "uri": "/static/A/widget/pages/instmore/course/course.async_302cbbb.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/instmore/course/course.async"
+            }
+        },
+        "A:widget/pages/instmore/course/course.css": {
+            "uri": "/static/A/widget/pages/instmore/course/course_50bfd35.css",
+            "type": "css"
+        },
+        "A:widget/pages/instmore/course/course.js": {
+            "uri": "/static/A/widget/pages/instmore/course/course_28b2dd8.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/instmore/course/course.async.js"
+                ],
+                "moduleId": "A:widget/pages/instmore/course/course"
+            },
+            "deps": [
+                "A:widget/pages/instmore/course/list/list.js",
+                "A:widget/pages/instmore/course/detail/detail.js",
+                "A:widget/pages/instmore/course/course.css"
+            ]
+        },
+        "A:widget/pages/instmore/course/detail/detail.async.js": {
+            "uri": "/static/A/widget/pages/instmore/course/detail/detail.async_dd25754.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/instmore/course/detail/detail.async"
+            }
+        },
+        "A:widget/pages/instmore/course/detail/detail.css": {
+            "uri": "/static/A/widget/pages/instmore/course/detail/detail_683be4b.css",
+            "type": "css"
+        },
+        "A:widget/pages/instmore/course/detail/detail.js": {
+            "uri": "/static/A/widget/pages/instmore/course/detail/detail_d9c4148.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/instmore/course/detail/detail.async.js"
+                ],
+                "moduleId": "A:widget/pages/instmore/course/detail/detail"
+            },
+            "deps": [
+                "A:widget/pages/instmore/course/detail/detail.css"
+            ]
+        },
+        "A:widget/pages/instmore/course/list/list.async.js": {
+            "uri": "/static/A/widget/pages/instmore/course/list/list.async_0d487fc.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/instmore/course/list/list.async"
+            }
+        },
+        "A:widget/pages/instmore/course/list/list.css": {
+            "uri": "/static/A/widget/pages/instmore/course/list/list_f618a0b.css",
+            "type": "css"
+        },
+        "A:widget/pages/instmore/course/list/list.js": {
+            "uri": "/static/A/widget/pages/instmore/course/list/list_1d6dc57.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/instmore/course/list/list.async.js"
+                ],
+                "moduleId": "A:widget/pages/instmore/course/list/list"
+            },
+            "deps": [
+                "A:widget/pages/instmore/course/list/list.css"
+            ]
+        },
+        "A:widget/pages/instmore/environment/environment.async.js": {
+            "uri": "/static/A/widget/pages/instmore/environment/environment.async_faff0f3.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/instmore/environment/environment.async"
+            }
+        },
+        "A:widget/pages/instmore/environment/environment.css": {
+            "uri": "/static/A/widget/pages/instmore/environment/environment_d00ceec.css",
+            "type": "css"
+        },
+        "A:widget/pages/instmore/environment/environment.js": {
+            "uri": "/static/A/widget/pages/instmore/environment/environment_3de6678.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/instmore/environment/environment.async.js"
+                ],
+                "moduleId": "A:widget/pages/instmore/environment/environment"
+            },
+            "deps": [
+                "A:widget/pages/instmore/environment/environment.css"
+            ]
+        },
+        "A:widget/pages/instmore/instdetail/instdetail.async.js": {
+            "uri": "/static/A/widget/pages/instmore/instdetail/instdetail.async_47eb18a.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/instmore/instdetail/instdetail.async"
+            }
+        },
+        "A:widget/pages/instmore/instdetail/instdetail.css": {
+            "uri": "/static/A/widget/pages/instmore/instdetail/instdetail_965a59d.css",
+            "type": "css"
+        },
+        "A:widget/pages/instmore/instdetail/instdetail.js": {
+            "uri": "/static/A/widget/pages/instmore/instdetail/instdetail_9fb3030.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/instmore/instdetail/instdetail.async.js"
+                ],
+                "moduleId": "A:widget/pages/instmore/instdetail/instdetail"
+            },
+            "deps": [
+                "A:widget/pages/instmore/instdetail/instdetail.css"
+            ]
+        },
+        "A:widget/pages/instmore/instmore.css": {
+            "uri": "/static/A/widget/pages/instmore/instmore_82472ad.css",
+            "type": "css"
+        },
+        "A:widget/pages/instmore/instmore.js": {
+            "uri": "/static/A/widget/pages/instmore/instmore_8ac761e.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/instmore/instmore"
+            },
+            "deps": [
+                "A:widget/pages/instmore/news/news.js",
+                "A:widget/pages/instmore/course/course.js",
+                "A:widget/pages/instmore/product/product.js",
+                "A:widget/pages/instmore/teachers/teachers.js",
+                "A:widget/pages/instmore/environment/environment.js",
+                "A:widget/pages/instmore/instdetail/instdetail.js",
+                "A:widget/pages/instmore/brand/brand.js",
+                "A:widget/pages/instmore/instmore.css"
+            ]
+        },
+        "A:widget/pages/instmore/news/detail/detail.async.js": {
+            "uri": "/static/A/widget/pages/instmore/news/detail/detail.async_80ce8fa.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/instmore/news/detail/detail.async"
+            }
+        },
+        "A:widget/pages/instmore/news/detail/detail.css": {
+            "uri": "/static/A/widget/pages/instmore/news/detail/detail_d41d8cd.css",
+            "type": "css"
+        },
+        "A:widget/pages/instmore/news/detail/detail.js": {
+            "uri": "/static/A/widget/pages/instmore/news/detail/detail_19fc6be.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/instmore/news/detail/detail.async.js"
+                ],
+                "moduleId": "A:widget/pages/instmore/news/detail/detail"
+            },
+            "deps": [
+                "A:widget/pages/instmore/news/detail/detail.css"
+            ]
+        },
+        "A:widget/pages/instmore/news/list/list.async.js": {
+            "uri": "/static/A/widget/pages/instmore/news/list/list.async_319a20d.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/instmore/news/list/list.async"
+            }
+        },
+        "A:widget/pages/instmore/news/list/list.css": {
+            "uri": "/static/A/widget/pages/instmore/news/list/list_4792ac1.css",
+            "type": "css"
+        },
+        "A:widget/pages/instmore/news/list/list.js": {
+            "uri": "/static/A/widget/pages/instmore/news/list/list_d4febe6.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/instmore/news/list/list.async.js"
+                ],
+                "moduleId": "A:widget/pages/instmore/news/list/list"
+            },
+            "deps": [
+                "A:widget/pages/instmore/news/list/list.css"
+            ]
+        },
+        "A:widget/pages/instmore/news/news.async.js": {
+            "uri": "/static/A/widget/pages/instmore/news/news.async_f241794.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/instmore/news/news.async"
+            }
+        },
+        "A:widget/pages/instmore/news/news.css": {
+            "uri": "/static/A/widget/pages/instmore/news/news_b7bb92f.css",
+            "type": "css"
+        },
+        "A:widget/pages/instmore/news/news.js": {
+            "uri": "/static/A/widget/pages/instmore/news/news_d25019f.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/instmore/news/news.async.js"
+                ],
+                "moduleId": "A:widget/pages/instmore/news/news"
+            },
+            "deps": [
+                "A:widget/pages/instmore/news/list/list.js",
+                "A:widget/pages/instmore/news/detail/detail.js",
+                "A:widget/pages/instmore/news/news.css"
+            ]
+        },
+        "A:widget/pages/instmore/product/product.async.js": {
+            "uri": "/static/A/widget/pages/instmore/product/product.async_3770169.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/instmore/product/product.async"
+            }
+        },
+        "A:widget/pages/instmore/product/product.css": {
+            "uri": "/static/A/widget/pages/instmore/product/product_b781e35.css",
+            "type": "css"
+        },
+        "A:widget/pages/instmore/product/product.js": {
+            "uri": "/static/A/widget/pages/instmore/product/product_d9167f4.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/instmore/product/product.async.js"
+                ],
+                "moduleId": "A:widget/pages/instmore/product/product"
+            },
+            "deps": [
+                "A:widget/pages/instmore/product/product.css"
+            ]
+        },
+        "A:widget/pages/instmore/teachers/teachers.async.js": {
+            "uri": "/static/A/widget/pages/instmore/teachers/teachers.async_ce7b1fc.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/instmore/teachers/teachers.async"
+            }
+        },
+        "A:widget/pages/instmore/teachers/teachers.css": {
+            "uri": "/static/A/widget/pages/instmore/teachers/teachers_6cd074e.css",
+            "type": "css"
+        },
+        "A:widget/pages/instmore/teachers/teachers.js": {
+            "uri": "/static/A/widget/pages/instmore/teachers/teachers_4684d5d.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/instmore/teachers/teachers.async.js"
+                ],
+                "moduleId": "A:widget/pages/instmore/teachers/teachers"
+            },
+            "deps": [
+                "A:widget/pages/instmore/teachers/teachers.css"
+            ]
+        },
+        "A:widget/pages/login/login.async.js": {
+            "uri": "/static/A/widget/pages/login/login.async_e271701.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/login/login.async"
+            }
+        },
+        "A:widget/pages/login/login.css": {
+            "uri": "/static/A/widget/pages/login/login_8e42c81.css",
+            "type": "css"
+        },
+        "A:widget/pages/login/login.js": {
+            "uri": "/static/A/widget/pages/login/login_a067380.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/login/login.async.js"
+                ],
+                "moduleId": "A:widget/pages/login/login"
+            },
+            "deps": [
+                "A:widget/pages/login/login.css"
+            ]
+        },
+        "A:widget/pages/main/institution/institution.async.js": {
+            "uri": "/static/A/widget/pages/main/institution/institution.async_b4bd18b.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/main/institution/institution.async"
+            }
+        },
+        "A:widget/pages/main/institution/institution.css": {
+            "uri": "/static/A/widget/pages/main/institution/institution_e1a6b77.css",
+            "type": "css"
+        },
+        "A:widget/pages/main/institution/institution.js": {
+            "uri": "/static/A/widget/pages/main/institution/institution_3ab801f.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/main/institution/institution.async.js"
+                ],
+                "moduleId": "A:widget/pages/main/institution/institution"
+            },
+            "deps": [
+                "A:widget/pages/main/institution/institution.css"
+            ]
+        },
+        "A:widget/pages/main/main.async.js": {
+            "uri": "/static/A/widget/pages/main/main.async_a5e0174.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/main/main.async"
+            }
+        },
+        "A:widget/pages/main/main.css": {
+            "uri": "/static/A/widget/pages/main/main_d41d8cd.css",
+            "type": "css"
+        },
+        "A:widget/pages/main/main.js": {
+            "uri": "/static/A/widget/pages/main/main_ada3655.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/main/main.async.js"
+                ],
+                "moduleId": "A:widget/pages/main/main"
+            },
+            "deps": [
+                "A:widget/pages/main/teach/teach.js",
+                "A:widget/pages/main/user/user.js",
+                "A:widget/pages/main/institution/institution.js",
+                "A:widget/pages/main/main.css",
+                "A:widget/partial/footer/footer.less"
+            ]
+        },
+        "A:widget/pages/main/teach/english/detail/detail.async.js": {
+            "uri": "/static/A/widget/pages/main/teach/english/detail/detail.async_64ec118.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/main/teach/english/detail/detail.async"
+            }
+        },
+        "A:widget/pages/main/teach/english/detail/detail.css": {
+            "uri": "/static/A/widget/pages/main/teach/english/detail/detail_df787af.css",
+            "type": "css"
+        },
+        "A:widget/pages/main/teach/english/detail/detail.js": {
+            "uri": "/static/A/widget/pages/main/teach/english/detail/detail_a847487.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/main/teach/english/detail/detail.async.js"
+                ],
+                "moduleId": "A:widget/pages/main/teach/english/detail/detail"
+            },
+            "deps": [
+                "A:widget/pages/main/teach/english/detail/detail.css"
+            ]
+        },
+        "A:widget/pages/main/teach/english/english.css": {
+            "uri": "/static/A/widget/pages/main/teach/english/english_d41d8cd.css",
+            "type": "css"
+        },
+        "A:widget/pages/main/teach/english/english.js": {
+            "uri": "/static/A/widget/pages/main/teach/english/english_6dc69f7.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/main/teach/english/english"
+            },
+            "deps": [
+                "A:widget/pages/main/teach/english/type/type.js",
+                "A:widget/pages/main/teach/english/detail/detail.js",
+                "A:widget/pages/main/teach/english/english.css"
+            ]
+        },
+        "A:widget/pages/main/teach/english/type/type.async.js": {
+            "uri": "/static/A/widget/pages/main/teach/english/type/type.async_3498c5e.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/main/teach/english/type/type.async"
+            }
+        },
+        "A:widget/pages/main/teach/english/type/type.css": {
+            "uri": "/static/A/widget/pages/main/teach/english/type/type_e241900.css",
+            "type": "css"
+        },
+        "A:widget/pages/main/teach/english/type/type.js": {
+            "uri": "/static/A/widget/pages/main/teach/english/type/type_91cc0bb.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/main/teach/english/type/type.async.js"
+                ],
+                "moduleId": "A:widget/pages/main/teach/english/type/type"
+            },
+            "deps": [
+                "A:widget/pages/main/teach/english/type/type.css"
+            ]
+        },
+        "A:widget/pages/main/teach/song/chinese/chinese.async.js": {
+            "uri": "/static/A/widget/pages/main/teach/song/chinese/chinese.async_f6ea8b7.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/main/teach/song/chinese/chinese.async"
+            }
+        },
+        "A:widget/pages/main/teach/song/chinese/chinese.css": {
+            "uri": "/static/A/widget/pages/main/teach/song/chinese/chinese_d41d8cd.css",
+            "type": "css"
+        },
+        "A:widget/pages/main/teach/song/chinese/chinese.js": {
+            "uri": "/static/A/widget/pages/main/teach/song/chinese/chinese_bd7c6f0.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/main/teach/song/chinese/chinese.async.js"
+                ],
+                "moduleId": "A:widget/pages/main/teach/song/chinese/chinese"
+            },
+            "deps": [
+                "A:widget/pages/main/teach/song/chinese/chinese.css"
+            ]
+        },
+        "A:widget/pages/main/teach/song/english/english.async.js": {
+            "uri": "/static/A/widget/pages/main/teach/song/english/english.async_2de84eb.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/main/teach/song/english/english.async"
+            }
+        },
+        "A:widget/pages/main/teach/song/english/english.css": {
+            "uri": "/static/A/widget/pages/main/teach/song/english/english_d41d8cd.css",
+            "type": "css"
+        },
+        "A:widget/pages/main/teach/song/english/english.js": {
+            "uri": "/static/A/widget/pages/main/teach/song/english/english_ee62c31.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/main/teach/song/english/english.async.js"
+                ],
+                "moduleId": "A:widget/pages/main/teach/song/english/english"
+            },
+            "deps": [
+                "A:widget/pages/main/teach/song/english/english.css"
+            ]
+        },
+        "A:widget/pages/main/teach/song/song.css": {
+            "uri": "/static/A/widget/pages/main/teach/song/song_39def1d.css",
+            "type": "css"
+        },
+        "A:widget/pages/main/teach/song/song.js": {
+            "uri": "/static/A/widget/pages/main/teach/song/song_b734de9.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/main/teach/song/song"
+            },
+            "deps": [
+                "A:widget/pages/main/teach/song/chinese/chinese.js",
+                "A:widget/pages/main/teach/song/english/english.js",
+                "A:widget/pages/main/teach/song/song.css"
+            ]
+        },
+        "A:widget/pages/main/teach/story/story.async.js": {
+            "uri": "/static/A/widget/pages/main/teach/story/story.async_cf43c4a.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/main/teach/story/story.async"
+            }
+        },
+        "A:widget/pages/main/teach/story/story.css": {
+            "uri": "/static/A/widget/pages/main/teach/story/story_d41d8cd.css",
+            "type": "css"
+        },
+        "A:widget/pages/main/teach/story/story.js": {
+            "uri": "/static/A/widget/pages/main/teach/story/story_e1a230b.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/main/teach/story/story.async.js"
+                ],
+                "moduleId": "A:widget/pages/main/teach/story/story"
+            },
+            "deps": [
+                "A:widget/pages/main/teach/story/story.css"
+            ]
+        },
+        "A:widget/pages/main/teach/teach.async.js": {
+            "uri": "/static/A/widget/pages/main/teach/teach.async_d456b79.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/main/teach/teach.async"
+            }
+        },
+        "A:widget/pages/main/teach/teach.css": {
+            "uri": "/static/A/widget/pages/main/teach/teach_dd76e69.css",
+            "type": "css"
+        },
+        "A:widget/pages/main/teach/teach.js": {
+            "uri": "/static/A/widget/pages/main/teach/teach_9cf86f8.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/main/teach/teach.async.js"
+                ],
+                "moduleId": "A:widget/pages/main/teach/teach"
+            },
+            "deps": [
+                "A:widget/pages/main/teach/story/story.js",
+                "A:widget/pages/main/teach/english/english.js",
+                "A:widget/pages/main/teach/song/song.js",
+                "A:widget/pages/main/teach/teach.css"
+            ]
+        },
+        "A:widget/pages/main/user/user.async.js": {
+            "uri": "/static/A/widget/pages/main/user/user.async_6743eb1.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/main/user/user.async"
+            }
+        },
+        "A:widget/pages/main/user/user.css": {
+            "uri": "/static/A/widget/pages/main/user/user_e607ad1.css",
+            "type": "css"
+        },
+        "A:widget/pages/main/user/user.js": {
+            "uri": "/static/A/widget/pages/main/user/user_bb96217.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/main/user/user.async.js"
+                ],
+                "moduleId": "A:widget/pages/main/user/user"
+            },
+            "deps": [
+                "A:widget/pages/main/user/user.css"
+            ]
+        },
+        "A:widget/pages/message/message.async.js": {
+            "uri": "/static/A/widget/pages/message/message.async_0a4e62c.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/message/message.async"
+            }
+        },
+        "A:widget/pages/message/message.css": {
+            "uri": "/static/A/widget/pages/message/message_a8ac381.css",
+            "type": "css"
+        },
+        "A:widget/pages/message/message.js": {
+            "uri": "/static/A/widget/pages/message/message_6737a22.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/message/message.async.js"
+                ],
+                "moduleId": "A:widget/pages/message/message"
+            },
+            "deps": [
+                "A:widget/pages/message/message.css"
+            ]
+        },
+        "A:widget/pages/myactivity/myactivity.css": {
+            "uri": "/static/A/widget/pages/myactivity/myactivity_045b13b.css",
+            "type": "css"
+        },
+        "A:widget/pages/myactivity/myactivity.js": {
+            "uri": "/static/A/widget/pages/myactivity/myactivity_7a8e50a.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/myactivity/myactivity"
+            },
+            "deps": [
+                "A:widget/pages/myactivity/overview/overview.js",
+                "A:widget/pages/myactivity/review/review.js",
+                "A:widget/pages/myactivity/myactivity.css"
+            ]
+        },
+        "A:widget/pages/myactivity/overview/overview.async.js": {
+            "uri": "/static/A/widget/pages/myactivity/overview/overview.async_14d2248.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/myactivity/overview/overview.async"
+            }
+        },
+        "A:widget/pages/myactivity/overview/overview.css": {
+            "uri": "/static/A/widget/pages/myactivity/overview/overview_afea9d5.css",
+            "type": "css"
+        },
+        "A:widget/pages/myactivity/overview/overview.js": {
+            "uri": "/static/A/widget/pages/myactivity/overview/overview_29d1ff5.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/myactivity/overview/overview.async.js"
+                ],
+                "moduleId": "A:widget/pages/myactivity/overview/overview"
+            },
+            "deps": [
+                "A:widget/pages/myactivity/overview/overview.css"
+            ]
+        },
+        "A:widget/pages/myactivity/review/review.async.js": {
+            "uri": "/static/A/widget/pages/myactivity/review/review.async_dcc1c61.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/myactivity/review/review.async"
+            }
+        },
+        "A:widget/pages/myactivity/review/review.css": {
+            "uri": "/static/A/widget/pages/myactivity/review/review_d41d8cd.css",
+            "type": "css"
+        },
+        "A:widget/pages/myactivity/review/review.js": {
+            "uri": "/static/A/widget/pages/myactivity/review/review_8012a0b.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/myactivity/review/review.async.js"
+                ],
+                "moduleId": "A:widget/pages/myactivity/review/review"
+            },
+            "deps": [
+                "A:widget/pages/myactivity/review/review.css"
+            ]
+        },
+        "A:widget/pages/mycourse/mycourse.css": {
+            "uri": "/static/A/widget/pages/mycourse/mycourse_cc561d9.css",
+            "type": "css"
+        },
+        "A:widget/pages/mycourse/mycourse.js": {
+            "uri": "/static/A/widget/pages/mycourse/mycourse_764286b.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/mycourse/mycourse"
+            },
+            "deps": [
+                "A:widget/pages/mycourse/overview/overview.js",
+                "A:widget/pages/mycourse/review/review.js",
+                "A:widget/pages/mycourse/mycourse.css"
+            ]
+        },
+        "A:widget/pages/mycourse/overview/overview.async.js": {
+            "uri": "/static/A/widget/pages/mycourse/overview/overview.async_cf97354.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/mycourse/overview/overview.async"
+            }
+        },
+        "A:widget/pages/mycourse/overview/overview.css": {
+            "uri": "/static/A/widget/pages/mycourse/overview/overview_3fbf26c.css",
+            "type": "css"
+        },
+        "A:widget/pages/mycourse/overview/overview.js": {
+            "uri": "/static/A/widget/pages/mycourse/overview/overview_96ae12d.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/mycourse/overview/overview.async.js"
+                ],
+                "moduleId": "A:widget/pages/mycourse/overview/overview"
+            },
+            "deps": [
+                "A:widget/pages/mycourse/overview/overview.css"
+            ]
+        },
+        "A:widget/pages/mycourse/review/review.async.js": {
+            "uri": "/static/A/widget/pages/mycourse/review/review.async_3980c91.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/mycourse/review/review.async"
+            }
+        },
+        "A:widget/pages/mycourse/review/review.css": {
+            "uri": "/static/A/widget/pages/mycourse/review/review_d41d8cd.css",
+            "type": "css"
+        },
+        "A:widget/pages/mycourse/review/review.js": {
+            "uri": "/static/A/widget/pages/mycourse/review/review_a8fbc1d.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/mycourse/review/review.async.js"
+                ],
+                "moduleId": "A:widget/pages/mycourse/review/review"
+            },
+            "deps": [
+                "A:widget/pages/mycourse/review/review.css"
+            ]
+        },
+        "A:widget/pages/myorder/activity/activity.css": {
+            "uri": "/static/A/widget/pages/myorder/activity/activity_d41d8cd.css",
+            "type": "css"
+        },
+        "A:widget/pages/myorder/activity/activity.js": {
+            "uri": "/static/A/widget/pages/myorder/activity/activity_0eaadad.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/myorder/activity/activity"
+            },
+            "deps": [
+                "A:widget/pages/myorder/activity/list/list.js",
+                "A:widget/pages/myorder/activity/detail/detail.js",
+                "A:widget/pages/myorder/activity/activity.css"
+            ]
+        },
+        "A:widget/pages/myorder/activity/detail/detail.async.js": {
+            "uri": "/static/A/widget/pages/myorder/activity/detail/detail.async_da19712.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/myorder/activity/detail/detail.async"
+            }
+        },
+        "A:widget/pages/myorder/activity/detail/detail.css": {
+            "uri": "/static/A/widget/pages/myorder/activity/detail/detail_6aafd00.css",
+            "type": "css"
+        },
+        "A:widget/pages/myorder/activity/detail/detail.js": {
+            "uri": "/static/A/widget/pages/myorder/activity/detail/detail_9060f42.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/myorder/activity/detail/detail.async.js"
+                ],
+                "moduleId": "A:widget/pages/myorder/activity/detail/detail"
+            },
+            "deps": [
+                "A:widget/pages/myorder/activity/detail/detail.css"
+            ]
+        },
+        "A:widget/pages/myorder/activity/list/list.async.js": {
+            "uri": "/static/A/widget/pages/myorder/activity/list/list.async_02074f1.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/myorder/activity/list/list.async"
+            }
+        },
+        "A:widget/pages/myorder/activity/list/list.css": {
+            "uri": "/static/A/widget/pages/myorder/activity/list/list_d41d8cd.css",
+            "type": "css"
+        },
+        "A:widget/pages/myorder/activity/list/list.js": {
+            "uri": "/static/A/widget/pages/myorder/activity/list/list_4cd22f0.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/myorder/activity/list/list.async.js"
+                ],
+                "moduleId": "A:widget/pages/myorder/activity/list/list"
+            },
+            "deps": [
+                "A:widget/pages/myorder/activity/list/list.css"
+            ]
+        },
+        "A:widget/pages/myorder/course/course.css": {
+            "uri": "/static/A/widget/pages/myorder/course/course_d41d8cd.css",
+            "type": "css"
+        },
+        "A:widget/pages/myorder/course/course.js": {
+            "uri": "/static/A/widget/pages/myorder/course/course_2492efe.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/myorder/course/course"
+            },
+            "deps": [
+                "A:widget/pages/myorder/course/list/list.js",
+                "A:widget/pages/myorder/course/detail/detail.js",
+                "A:widget/pages/myorder/course/course.css"
+            ]
+        },
+        "A:widget/pages/myorder/course/detail/detail.async.js": {
+            "uri": "/static/A/widget/pages/myorder/course/detail/detail.async_f556b2e.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/myorder/course/detail/detail.async"
+            }
+        },
+        "A:widget/pages/myorder/course/detail/detail.css": {
+            "uri": "/static/A/widget/pages/myorder/course/detail/detail_689fb22.css",
+            "type": "css"
+        },
+        "A:widget/pages/myorder/course/detail/detail.js": {
+            "uri": "/static/A/widget/pages/myorder/course/detail/detail_cb3174e.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/myorder/course/detail/detail.async.js"
+                ],
+                "moduleId": "A:widget/pages/myorder/course/detail/detail"
+            },
+            "deps": [
+                "A:widget/pages/myorder/course/detail/detail.css"
+            ]
+        },
+        "A:widget/pages/myorder/course/list/list.async.js": {
+            "uri": "/static/A/widget/pages/myorder/course/list/list.async_a582bc1.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/myorder/course/list/list.async"
+            }
+        },
+        "A:widget/pages/myorder/course/list/list.css": {
+            "uri": "/static/A/widget/pages/myorder/course/list/list_d41d8cd.css",
+            "type": "css"
+        },
+        "A:widget/pages/myorder/course/list/list.js": {
+            "uri": "/static/A/widget/pages/myorder/course/list/list_fd66fb2.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/myorder/course/list/list.async.js"
+                ],
+                "moduleId": "A:widget/pages/myorder/course/list/list"
+            },
+            "deps": [
+                "A:widget/pages/myorder/course/list/list.css"
+            ]
+        },
+        "A:widget/pages/myorder/myorder.css": {
+            "uri": "/static/A/widget/pages/myorder/myorder_4d7a613.css",
+            "type": "css"
+        },
+        "A:widget/pages/myorder/myorder.js": {
+            "uri": "/static/A/widget/pages/myorder/myorder_a86a811.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/myorder/myorder"
+            },
+            "deps": [
+                "A:widget/pages/myorder/course/course.js",
+                "A:widget/pages/myorder/activity/activity.js",
+                "A:widget/pages/myorder/myorder.css"
+            ]
+        },
+        "A:widget/pages/order/order.async.js": {
+            "uri": "/static/A/widget/pages/order/order.async_6527ccd.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/order/order.async"
+            }
+        },
+        "A:widget/pages/order/order.css": {
+            "uri": "/static/A/widget/pages/order/order_bf24ff1.css",
+            "type": "css"
+        },
+        "A:widget/pages/order/order.js": {
+            "uri": "/static/A/widget/pages/order/order_6c64b7d.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/order/order.async.js"
+                ],
+                "moduleId": "A:widget/pages/order/order"
+            },
+            "deps": [
+                "A:widget/pages/order/order.css"
+            ]
+        },
+        "A:widget/pages/pay/failure/failure.async.js": {
+            "uri": "/static/A/widget/pages/pay/failure/failure.async_1a79d69.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/pay/failure/failure.async"
+            }
+        },
+        "A:widget/pages/pay/failure/failure.css": {
+            "uri": "/static/A/widget/pages/pay/failure/failure_d41d8cd.css",
+            "type": "css"
+        },
+        "A:widget/pages/pay/failure/failure.js": {
+            "uri": "/static/A/widget/pages/pay/failure/failure_bf6f2a2.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/pay/failure/failure.async.js"
+                ],
+                "moduleId": "A:widget/pages/pay/failure/failure"
+            },
+            "deps": [
+                "A:widget/pages/pay/failure/failure.css"
+            ]
+        },
+        "A:widget/pages/pay/pay.async.js": {
+            "uri": "/static/A/widget/pages/pay/pay.async_8182925.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/pay/pay.async"
+            }
+        },
+        "A:widget/pages/pay/pay.css": {
+            "uri": "/static/A/widget/pages/pay/pay_3f5223e.css",
+            "type": "css"
+        },
+        "A:widget/pages/pay/pay.js": {
+            "uri": "/static/A/widget/pages/pay/pay_371ee7b.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/pay/pay.async.js"
+                ],
+                "moduleId": "A:widget/pages/pay/pay"
+            },
+            "deps": [
+                "A:widget/pages/pay/success/success.js",
+                "A:widget/pages/pay/failure/failure.js",
+                "A:widget/pages/pay/pay.css"
+            ]
+        },
+        "A:widget/pages/pay/success/success.async.js": {
+            "uri": "/static/A/widget/pages/pay/success/success.async_00a36de.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/pay/success/success.async"
+            }
+        },
+        "A:widget/pages/pay/success/success.css": {
+            "uri": "/static/A/widget/pages/pay/success/success_42c913b.css",
+            "type": "css"
+        },
+        "A:widget/pages/pay/success/success.js": {
+            "uri": "/static/A/widget/pages/pay/success/success_133e641.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/pay/success/success.async.js"
+                ],
+                "moduleId": "A:widget/pages/pay/success/success"
+            },
+            "deps": [
+                "A:widget/pages/pay/success/success.css"
+            ]
+        },
+        "A:widget/pages/register/first/checkMobileService.js": {
+            "uri": "/static/A/widget/pages/register/first/checkMobileService_b2b5837.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/register/first/checkMobileService"
+            }
+        },
+        "A:widget/pages/register/first/first.async.js": {
+            "uri": "/static/A/widget/pages/register/first/first.async_5526b26.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/register/first/first.async"
+            }
+        },
+        "A:widget/pages/register/first/first.css": {
+            "uri": "/static/A/widget/pages/register/first/first_d41d8cd.css",
+            "type": "css"
+        },
+        "A:widget/pages/register/first/first.js": {
+            "uri": "/static/A/widget/pages/register/first/first_87dd39a.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/register/first/first.async.js"
+                ],
+                "moduleId": "A:widget/pages/register/first/first"
+            },
+            "deps": [
+                "A:widget/pages/register/first/checkMobileService.js",
+                "A:widget/pages/register/first/first.css"
+            ]
+        },
+        "A:widget/pages/register/register.css": {
+            "uri": "/static/A/widget/pages/register/register_85c6222.css",
+            "type": "css"
+        },
+        "A:widget/pages/register/register.js": {
+            "uri": "/static/A/widget/pages/register/register_ba3660e.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/register/register"
+            },
+            "deps": [
+                "A:widget/pages/register/first/first.js",
+                "A:widget/pages/register/second/second.js",
+                "A:widget/pages/register/third/third.js",
+                "A:widget/pages/register/register.css"
+            ]
+        },
+        "A:widget/pages/register/second/checkMobileVerifyCodeService.js": {
+            "uri": "/static/A/widget/pages/register/second/checkMobileVerifyCodeService_6221853.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/register/second/checkMobileVerifyCodeService"
+            }
+        },
+        "A:widget/pages/register/second/second.async.js": {
+            "uri": "/static/A/widget/pages/register/second/second.async_1706efa.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/register/second/second.async"
+            }
+        },
+        "A:widget/pages/register/second/second.css": {
+            "uri": "/static/A/widget/pages/register/second/second_7196ac9.css",
+            "type": "css"
+        },
+        "A:widget/pages/register/second/second.js": {
+            "uri": "/static/A/widget/pages/register/second/second_1fd73d1.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/register/second/second.async.js"
+                ],
+                "moduleId": "A:widget/pages/register/second/second"
+            },
+            "deps": [
+                "A:widget/pages/register/second/checkMobileVerifyCodeService.js",
+                "A:widget/pages/register/second/second.css"
+            ]
+        },
+        "A:widget/pages/register/third/third.async.js": {
+            "uri": "/static/A/widget/pages/register/third/third.async_7b264cd.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/register/third/third.async"
+            }
+        },
+        "A:widget/pages/register/third/third.css": {
+            "uri": "/static/A/widget/pages/register/third/third_d41d8cd.css",
+            "type": "css"
+        },
+        "A:widget/pages/register/third/third.js": {
+            "uri": "/static/A/widget/pages/register/third/third_efe674f.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/register/third/third.async.js"
+                ],
+                "moduleId": "A:widget/pages/register/third/third"
+            },
+            "deps": [
+                "A:widget/pages/register/third/third.css"
+            ]
+        },
+        "A:widget/pages/reset/first/first.async.js": {
+            "uri": "/static/A/widget/pages/reset/first/first.async_8f5d169.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/reset/first/first.async"
+            }
+        },
+        "A:widget/pages/reset/first/first.css": {
+            "uri": "/static/A/widget/pages/reset/first/first_8eb98cc.css",
+            "type": "css"
+        },
+        "A:widget/pages/reset/first/first.js": {
+            "uri": "/static/A/widget/pages/reset/first/first_4039ad4.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/reset/first/first.async.js"
+                ],
+                "moduleId": "A:widget/pages/reset/first/first"
+            },
+            "deps": [
+                "A:widget/pages/reset/first/first.css"
+            ]
+        },
+        "A:widget/pages/reset/reset.css": {
+            "uri": "/static/A/widget/pages/reset/reset_4b03a4f.css",
+            "type": "css"
+        },
+        "A:widget/pages/reset/reset.js": {
+            "uri": "/static/A/widget/pages/reset/reset_8a77fe1.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/reset/reset"
+            },
+            "deps": [
+                "A:widget/pages/reset/first/first.js",
+                "A:widget/pages/reset/second/second.js",
+                "A:widget/pages/reset/third/third.js",
+                "A:widget/pages/reset/reset.css"
+            ]
+        },
+        "A:widget/pages/reset/second/second.async.js": {
+            "uri": "/static/A/widget/pages/reset/second/second.async_155658b.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/reset/second/second.async"
+            }
+        },
+        "A:widget/pages/reset/second/second.css": {
+            "uri": "/static/A/widget/pages/reset/second/second_2398129.css",
+            "type": "css"
+        },
+        "A:widget/pages/reset/second/second.js": {
+            "uri": "/static/A/widget/pages/reset/second/second_4036895.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/reset/second/second.async.js"
+                ],
+                "moduleId": "A:widget/pages/reset/second/second"
+            },
+            "deps": [
+                "A:widget/pages/reset/second/second.css"
+            ]
+        },
+        "A:widget/pages/reset/third/third.async.js": {
+            "uri": "/static/A/widget/pages/reset/third/third.async_96ad7b0.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/reset/third/third.async"
+            }
+        },
+        "A:widget/pages/reset/third/third.css": {
+            "uri": "/static/A/widget/pages/reset/third/third_d41d8cd.css",
+            "type": "css"
+        },
+        "A:widget/pages/reset/third/third.js": {
+            "uri": "/static/A/widget/pages/reset/third/third_58b3b6e.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/reset/third/third.async.js"
+                ],
+                "moduleId": "A:widget/pages/reset/third/third"
+            },
+            "deps": [
+                "A:widget/pages/reset/third/third.css"
+            ]
+        },
+        "A:widget/pages/score/availpoints/availpoints.async.js": {
+            "uri": "/static/A/widget/pages/score/availpoints/availpoints.async_3151e8f.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/score/availpoints/availpoints.async"
+            }
+        },
+        "A:widget/pages/score/availpoints/availpoints.css": {
+            "uri": "/static/A/widget/pages/score/availpoints/availpoints_6d9743a.css",
+            "type": "css"
+        },
+        "A:widget/pages/score/availpoints/availpoints.js": {
+            "uri": "/static/A/widget/pages/score/availpoints/availpoints_e594701.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/score/availpoints/availpoints.async.js"
+                ],
+                "moduleId": "A:widget/pages/score/availpoints/availpoints"
+            },
+            "deps": [
+                "A:widget/pages/score/availpoints/availpoints.css"
+            ]
+        },
+        "A:widget/pages/score/chargedetail/chargedetail.async.js": {
+            "uri": "/static/A/widget/pages/score/chargedetail/chargedetail.async_3e12ae5.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/score/chargedetail/chargedetail.async"
+            }
+        },
+        "A:widget/pages/score/chargedetail/chargedetail.css": {
+            "uri": "/static/A/widget/pages/score/chargedetail/chargedetail_7d2b260.css",
+            "type": "css"
+        },
+        "A:widget/pages/score/chargedetail/chargedetail.js": {
+            "uri": "/static/A/widget/pages/score/chargedetail/chargedetail_e611773.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/score/chargedetail/chargedetail.async.js"
+                ],
+                "moduleId": "A:widget/pages/score/chargedetail/chargedetail"
+            },
+            "deps": [
+                "A:widget/pages/score/chargedetail/chargedetail.css"
+            ]
+        },
+        "A:widget/pages/score/chargerecord/chargerecord.async.js": {
+            "uri": "/static/A/widget/pages/score/chargerecord/chargerecord.async_68e06ed.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/score/chargerecord/chargerecord.async"
+            }
+        },
+        "A:widget/pages/score/chargerecord/chargerecord.css": {
+            "uri": "/static/A/widget/pages/score/chargerecord/chargerecord_fad9a7d.css",
+            "type": "css"
+        },
+        "A:widget/pages/score/chargerecord/chargerecord.js": {
+            "uri": "/static/A/widget/pages/score/chargerecord/chargerecord_9411069.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/score/chargerecord/chargerecord.async.js"
+                ],
+                "moduleId": "A:widget/pages/score/chargerecord/chargerecord"
+            },
+            "deps": [
+                "A:widget/pages/score/chargerecord/chargerecord.css"
+            ]
+        },
+        "A:widget/pages/score/memberlevel/memberlevel.async.js": {
+            "uri": "/static/A/widget/pages/score/memberlevel/memberlevel.async_2e932cf.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/score/memberlevel/memberlevel.async"
+            }
+        },
+        "A:widget/pages/score/memberlevel/memberlevel.css": {
+            "uri": "/static/A/widget/pages/score/memberlevel/memberlevel_e49ec2c.css",
+            "type": "css"
+        },
+        "A:widget/pages/score/memberlevel/memberlevel.js": {
+            "uri": "/static/A/widget/pages/score/memberlevel/memberlevel_5b00599.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/score/memberlevel/memberlevel.async.js"
+                ],
+                "moduleId": "A:widget/pages/score/memberlevel/memberlevel"
+            },
+            "deps": [
+                "A:widget/pages/score/memberlevel/memberlevel.css"
+            ]
+        },
+        "A:widget/pages/score/pointdetail/pointdetail.async.js": {
+            "uri": "/static/A/widget/pages/score/pointdetail/pointdetail.async_eb167cd.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/score/pointdetail/pointdetail.async"
+            }
+        },
+        "A:widget/pages/score/pointdetail/pointdetail.css": {
+            "uri": "/static/A/widget/pages/score/pointdetail/pointdetail_f11b58b.css",
+            "type": "css"
+        },
+        "A:widget/pages/score/pointdetail/pointdetail.js": {
+            "uri": "/static/A/widget/pages/score/pointdetail/pointdetail_80dbd87.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/score/pointdetail/pointdetail.async.js"
+                ],
+                "moduleId": "A:widget/pages/score/pointdetail/pointdetail"
+            },
+            "deps": [
+                "A:widget/pages/score/pointdetail/pointdetail.css"
+            ]
+        },
+        "A:widget/pages/score/pointrule/pointrule.async.js": {
+            "uri": "/static/A/widget/pages/score/pointrule/pointrule.async_5b76e11.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/score/pointrule/pointrule.async"
+            }
+        },
+        "A:widget/pages/score/pointrule/pointrule.css": {
+            "uri": "/static/A/widget/pages/score/pointrule/pointrule_a65a903.css",
+            "type": "css"
+        },
+        "A:widget/pages/score/pointrule/pointrule.js": {
+            "uri": "/static/A/widget/pages/score/pointrule/pointrule_f4d18c0.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/score/pointrule/pointrule.async.js"
+                ],
+                "moduleId": "A:widget/pages/score/pointrule/pointrule"
+            },
+            "deps": [
+                "A:widget/pages/score/pointrule/pointrule.css"
+            ]
+        },
+        "A:widget/pages/score/score.css": {
+            "uri": "/static/A/widget/pages/score/score_d41d8cd.css",
+            "type": "css"
+        },
+        "A:widget/pages/score/score.js": {
+            "uri": "/static/A/widget/pages/score/score_d7ea22b.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/score/score"
+            },
+            "deps": [
+                "A:widget/pages/score/pointrule/pointrule.js",
+                "A:widget/pages/score/pointdetail/pointdetail.js",
+                "A:widget/pages/score/availpoints/availpoints.js",
+                "A:widget/pages/score/memberlevel/memberlevel.js",
+                "A:widget/pages/score/chargedetail/chargedetail.js",
+                "A:widget/pages/score/chargerecord/chargerecord.js",
+                "A:widget/pages/score/score.css"
+            ]
+        },
+        "A:widget/pages/search/search.async.js": {
+            "uri": "/static/A/widget/pages/search/search.async_a5b9943.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/search/search.async"
+            }
+        },
+        "A:widget/pages/search/search.css": {
+            "uri": "/static/A/widget/pages/search/search_648a34c.css",
+            "type": "css"
+        },
+        "A:widget/pages/search/search.js": {
+            "uri": "/static/A/widget/pages/search/search_d5a6cde.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/search/search.async.js"
+                ],
+                "moduleId": "A:widget/pages/search/search"
+            },
+            "deps": [
+                "A:widget/pages/search/search.css"
+            ]
+        },
+        "A:widget/pages/setting/aboutus/aboutus.css": {
+            "uri": "/static/A/widget/pages/setting/aboutus/aboutus_d41d8cd.css",
+            "type": "css"
+        },
+        "A:widget/pages/setting/aboutus/aboutus.js": {
+            "uri": "/static/A/widget/pages/setting/aboutus/aboutus_0e3c743.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/setting/aboutus/aboutus"
+            },
+            "deps": [
+                "A:widget/pages/setting/aboutus/aboutus.css"
+            ]
+        },
+        "A:widget/pages/setting/all/all.async.js": {
+            "uri": "/static/A/widget/pages/setting/all/all.async_f5f8aff.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/setting/all/all.async"
+            }
+        },
+        "A:widget/pages/setting/all/all.css": {
+            "uri": "/static/A/widget/pages/setting/all/all_e576733.css",
+            "type": "css"
+        },
+        "A:widget/pages/setting/all/all.js": {
+            "uri": "/static/A/widget/pages/setting/all/all_407ce93.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/setting/all/all.async.js"
+                ],
+                "moduleId": "A:widget/pages/setting/all/all"
+            },
+            "deps": [
+                "A:widget/pages/setting/all/all.css"
+            ]
+        },
+        "A:widget/pages/setting/me/me.async.js": {
+            "uri": "/static/A/widget/pages/setting/me/me.async_40be79e.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/setting/me/me.async"
+            }
+        },
+        "A:widget/pages/setting/me/me.css": {
+            "uri": "/static/A/widget/pages/setting/me/me_f83f289.css",
+            "type": "css"
+        },
+        "A:widget/pages/setting/me/me.js": {
+            "uri": "/static/A/widget/pages/setting/me/me_5b3c3ae.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/setting/me/me.async.js"
+                ],
+                "moduleId": "A:widget/pages/setting/me/me"
+            },
+            "deps": [
+                "A:widget/pages/setting/me/me.css"
+            ]
+        },
+        "A:widget/pages/setting/password/password.async.js": {
+            "uri": "/static/A/widget/pages/setting/password/password.async_ff1a223.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/setting/password/password.async"
+            }
+        },
+        "A:widget/pages/setting/password/password.css": {
+            "uri": "/static/A/widget/pages/setting/password/password_d41d8cd.css",
+            "type": "css"
+        },
+        "A:widget/pages/setting/password/password.js": {
+            "uri": "/static/A/widget/pages/setting/password/password_9527419.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/setting/password/password.async.js"
+                ],
+                "moduleId": "A:widget/pages/setting/password/password"
+            },
+            "deps": [
+                "A:widget/pages/setting/password/password.css"
+            ]
+        },
+        "A:widget/pages/setting/phone/changemobile/changemobile.async.js": {
+            "uri": "/static/A/widget/pages/setting/phone/changemobile/changemobile.async_b4d6821.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/setting/phone/changemobile/changemobile.async"
+            }
+        },
+        "A:widget/pages/setting/phone/changemobile/changemobile.css": {
+            "uri": "/static/A/widget/pages/setting/phone/changemobile/changemobile_d41d8cd.css",
+            "type": "css"
+        },
+        "A:widget/pages/setting/phone/changemobile/changemobile.js": {
+            "uri": "/static/A/widget/pages/setting/phone/changemobile/changemobile_66d149c.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/setting/phone/changemobile/changemobile.async.js"
+                ],
+                "moduleId": "A:widget/pages/setting/phone/changemobile/changemobile"
+            },
+            "deps": [
+                "A:widget/pages/setting/phone/changemobile/changemobile.css"
+            ]
+        },
+        "A:widget/pages/setting/phone/current/current.css": {
+            "uri": "/static/A/widget/pages/setting/phone/current/current_557eb05.css",
+            "type": "css"
+        },
+        "A:widget/pages/setting/phone/current/current.js": {
+            "uri": "/static/A/widget/pages/setting/phone/current/current_0e5a137.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/setting/phone/current/current"
+            },
+            "deps": [
+                "A:widget/pages/setting/phone/current/current.css"
+            ]
+        },
+        "A:widget/pages/setting/phone/newphone/newphone.async.js": {
+            "uri": "/static/A/widget/pages/setting/phone/newphone/newphone.async_0cc98a6.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/setting/phone/newphone/newphone.async"
+            }
+        },
+        "A:widget/pages/setting/phone/newphone/newphone.css": {
+            "uri": "/static/A/widget/pages/setting/phone/newphone/newphone_d41d8cd.css",
+            "type": "css"
+        },
+        "A:widget/pages/setting/phone/newphone/newphone.js": {
+            "uri": "/static/A/widget/pages/setting/phone/newphone/newphone_d1102b8.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/setting/phone/newphone/newphone.async.js"
+                ],
+                "moduleId": "A:widget/pages/setting/phone/newphone/newphone"
+            },
+            "deps": [
+                "A:widget/pages/setting/phone/newphone/newphone.css"
+            ]
+        },
+        "A:widget/pages/setting/phone/phone.css": {
+            "uri": "/static/A/widget/pages/setting/phone/phone_d41d8cd.css",
+            "type": "css"
+        },
+        "A:widget/pages/setting/phone/phone.js": {
+            "uri": "/static/A/widget/pages/setting/phone/phone_21fe391.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/setting/phone/phone"
+            },
+            "deps": [
+                "A:widget/pages/setting/phone/current/current.js",
+                "A:widget/pages/setting/phone/newphone/newphone.js",
+                "A:widget/pages/setting/phone/verifycode/verifycode.js",
+                "A:widget/pages/setting/phone/changemobile/changemobile.js",
+                "A:widget/pages/setting/phone/phone.css"
+            ]
+        },
+        "A:widget/pages/setting/phone/verifycode/verifycode.async.js": {
+            "uri": "/static/A/widget/pages/setting/phone/verifycode/verifycode.async_dfb544e.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/setting/phone/verifycode/verifycode.async"
+            }
+        },
+        "A:widget/pages/setting/phone/verifycode/verifycode.css": {
+            "uri": "/static/A/widget/pages/setting/phone/verifycode/verifycode_3badee9.css",
+            "type": "css"
+        },
+        "A:widget/pages/setting/phone/verifycode/verifycode.js": {
+            "uri": "/static/A/widget/pages/setting/phone/verifycode/verifycode_96b5aa2.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/setting/phone/verifycode/verifycode.async.js"
+                ],
+                "moduleId": "A:widget/pages/setting/phone/verifycode/verifycode"
+            },
+            "deps": [
+                "A:widget/pages/setting/phone/verifycode/verifycode.css"
+            ]
+        },
+        "A:widget/pages/setting/setting.css": {
+            "uri": "/static/A/widget/pages/setting/setting_9bf4a2e.css",
+            "type": "css"
+        },
+        "A:widget/pages/setting/setting.js": {
+            "uri": "/static/A/widget/pages/setting/setting_0428a61.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/setting/setting"
+            },
+            "deps": [
+                "A:widget/pages/setting/all/all.js",
+                "A:widget/pages/setting/me/me.js",
+                "A:widget/pages/setting/phone/phone.js",
+                "A:widget/pages/setting/password/password.js",
+                "A:widget/pages/setting/suggestion/suggestion.js",
+                "A:widget/pages/setting/aboutus/aboutus.js",
+                "A:widget/pages/setting/setting.css"
+            ]
+        },
+        "A:widget/pages/setting/suggestion/suggestion.async.js": {
+            "uri": "/static/A/widget/pages/setting/suggestion/suggestion.async_9f6a7fa.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/setting/suggestion/suggestion.async"
+            }
+        },
+        "A:widget/pages/setting/suggestion/suggestion.css": {
+            "uri": "/static/A/widget/pages/setting/suggestion/suggestion_d41d8cd.css",
+            "type": "css"
+        },
+        "A:widget/pages/setting/suggestion/suggestion.js": {
+            "uri": "/static/A/widget/pages/setting/suggestion/suggestion_bfeb719.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/setting/suggestion/suggestion.async.js"
+                ],
+                "moduleId": "A:widget/pages/setting/suggestion/suggestion"
+            },
+            "deps": [
+                "A:widget/pages/setting/suggestion/suggestion.css"
+            ]
+        },
+        "A:widget/pages/song/song.async.js": {
+            "uri": "/static/A/widget/pages/song/song.async_aaba0af.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/song/song.async"
+            }
+        },
+        "A:widget/pages/song/song.css": {
+            "uri": "/static/A/widget/pages/song/song_f253f01.css",
+            "type": "css"
+        },
+        "A:widget/pages/song/song.js": {
+            "uri": "/static/A/widget/pages/song/song_29e10b0.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/song/song.async.js"
+                ],
+                "moduleId": "A:widget/pages/song/song"
+            },
+            "deps": [
+                "A:widget/pages/song/song.css"
+            ]
+        },
+        "A:widget/pages/story/story.async.js": {
+            "uri": "/static/A/widget/pages/story/story.async_c3462a1.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/pages/story/story.async"
+            }
+        },
+        "A:widget/pages/story/story.css": {
+            "uri": "/static/A/widget/pages/story/story_f91b3b7.css",
+            "type": "css"
+        },
+        "A:widget/pages/story/story.js": {
+            "uri": "/static/A/widget/pages/story/story_bc9a5ed.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "A:widget/pages/story/story.async.js"
+                ],
+                "moduleId": "A:widget/pages/story/story"
+            },
+            "deps": [
+                "A:widget/pages/story/story.css"
+            ]
+        },
+        "A:widget/partial/footer/footer.less": {
+            "uri": "/static/A/widget/partial/footer/footer_fe97315.css",
+            "type": "css"
+        },
+        "A:widget/router/router.js": {
+            "uri": "/static/A/widget/router/router_7fc42c4.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/router/router"
+            },
+            "deps": [
+                "A:widget/pages/main/main.js",
+                "A:widget/pages/story/story.js",
+                "A:widget/pages/english/english.js",
+                "A:widget/pages/song/song.js",
+                "A:widget/pages/child/child.js",
+                "A:widget/pages/growth/growth.js",
+                "A:widget/pages/setting/setting.js",
+                "A:widget/pages/register/register.js",
+                "A:widget/pages/login/login.js",
+                "A:widget/pages/reset/reset.js",
+                "A:widget/pages/search/search.js",
+                "A:widget/pages/imgcrop/imgcrop.js",
+                "A:widget/pages/activity/activity.js",
+                "A:widget/pages/discover/discover.js",
+                "A:widget/pages/institution/institution.js",
+                "A:widget/pages/city/city.js",
+                "A:widget/pages/instmore/instmore.js",
+                "A:widget/pages/course/course.js",
+                "A:widget/pages/message/message.js",
+                "A:widget/pages/mycourse/mycourse.js",
+                "A:widget/pages/myactivity/myactivity.js",
+                "A:widget/pages/order/order.js",
+                "A:widget/pages/pay/pay.js",
+                "A:widget/pages/score/score.js",
+                "A:widget/pages/coupon/coupon.js",
+                "A:widget/pages/myorder/myorder.js"
+            ]
+        },
+        "A:widget/shareService/shareService.js": {
+            "uri": "/static/A/widget/shareService/shareService_901a2a9.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/shareService/shareService"
+            }
+        },
+        "A:widget/UAdetect/UAdetect.js": {
+            "uri": "/static/A/widget/UAdetect/UAdetect_f15c92b.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/UAdetect/UAdetect"
+            }
+        },
+        "A:widget/webservice/webservice.js": {
+            "uri": "/static/A/widget/webservice/webservice_75523f7.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "A:widget/webservice/webservice"
+            }
+        }
+    },
+    "pkg": {}
+}

@@ -1,0 +1,15 @@
+.myorder-container .activity-container .detail-container .container {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.myorder-container .activity-container .detail-container .list-group-item {
+	margin-bottom: 0;
+  border: 0;
+  border-bottom: 1px solid #dddddd;
+  padding: 15px 0;
+}
+
+.myorder-container .activity-container .detail-container .list-group-item:last-child {
+  border-bottom: 0;
+}

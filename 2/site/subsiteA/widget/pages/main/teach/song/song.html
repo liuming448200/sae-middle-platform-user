@@ -1,0 +1,19 @@
+<!--
+    @require "song.css"
+-->
+
+<div class="song-container">
+  <div class="container">
+    <ul class="nav nav-tabs">
+      <li ui-sref-active="active">
+        <a href="javascript:;" ui-sref="main.teach.song.chinese">中文歌</a>
+      </li>
+      <li ui-sref-active="active">
+        <a href="javascript:;" ui-sref="main.teach.song.english">英文歌</a>
+      </li>
+    </ul>
+    <div class="content-container">
+      <div ui-view></div>
+    </div>
+  </div>
+</div>

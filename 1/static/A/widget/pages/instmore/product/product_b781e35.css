@@ -1,0 +1,31 @@
+.instmore-container .product-container .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.instmore-container .product-container .list-group-item .panel {
+  margin-bottom: 0;
+}
+
+.instmore-container .product-container .list-group-item .table > tbody > tr > td {
+  border-top: 0;
+  vertical-align: middle;
+}
+
+.instmore-container .product-container .list-group-item .price-origin {
+	text-decoration: line-through;
+	margin-left: 3px;
+}
+
+.instmore-container .product-container .list-group-item .price {
+	color: #ff6969;
+}
+
+.instmore-container .product-container .list-group-item i.fa-jpy {
+  font-size: 12px;
+}
+
+.instmore-container .product-container .list-group-item .total-price {
+  height: 34px;
+  line-height: 34px;
+}

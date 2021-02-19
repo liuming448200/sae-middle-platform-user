@@ -1,0 +1,217 @@
+<!--
+    @require "product.css"
+-->
+
+<div class="product-container">
+	<header class="header-container navbar-fixed-top">
+    <a href="javascript:;" class="header-btn header-pos-left" ng-click="back()">
+      <i class="fa fa-chevron-left"></i>
+    </a>
+    <a class="header-btn header-pos-right" href="javascript:;" ng-click="share()" ng-hide="weixinFlag">
+      <i class="fa fa-share"></i>
+    </a>
+    <div class="title">购买课程</div>
+  </header>
+  <div class="container">
+  	<div class="content-container">
+      <ul>
+        <rd-widget>
+          <rd-widget-body classes="no-padding" loading="loading" failing="failing" empty="empty">
+            <div scroll-trigger="loadMore()" trigger-run trigger-at-end trigger-persist trigger-active="!(loading || failing || empty || busy || lazy || finish || scrollDisabled)">
+              <li class="list-group-item">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">早教36课时包</h3>
+                  </div>
+                  <table class="table">
+                    <tr>
+                      <td>注册费：</td>
+                      <td>
+                        <span><i class="fa fa-jpy" aria-hidden="true"></i>360</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>每课时：</td>
+                      <td>
+                        <span><i class="fa fa-jpy" aria-hidden="true"></i>298</span>
+                        <small class="price-origin"><i class="fa fa-jpy" aria-hidden="true"></i>338</small>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>有效期：</td>
+                      <td>36个月</td>
+                    </tr>
+                    <tr>
+                      <td>活动：</td>
+                      <td>赠送大礼包</td>
+                    </tr>
+                  </table>
+                  <div class="panel-footer clearfix">
+                    <div class="total-price pull-left">
+                      <span><i class="fa fa-jpy" aria-hidden="true"></i><span class="price">12300</span></span>
+                      <small class="price-origin"><i class="fa fa-jpy" aria-hidden="true"></i>14400</small>
+                    </div>
+                    <button class="btn btn-success pull-right" ng-click="goOrder()">立即购买</button>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">早教36课时包</h3>
+                  </div>
+                  <table class="table">
+                    <tr>
+                      <td>注册费：</td>
+                      <td>
+                        <span><i class="fa fa-jpy" aria-hidden="true"></i>360</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>每课时：</td>
+                      <td>
+                        <span><i class="fa fa-jpy" aria-hidden="true"></i>298</span>
+                        <small class="price-origin"><i class="fa fa-jpy" aria-hidden="true"></i>338</small>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>有效期：</td>
+                      <td>36个月</td>
+                    </tr>
+                    <tr>
+                      <td>活动：</td>
+                      <td>赠送大礼包</td>
+                    </tr>
+                  </table>
+                  <div class="panel-footer clearfix">
+                    <div class="total-price pull-left">
+                      <span><i class="fa fa-jpy" aria-hidden="true"></i><span class="price">12300</span></span>
+                      <small class="price-origin"><i class="fa fa-jpy" aria-hidden="true"></i>14400</small>
+                    </div>
+                    <button class="btn btn-success pull-right" ng-click="goOrder()">立即购买</button>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">早教36课时包</h3>
+                  </div>
+                  <table class="table">
+                    <tr>
+                      <td>注册费：</td>
+                      <td>
+                        <span><i class="fa fa-jpy" aria-hidden="true"></i>360</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>每课时：</td>
+                      <td>
+                        <span><i class="fa fa-jpy" aria-hidden="true"></i>298</span>
+                        <small class="price-origin"><i class="fa fa-jpy" aria-hidden="true"></i>338</small>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>有效期：</td>
+                      <td>36个月</td>
+                    </tr>
+                    <tr>
+                      <td>活动：</td>
+                      <td>赠送大礼包</td>
+                    </tr>
+                  </table>
+                  <div class="panel-footer clearfix">
+                    <div class="total-price pull-left">
+                      <span><i class="fa fa-jpy" aria-hidden="true"></i><span class="price">12300</span></span>
+                      <small class="price-origin"><i class="fa fa-jpy" aria-hidden="true"></i>14400</small>
+                    </div>
+                    <button class="btn btn-success pull-right" ng-click="goOrder()">立即购买</button>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">早教36课时包</h3>
+                  </div>
+                  <table class="table">
+                    <tr>
+                      <td>注册费：</td>
+                      <td>
+                        <span><i class="fa fa-jpy" aria-hidden="true"></i>360</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>每课时：</td>
+                      <td>
+                        <span><i class="fa fa-jpy" aria-hidden="true"></i>298</span>
+                        <small class="price-origin"><i class="fa fa-jpy" aria-hidden="true"></i>338</small>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>有效期：</td>
+                      <td>36个月</td>
+                    </tr>
+                    <tr>
+                      <td>活动：</td>
+                      <td>赠送大礼包</td>
+                    </tr>
+                  </table>
+                  <div class="panel-footer clearfix">
+                    <div class="total-price pull-left">
+                      <span><i class="fa fa-jpy" aria-hidden="true"></i><span class="price">12300</span></span>
+                      <small class="price-origin"><i class="fa fa-jpy" aria-hidden="true"></i>14400</small>
+                    </div>
+                    <button class="btn btn-success pull-right" ng-click="goOrder()">立即购买</button>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">早教36课时包</h3>
+                  </div>
+                  <table class="table">
+                    <tr>
+                      <td>注册费：</td>
+                      <td>
+                        <span><i class="fa fa-jpy" aria-hidden="true"></i>360</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>每课时：</td>
+                      <td>
+                        <span><i class="fa fa-jpy" aria-hidden="true"></i>298</span>
+                        <small class="price-origin"><i class="fa fa-jpy" aria-hidden="true"></i>338</small>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>有效期：</td>
+                      <td>36个月</td>
+                    </tr>
+                    <tr>
+                      <td>活动：</td>
+                      <td>赠送大礼包</td>
+                    </tr>
+                  </table>
+                  <div class="panel-footer clearfix">
+                    <div class="total-price pull-left">
+                      <span><i class="fa fa-jpy" aria-hidden="true"></i><span class="price">12300</span></span>
+                      <small class="price-origin"><i class="fa fa-jpy" aria-hidden="true"></i>14400</small>
+                    </div>
+                    <button class="btn btn-success pull-right" ng-click="goOrder()">立即购买</button>
+                  </div>
+                </div>
+              </li>
+              <div class="scroll-loading" ng-show="busy">
+                <i class="fa fa-spinner fa-pulse"></i><span>加载中...</span>
+              </div>
+              <div class="scroll-loadfail" ng-show="lazy">加载失败，请检查网络连接...</div>
+              <div class="scroll-loadfinish" ng-show="finish">没有更多了</div>
+            </div>
+          </rd-widget-body>
+        </rd-widget>
+      </ul>
+    </div>
+  </div>
+</div>

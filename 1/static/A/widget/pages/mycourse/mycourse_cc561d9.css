@@ -1,0 +1,25 @@
+.mycourse-container .container {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.mycourse-container .table {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.mycourse-container .table > tbody > tr > td {
+  border-top: 0;
+  vertical-align: middle;
+  padding: 0;
+}
+
+.mycourse-container .list-group-item {
+  margin-bottom: 0;
+  border: 0;
+  border-bottom: 1px solid #dddddd;
+}
+
+.mycourse-container .list-group-item > table table {
+  text-align: left;
+}

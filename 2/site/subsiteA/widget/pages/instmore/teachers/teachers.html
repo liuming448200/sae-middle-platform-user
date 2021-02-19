@@ -1,0 +1,89 @@
+<!--
+    @require "teachers.css"
+-->
+
+<div class="teachers-container">
+	<header class="header-container navbar-fixed-top">
+    <a href="javascript:;" class="header-btn header-pos-left" ng-click="back()">
+      <i class="fa fa-times"></i>
+    </a>
+    <a class="header-btn header-pos-right" href="javascript:;" ng-click="share()" ng-hide="weixinFlag">
+      <i class="fa fa-share"></i>
+    </a>
+    <div class="title">师资力量</div>
+  </header>
+  <div class="container">
+  	<div class="content-container">
+      <div class="teacher-group">
+        <ul>
+          <rd-widget>
+            <rd-widget-body classes="no-padding" loading="loading" failing="failing" empty="empty">
+              <div scroll-trigger="loadMore()" trigger-run trigger-at-end trigger-persist trigger-active="!(loading || failing || empty || busy || lazy || finish || scrollDisabled)">
+                <li class="list-group-item">
+                  <div class="title text-center">
+                    <div class="title-text">王老师</div>
+                  </div>
+                  <div class="photo">
+                    <a href="javascript:;">
+                      <img class="img-responsive" src="static/images/default.jpg" alt="王老师">
+                    </a>
+                  </div>
+                  <p>王老师毕业于清华大学学前教育专业，5年早教经验，是孩子们特别喜欢的一位老师。</p>
+                </li>
+                <li class="list-group-item">
+                  <div class="title text-center">
+                    <div class="title-text">王老师</div>
+                  </div>
+                  <div class="photo">
+                    <a href="javascript:;">
+                      <img class="img-responsive" src="static/images/default.jpg" alt="王老师">
+                    </a>
+                  </div>
+                  <p>王老师毕业于清华大学学前教育专业，5年早教经验，是孩子们特别喜欢的一位老师。</p>
+                </li>
+                <li class="list-group-item">
+                  <div class="title text-center">
+                    <div class="title-text">王老师</div>
+                  </div>
+                  <div class="photo">
+                    <a href="javascript:;">
+                      <img class="img-responsive" src="static/images/default.jpg" alt="王老师">
+                    </a>
+                  </div>
+                  <p>王老师毕业于清华大学学前教育专业，5年早教经验，是孩子们特别喜欢的一位老师。</p>
+                </li>
+                <li class="list-group-item">
+                  <div class="title text-center">
+                    <div class="title-text">王老师</div>
+                  </div>
+                  <div class="photo">
+                    <a href="javascript:;">
+                      <img class="img-responsive" src="static/images/default.jpg" alt="王老师">
+                    </a>
+                  </div>
+                  <p>王老师毕业于清华大学学前教育专业，5年早教经验，是孩子们特别喜欢的一位老师。</p>
+                </li>
+                <li class="list-group-item">
+                  <div class="title text-center">
+                    <div class="title-text">王老师</div>
+                  </div>
+                  <div class="photo">
+                    <a href="javascript:;">
+                      <img class="img-responsive" src="static/images/default.jpg" alt="王老师">
+                    </a>
+                  </div>
+                  <p>王老师毕业于清华大学学前教育专业，5年早教经验，是孩子们特别喜欢的一位老师。</p>
+                </li>
+                <div class="scroll-loading" ng-show="busy">
+                  <i class="fa fa-spinner fa-pulse"></i><span>加载中...</span>
+                </div>
+                <div class="scroll-loadfail" ng-show="lazy">加载失败，请检查网络连接...</div>
+                <div class="scroll-loadfinish" ng-show="finish">没有更多了</div>
+              </div>
+            </rd-widget-body>
+          </rd-widget>
+        </ul>
+      </div>
+  	</div>
+  </div>
+</div>

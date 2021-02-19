@@ -1,0 +1,86 @@
+.widget {
+    .widget-header {
+        .row > div {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.waiting-container {
+  background: rgba(0,0,0,.4);
+  overflow-x: hidden;
+  overflow-y: auto;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1051;
+  text-align: center;
+}
+
+.waiting {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  left: 50%;
+  margin-left: -100px;
+  background: #FFFFFF;
+  border-radius: 7px;
+}
+
+.waiting-inner-container {
+  position: relative;
+  top: 31px;
+}
+
+.loading-container {
+  text-align: center;
+  margin: 100px auto;
+  width: 200px;
+  height: 100px;
+  position: relative;
+}
+
+.loading {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  left: 50%;
+  margin-left: -100px;
+  background: rgba(0,0,0,.6);
+  border-radius: 7px;
+  color: white;
+}
+
+.loading-inner-container {
+  position: relative;
+  top: 31px;
+}
+
+.load-fail, .load-empty {
+  text-align: center;
+  margin: 100px auto;
+}
+
+.toast {
+  color: white;
+  font-size: .9em;
+  text-align: center;
+  position: fixed;
+  bottom: 100px;
+  width: 100%;
+  left: 0;
+  .msg {
+    display: inline-block;
+    padding: 10px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+  }
+}

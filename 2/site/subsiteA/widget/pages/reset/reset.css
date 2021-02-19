@@ -1,0 +1,13 @@
+.reset-container table {
+  width: 100%;
+}
+
+.reset-container .verifycode {
+  padding-left: 5px;
+  vertical-align: middle;
+}
+
+.reset-container .verifycode button {
+  font-size: 14px;
+  width: 100%;
+}

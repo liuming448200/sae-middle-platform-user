@@ -1,0 +1,129 @@
+<!--
+    @require "activity.css"
+-->
+
+<div class="activity-container">
+	<rd-widget>
+		<rd-widget-body classes="no-padding" loading="loading" failing="failing" empty="empty">
+			<div scroll-trigger="loadMore()" trigger-run trigger-at-end trigger-persist trigger-active="!(loading || failing || empty || busy || lazy || finish || scrollDisabled)">
+				<a ui-sref="activity" class="list-group-item">
+	        <div class="media">
+	          <div class="pull-left">
+	            <img class="media-object" src="static/images/default.jpg" alt="要参加">
+	          </div>
+	          <div class="media-body">
+	            <h4 class="media-heading">风度小骑士</h4>
+	            <div class="short">
+	              <span class="label label-danger">3岁以上</span>
+	              <span class="label label-warning">户外</span>
+	              <span class="label label-info">家长陪同</span>
+	              <span class="label label-primary">划课</span>
+	              <span class="label label-primary">收费</span>
+	            </div>
+	            <p class="time">2017-05-20 周六 9:00-10:45</p>
+	            <div class="number clearfix">
+	            	<p class="pull-right">
+	            		剩余名额：<span class="left">1</span>
+	            	</p>
+	            </div>
+	          </div>
+	        </div>
+	      </a>
+	      <a ui-sref="activity" class="list-group-item">
+	        <div class="media">
+	          <div class="pull-left">
+	            <img class="media-object" src="static/images/default.jpg" alt="要参加">
+	          </div>
+	          <div class="media-body">
+	            <h4 class="media-heading">风度小骑士</h4>
+	            <div class="short">
+	              <span class="label label-danger">3岁以上</span>
+	              <span class="label label-warning">场内</span>
+	              <span class="label label-info">独立参加</span>
+	              <span class="label label-primary">划课</span>
+	            </div>
+	            <p class="time">2017-03-20 周一 15:00-17:00</p>
+	            <div class="number clearfix">
+	            	<p class="pull-right">
+	            		剩余名额：<span class="left">1</span>
+	            	</p>
+	            </div>
+	          </div>
+	        </div>
+	      </a>
+	      <a ui-sref="activity" class="list-group-item">
+	        <div class="media">
+	          <div class="pull-left">
+	            <img class="media-object" src="static/images/default.jpg" alt="要参加">
+	          </div>
+	          <div class="media-body">
+	            <h4 class="media-heading">风度小骑士</h4>
+	            <div class="short">
+	              <span class="label label-danger">3岁以上</span>
+	              <span class="label label-warning">中心内</span>
+	              <span class="label label-info">家长陪同</span>
+	              <span class="label label-primary">收费</span>
+	            </div>
+	            <p class="time">2017-03-20 周一 15:00-17:00</p>
+	            <div class="number clearfix">
+	            	<p class="pull-right">
+	            		剩余名额：<span class="left">1</span>
+	            	</p>
+	            </div>
+	          </div>
+	        </div>
+	      </a>
+	      <a ui-sref="activity" class="list-group-item">
+	        <div class="media">
+	          <div class="pull-left">
+	            <img class="media-object" src="static/images/default.jpg" alt="要参加">
+	          </div>
+	          <div class="media-body">
+	            <h4 class="media-heading">风度小骑士</h4>
+	            <div class="short">
+	              <span class="label label-danger">3岁以上</span>
+	              <span class="label label-warning">户外</span>
+	              <span class="label label-info">家长陪同</span>
+	              <span class="label label-primary">免费</span>
+	            </div>
+	            <p class="time">2017-03-20 周一 15:00-17:00</p>
+	            <div class="number clearfix">
+	            	<p class="pull-right">
+	            		剩余名额：<span class="left">1</span>
+	            	</p>
+	            </div>
+	          </div>
+	        </div>
+	      </a>
+	      <a ui-sref="activity" class="list-group-item">
+	        <div class="media">
+	          <div class="pull-left">
+	            <img class="media-object" src="static/images/default.jpg" alt="要参加">
+	          </div>
+	          <div class="media-body">
+	            <h4 class="media-heading">风度小骑士</h4>
+	            <div class="short">
+	              <span class="label label-danger">3岁以上</span>
+	              <span class="label label-warning">户外</span>
+	              <span class="label label-info">家长陪同</span>
+	              <span class="label label-primary">划课</span>
+	              <span class="label label-primary">收费</span>
+	            </div>
+	            <p class="time">2017-03-20 周一 15:00-17:00</p>
+	            <div class="number clearfix">
+	            	<p class="pull-right">
+	            		剩余名额：<span class="left">1</span>
+	            	</p>
+	            </div>
+	          </div>
+	        </div>
+	      </a>
+				<div class="scroll-loading" ng-show="busy">
+	        <i class="fa fa-spinner fa-pulse"></i><span>加载中...</span>
+	      </div>
+	      <div class="scroll-loadfail" ng-show="lazy">加载失败，请检查网络连接...</div>
+	      <div class="scroll-loadfinish" ng-show="finish">没有更多了</div>
+			</div>
+		</rd-widget-body>
+	</rd-widget>
+</div>

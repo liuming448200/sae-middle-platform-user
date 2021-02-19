@@ -1,0 +1,84 @@
+<!--
+    @require "add.css"
+-->
+
+<div class="add-container">
+  <header class="header-container navbar-fixed-top">
+    <a class="header-btn header-pos-left" href="javascript:;" ui-sref="main.user">
+      <i class="fa fa-chevron-left"></i>
+    </a>
+    <div class="title">添加孩子</div>
+  </header>
+  <div class="container">
+    <div class="content-container">
+      <div class="well">
+        <form class="form-horizontal" role="form" name="addChildInfoForm" novalidate ng-submit="addChildInfoSubmit()">
+          <div class="form-group">
+            <label for="inputpic" class="col-sm-2 control-label">头像</label>
+            <div class="col-sm-10">
+              <input type="file" id="inputpic" rd-picupload="myPic" accept="image/*" style="display:none;">
+              <a href="javascript:;" ng-click="upload()">
+                <img class="img-responsive img-portrait" src="static/images/portrait.png" ng-src="{{head_portrait}}" alt="{{childInfo.picname}}">
+              </a>
+              <p class="help-block">备注：点击图片进行更换，最后点击页面底部的按钮使更换生效。</p>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="nickname" class="col-sm-2 control-label">昵称</label>
+            <div class="col-sm-10">
+               <input type="text" class="form-control" id="nickname" name="nickname" ng-model="childInfo.nickname" ng-trim="true" required ng-maxlength="100" placeholder="请输入孩子小名">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="realname" class="col-sm-2 control-label">姓名</label>
+            <div class="col-sm-10">
+               <input type="text" class="form-control" id="realname" name="realname" ng-model="childInfo.realname" ng-trim="true" required ng-maxlength="50" placeholder="请输入孩子姓名">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="gender" class="col-sm-2 control-label">性别</label>
+            <div class="col-sm-10">
+               <label class="checkbox-inline" style="padding-left: 0;">
+                  <input type="radio" name="gender" id="gendermale" value="1" ng-model="childInfo.gender"> 男
+               </label>
+               <label class="checkbox-inline" style="padding-left: 0;">
+                  <input type="radio" name="gender" id="genderfemale" value="2" ng-model="childInfo.gender"> 女
+               </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="birthday" class="col-sm-2 control-label">出生日期</label>
+            <div class="col-sm-10">
+               <input type="date" class="form-control" id="birthday" name="birthday" ng-model="birthday" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="relation" class="col-sm-2 control-label">关系</label>
+            <div class="col-sm-10">
+              <div class="relationship-outer">
+                <input type="text" class="form-control" id="relation" name="relation" ng-model="childInfo.relationship" ng-trim="true" ng-maxlength="10" placeholder="我是孩子的..." autocomplete="off" spellcheck="false" autocorrect="off" ng-focus="focusRelation()" ng-keyup="checkRelation()" ng-blur="blurRelation()">
+                <ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-1" tabindex="0" style="width:100%; top:34px;" ng-show="showRelations">
+                  <li class="ui-menu-item" id="ui-id-{{relation.id}}" tabindex="-1" ng-click="selectRelation(relation.name)" ng-repeat="relation in relations">{{relation.name}}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="form-group" ng-if="showCheckboxFlag">
+            <div class="col-sm-offset-2 col-sm-10">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="current" ng-model="childInfo.current" ng-true-value="'1'" ng-false-value="'0'">设置为默认孩子
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10" style="text-align: center;">
+               <button type="submit" class="btn btn-success">确定</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

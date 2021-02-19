@@ -1,0 +1,213 @@
+<!--
+    @require "user.css"
+-->
+
+<div class="user-container">
+	<header class="header-container navbar-fixed-top">
+    <a class="header-btn header-pos-left" ui-sref="setting">
+      <i class="fa fa-cog" aria-hidden="true"></i>
+    </a>
+    <a class="header-btn header-pos-right" ui-sref="message">
+      <i class="fa fa-envelope" aria-hidden="true"></i>
+      <i class="fa fa-circle" aria-hidden="true"></i>
+    </a>
+    <div class="title">家长中心</div>
+  </header>
+  <div class="container">
+    <div class="head">
+      <a ui-sref="setting.me({from:$state.current.name})" class="media well">
+        <table style="width:100%;">
+          <tr>
+            <td>
+              <table>
+                <tr>
+                  <td style="padding-right:5px;">
+                    <div class="media-body">
+                      <img src="static/images/portrait.png" ng-src="{{head_portrait}}" class="media-object img-portrait">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="media-body">
+                      <h4 class="media-heading">
+                        {{userInfo.nickname}}
+                      </h4>
+                      <p>
+                        {{childInfo.nickname}} {{childInfo.birthday|birthdayFormat}}
+                      </p>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <p class="arrow">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </a>
+    </div>
+    <div class="list-outer">
+      <ul class="list-group">
+        <a ui-sref="child" class="list-group-item">
+          <table>
+            <tr>
+              <td>
+                <p class="item-title">
+                  <i class="fa fa-child" aria-hidden="true"></i>
+                  我的孩子
+                </p>
+              </td>
+              <td>
+                <p class="arrow">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </p>
+              </td>
+            </tr>
+          </table>
+        </a>
+        <li class="list-group-item list-horizontal">
+          <table>
+            <tr>
+              <td>
+                <a ui-sref="mycourse" class="block">
+                  <table class="table-common">
+                    <tr>
+                      <td>
+                        <h3><i class="fa fa-calendar" aria-hidden="true"></i></h3>
+                        <p>课程管理</p>
+                      </td>
+                      <td>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </td>
+                    </tr>
+                  </table>
+                </a>
+              </td>
+              <td>
+                <a ui-sref="myactivity" class="block">
+                  <table class="table-common">
+                    <tr>
+                      <td>
+                        <h3><i class="fa fa-calendar-o" aria-hidden="true"></i></h3>
+                        <p>活动管理</p>
+                      </td>
+                      <td>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </td>
+                    </tr>
+                  </table>
+                </a>
+              </td>
+              <td>
+                <a ui-sref="growth" class="block">
+                  <table class="table-common">
+                    <tr>
+                      <td>
+                        <h3><i class="fa fa-archive" aria-hidden="true"></i></h3>
+                        <p>成长档案</p>
+                      </td>
+                      <td>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </td>
+                    </tr>
+                  </table>
+                </a>
+              </td>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </div>
+    <div class="list-outer">
+      <ul class="list-group">
+        <li class="list-group-item">
+          <table>
+            <tr>
+              <td>
+                <p class="item-title">
+                  订单管理
+                </p>
+              </td>
+            </tr>
+          </table>
+        </li>
+        <li class="list-group-item list-horizontal">
+          <table>
+            <tr>
+              <td>
+                <a ui-sref="myorder.activity" class="block">
+                  <table class="table-common">
+                    <tr>
+                      <td>
+                        <h3><i class="fa fa-tasks" aria-hidden="true"></i></h3>
+                        <p>活动订单</p>
+                      </td>
+                      <td>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </td>
+                    </tr>
+                  </table>
+                </a>
+              </td>
+              <td>
+                <a ui-sref="myorder.course" class="block">
+                  <table class="table-common">
+                    <tr>
+                      <td>
+                        <h3><i class="fa fa-shopping-bag" aria-hidden="true"></i></h3>
+                        <p>课程订单</p>
+                      </td>
+                      <td>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </td>
+                    </tr>
+                  </table>
+                </a>
+              </td>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </div>
+    <div class="list-outer">
+      <ul class="list-group">
+        <a ui-sref="score.availpoints({from:$state.current.name})" class="list-group-item">
+          <table>
+            <tr>
+              <td>
+                <p class="item-title">
+                  <i class="fa fa-clone" aria-hidden="true"></i>
+                  积分管理
+                </p>
+              </td>
+              <td>
+                <p class="arrow">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </p>
+              </td>
+            </tr>
+          </table>
+        </a>
+        <a ui-sref="coupon" class="list-group-item">
+          <table>
+            <tr>
+              <td>
+                <p class="item-title">
+                  <i class="fa fa-gift" aria-hidden="true"></i>
+                  优惠券管理
+                </p>
+              </td>
+              <td>
+                <p class="arrow">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </p>
+              </td>
+            </tr>
+          </table>
+        </a>
+      </ul>
+    </div>
+  </div>
+</div>

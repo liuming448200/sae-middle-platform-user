@@ -1,0 +1,32 @@
+<!--
+    @require "list.css"
+-->
+
+<div class="list-container">
+	<div class="content-container">
+		<rd-widget>
+			<rd-widget-body classes="no-padding" loading="loading" failing="failing" empty="empty">
+				<div scroll-trigger="loadMore()" trigger-run trigger-at-end trigger-persist trigger-active="!(loading || failing || empty || busy || lazy || finish || scrollDisabled)">
+		      <div class="list-group-item" ng-repeat="item in items">
+		        <a ui-sref="discover.detail({news_id:item.news_id})" class="thumbnail">
+	            <img src="static/images/default.jpg" lazy-img="{{item.news_pic}}" scroll-trigger="displayImage()" alt="{{item.news_title}}">
+	            <div class="cover-layer cover-layer-color"></div>
+	            <div class="cover-layer">
+	            	<table>
+	            		<tr>
+	            			<td>{{item.news_title}}</td>
+	            		</tr>
+	            	</table>
+	            </div>
+	        	</a>
+		      </div>
+		      <div class="scroll-loading" ng-show="busy">
+		        <i class="fa fa-spinner fa-pulse"></i><span>加载中...</span>
+		      </div>
+		      <div class="scroll-loadfail" ng-show="lazy">加载失败，请检查网络连接...</div>
+		      <div class="scroll-loadfinish" ng-show="finish">没有更多了</div>
+		    </div>
+			</rd-widget-body>
+		</rd-widget>
+	</div>
+</div>

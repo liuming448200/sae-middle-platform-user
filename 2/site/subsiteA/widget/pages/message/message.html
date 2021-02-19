@@ -1,0 +1,204 @@
+<!--
+    @require "message.css"
+-->
+
+<div class="message-container">
+	<header class="header-container navbar-fixed-top">
+    <a class="header-btn header-pos-left" ui-sref="main.user">
+      <i class="fa fa-times"></i>
+    </a>
+    <div class="title">消息中心</div>
+  </header>
+  <div class="container">
+  	<div class="content-container">
+      <ul>
+    		<rd-widget>
+          <rd-widget-body classes="no-padding" loading="loading" failing="failing" empty="empty">
+            <ul scroll-trigger="loadMore()" trigger-run trigger-at-end trigger-persist trigger-active="!(loading || failing || empty || busy || lazy || finish || scrollDisabled)">
+              <li class="list-group-item">
+                <a ui-sref="activity">
+                  <h3 class="title">风度小骑士</h3>
+                  <span class="status">即将开始</span>
+                  <div class="info">
+                    <table>
+                      <tr>
+                        <td>
+                          <p class="time">
+                            活动时间：
+                            <span>2017-07-17 星期一 9:00-11:00</span>
+                          </p>
+                          <p class="address">
+                            活动地点：
+                            <span>南宫赛马场</span>
+                          </p>
+                        </td>
+                        <td>
+                          <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a href="javascript:;">
+                  <h3 class="title">健身课</h3>
+                  <span class="status">即将开始</span>
+                  <div class="info">
+                    <table>
+                      <tr>
+                        <td>
+                          <p class="time">
+                            上课时间：
+                            <span>2017-07-17 星期一 9:00-9:45</span>
+                          </p>
+                          <p class="address">
+                            上课地点：
+                            <span>纽约国际儿童俱乐部西红门鸿坤中心</span>
+                          </p>
+                        </td>
+                        <td>
+                          <i class="fa fa-angle-right" aria-hidden="true" ng-show=""></i>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a ui-sref="activity">
+                  <h3 class="title">风度小骑士</h3>
+                  <span class="status">即将开始</span>
+                  <div class="info">
+                    <table>
+                      <tr>
+                        <td>
+                          <p class="time">
+                            活动时间：
+                            <span>2017-07-17 星期一 9:00-11:00</span>
+                          </p>
+                          <p class="address">
+                            活动地点：
+                            <span>南宫赛马场</span>
+                          </p>
+                        </td>
+                        <td>
+                          <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a ui-sref="activity">
+                  <h3 class="title">风度小骑士</h3>
+                  <span class="status">即将开始</span>
+                  <div class="info">
+                    <table>
+                      <tr>
+                        <td>
+                          <p class="time">
+                            活动时间：
+                            <span>2017-07-17 星期一 9:00-11:00</span>
+                          </p>
+                          <p class="address">
+                            活动地点：
+                            <span>南宫赛马场</span>
+                          </p>
+                        </td>
+                        <td>
+                          <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a ui-sref="activity">
+                  <h3 class="title">风度小骑士</h3>
+                  <span class="status">即将开始</span>
+                  <div class="info">
+                    <table>
+                      <tr>
+                        <td>
+                          <p class="time">
+                            活动时间：
+                            <span>2017-07-17 星期一 9:00-11:00</span>
+                          </p>
+                          <p class="address">
+                            活动地点：
+                            <span>南宫赛马场</span>
+                          </p>
+                        </td>
+                        <td>
+                          <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a ui-sref="activity">
+                  <h3 class="title">风度小骑士</h3>
+                  <span class="status">即将开始</span>
+                  <div class="info">
+                    <table>
+                      <tr>
+                        <td>
+                          <p class="time">
+                            活动时间：
+                            <span>2017-07-17 星期一 9:00-11:00</span>
+                          </p>
+                          <p class="address">
+                            活动地点：
+                            <span>南宫赛马场</span>
+                          </p>
+                        </td>
+                        <td>
+                          <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a ui-sref="activity">
+                  <h3 class="title">风度小骑士</h3>
+                  <span class="status">即将开始</span>
+                  <div class="info">
+                    <table>
+                      <tr>
+                        <td>
+                          <p class="time">
+                            活动时间：
+                            <span>2017-07-17 星期一 9:00-11:00</span>
+                          </p>
+                          <p class="address">
+                            活动地点：
+                            <span>南宫赛马场</span>
+                          </p>
+                        </td>
+                        <td>
+                          <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </a>
+              </li>
+              <div class="scroll-loading" ng-show="busy">
+                <i class="fa fa-spinner fa-pulse"></i><span>加载中...</span>
+              </div>
+              <div class="scroll-loadfail" ng-show="lazy">加载失败，请检查网络连接...</div>
+              <div class="scroll-loadfinish" ng-show="finish">没有更多了</div>
+            </ul>
+          </rd-widget-body>
+        </rd-widget>
+      </ul>
+  	</div>
+  </div>
+</div>

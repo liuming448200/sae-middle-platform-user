@@ -1,0 +1,172 @@
+.order-container .container {
+	padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 47px;
+}
+
+.order-container .order-info,
+.order-container .coupon-info {
+	background-color: #f0eff5;
+  padding-bottom: 10px;
+}
+
+.order-container .pay-info {
+  background: #ffffff;
+  padding-bottom: 0;
+}
+
+.order-container .order-info > ul,
+.order-container .coupon-info > ul {
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #ffffff;
+}
+
+.order-container .list-group-item {
+	margin-bottom: 0;
+  border: 0;
+  border-bottom: 1px solid #dddddd;
+  padding: 15px 0;
+}
+
+.order-container a.list-group-item {
+  background-color: #ffffff;
+}
+
+.order-container .list-group-item:last-child {
+  border-bottom: 0;
+}
+
+.order-container .order-info .list-group-item .price-origin {
+  text-decoration: line-through;
+  margin-left: 3px;
+}
+
+.order-container .order-info .list-group-item .price {
+  color: #ff6969;
+}
+
+.order-container .order-info .list-group-item i.fa-jpy {
+  font-size: 12px;
+}
+
+.order-container .coupon-info .list-group-item > table {
+  width: 100%;
+}
+
+.order-container .coupon-info .list-group-item > table td {
+  vertical-align: middle;
+}
+
+.order-container .coupon-info .list-group-item > table td:last-child {
+  font-size: 18px;
+  width: 20px;
+  text-align: right;
+}
+
+.order-container .coupon-info .coupon-tip {
+  padding: 2px 8px;
+  background: #f23030;
+  color: #fff;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.order-container .pay-info {
+	padding: 10px 15px;
+}
+
+.order-container .pay-info .pay-item {
+	margin-bottom: 10px;
+}
+
+.order-container .pay-info .reset-item {
+  display: block;
+  background-color: #F7F7F7;
+  padding: 10px;
+}
+
+.order-container .pay-info .reset-item:last-of-type {
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.order-container .pay-info .reset-item.collapsed {
+  border-bottom: 0;
+}
+
+.order-container .pay-info .img-common {
+  width: 30px;
+  height: 30px;
+  background-size: 100% 100%;
+}
+
+.order-container .pay-info .pay-text {
+  height: 30px;
+  line-height: 30px;
+  margin-left: 40px;
+}
+
+.order-container .pay-info .more {
+  position: relative;
+}
+
+.order-container .pay-info .more i {
+  position: absolute;
+  right: 7px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 22px;
+}
+
+.order-container .pay-info > a i:first-of-type {
+  display: none;
+}
+
+.order-container .pay-info > a i:last-of-type {
+  display: inline-block;
+}
+
+.order-container .pay-info > a.collapsed i:first-of-type {
+  display: inline-block;
+}
+
+.order-container .pay-info > a.collapsed i:last-of-type {
+  display: none;
+}
+
+.order-container .footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1030;
+  text-align: center;
+  margin-top: 20px;
+  background-color: #FFFFFF;
+  border-top: 1px solid #e5e5e5;
+}
+
+.order-container .footer > .pay {
+  height: 46px;
+}
+
+.order-container .footer > .pay > table {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.order-container .footer > .pay > table td {
+  vertical-align: middle;
+}
+
+.order-container .footer > .pay > table span {
+  color:#01B7CF;
+}
+
+.order-container .footer > .pay > table button {
+  width: 100%;
+  border-radius: 0;
+  background-color: #5cb85c;
+  border-color: #5cb85c;
+}

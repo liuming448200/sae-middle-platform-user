@@ -1,0 +1,75 @@
+.score-container .chargerecord-container .list-group-item {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 0;
+	border-radius: 6px;
+}
+
+.score-container .chargerecord-container .list-group-item:first-child {
+	margin-top: 0;
+}
+
+.score-container .chargerecord-container .list-group-item > a {
+	display: block;
+	overflow: hidden;
+	border-radius: 6px;
+}
+
+.score-container .chargerecord-container .circle {
+	width: 48px;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	border-radius: 50%;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #5cb85c;
+	color: #5cb85c;
+	margin: auto;
+}
+
+.score-container .chargerecord-container .list-group-item .quan-l {
+	float: left;
+	width: 90%;
+	height: 84px;
+  background-color: #fff;
+}
+
+.score-container .chargerecord-container .list-group-item .quan-l > table > tbody > tr > td:first-child {
+	width: 30%;
+}
+
+.score-container .chargerecord-container .list-group-item .quan-l .qu-info {
+	text-align: left;
+	color: #93939e;
+}
+
+.score-container .chargerecord-container .list-group-item .quan-l .qu-info .qu-name {
+	display: block;
+  color: #60606c;
+  height: 26px;
+  line-height: 26px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.score-container .chargerecord-container .list-group-item .quan-l .qu-info .qu-exch {
+	display: block;
+	font-size: 14px;
+	height: 18px;
+	line-height: 18px;
+}
+
+.score-container .chargerecord-container .list-group-item .quan-l .qu-info .qu-date {
+  display: block;
+  font-size: 14px;
+  height: 18px;
+	line-height: 18px;
+}
+
+.score-container .chargerecord-container .list-group-item .quan-r {
+	float: left;
+	width: 10%;
+	height: 84px;
+}

@@ -1,0 +1,35 @@
+.instmore-container .environment-container img {
+  margin: auto;
+}
+
+.instmore-container .environment-container .photo {
+	margin: 10px 0;
+	text-align: center;
+}
+
+.instmore-container .environment-container .photo span {
+  font-size: 14px;
+  color: #404040;
+}
+
+.instmore-container .environment-container .list-group-item {
+  padding: 0;
+}
+
+.instmore-container .environment-container .list-group-item .title {
+	margin-bottom: 15px;
+}
+
+.instmore-container .environment-container .list-group-item .title-text {
+	display: inline-block;
+	border: 10px solid transparent;
+	-webkit-border-image: url(../images/border.png) 30 30 stretch; /* Safari 5 and older */
+	-o-border-image: url(../images/border.png) 30 30 stretch; /* Opera */
+	border-image: url(../images/border.png) 30 30 stretch;
+}
+
+.instmore-container .environment-container .list-group-item p {
+  margin: 10px 0;
+  text-align: justify;
+  text-indent: 2em;
+}

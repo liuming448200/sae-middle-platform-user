@@ -1,0 +1,112 @@
+<!--
+    @require "list.css"
+-->
+
+<div class="list-container">
+	<rd-widget>
+	  <rd-widget-body classes="no-padding" loading="loading" failing="failing" empty="empty">
+	    <div scroll-trigger="loadMore()" trigger-run trigger-at-end trigger-persist trigger-active="!(loading || failing || empty || busy || lazy || finish || scrollDisabled)">
+	      <a ui-sref="instmore.course.detail" class="list-group-item">
+	        <div class="media">
+	          <div class="pull-left">
+	            <img class="media-object" src="static/images/default.jpg" alt="选课程">
+	          </div>
+	          <div class="media-body">
+	            <h4 class="media-heading">运动课</h4>
+	            <div class="time">
+	              <span class="label label-danger">6-12个月</span>
+	              <span class="label label-warning">45分钟</span>
+	              <span class="label label-info">家长陪同</span>
+	              <span class="label label-primary">8人满班</span>
+	            </div>
+	            <p class="target">
+	            	培养核心能力：身体协调能力 社会交往能力 团队协作能力
+	            </p>
+	          </div>
+	        </div>
+	      </a>
+	      <a ui-sref="instmore.course.detail" class="list-group-item">
+	        <div class="media">
+	          <div class="pull-left">
+	            <img class="media-object" src="static/images/default.jpg" alt="选课程">
+	          </div>
+	          <div class="media-body">
+	            <h4 class="media-heading">运动课</h4>
+	            <div class="time">
+	              <span class="label label-danger">6-12个月</span>
+	              <span class="label label-warning">45分钟</span>
+	              <span class="label label-info">家长陪同</span>
+	              <span class="label label-primary">10人满班</span>
+	            </div>
+	            <p class="target">
+	            	培养核心能力：身体协调能力 社会交往能力 团队协作能力
+	            </p>
+	          </div>
+	        </div>
+	      </a>
+	      <a ui-sref="instmore.course.detail" class="list-group-item">
+	        <div class="media">
+	          <div class="pull-left">
+	            <img class="media-object" src="static/images/default.jpg" alt="选课程">
+	          </div>
+	          <div class="media-body">
+	            <h4 class="media-heading">运动课</h4>
+	            <div class="time">
+	              <span class="label label-danger">6-12个月</span>
+	              <span class="label label-warning">45分钟</span>
+	              <span class="label label-info">家长陪同</span>
+	              <span class="label label-primary">12人满班</span>
+	            </div>
+	            <p class="target">
+	            	培养核心能力：身体协调能力 社会交往能力 团队协作能力
+	            </p>
+	          </div>
+	        </div>
+	      </a>
+	      <a ui-sref="instmore.course.detail" class="list-group-item">
+	        <div class="media">
+	          <div class="pull-left">
+	            <img class="media-object" src="static/images/default.jpg" alt="选课程">
+	          </div>
+	          <div class="media-body">
+	            <h4 class="media-heading">运动课</h4>
+	            <div class="time">
+	              <span class="label label-danger">6-12个月</span>
+	              <span class="label label-warning">45分钟</span>
+	              <span class="label label-info">独自上课</span>
+	              <span class="label label-primary">8人满班</span>
+	            </div>
+	            <p class="target">
+	            	培养核心能力：身体协调能力 社会交往能力 团队协作能力
+	            </p>
+	          </div>
+	        </div>
+	      </a>
+	      <a ui-sref="instmore.course.detail" class="list-group-item">
+	        <div class="media">
+	          <div class="pull-left">
+	            <img class="media-object" src="static/images/default.jpg" alt="选课程">
+	          </div>
+	          <div class="media-body">
+	            <h4 class="media-heading">运动课</h4>
+	            <div class="time">
+	              <span class="label label-danger">6-12个月</span>
+	              <span class="label label-warning">90分钟</span>
+	              <span class="label label-info">独自上课</span>
+	              <span class="label label-primary">8人满班</span>
+	            </div>
+	            <p class="target">
+	            	培养核心能力：身体协调能力 社会交往能力 团队协作能力
+	            </p>
+	          </div>
+	        </div>
+	      </a>
+	      <div class="scroll-loading" ng-show="busy">
+	        <i class="fa fa-spinner fa-pulse"></i><span>加载中...</span>
+	      </div>
+	      <div class="scroll-loadfail" ng-show="lazy">加载失败，请检查网络连接...</div>
+	      <div class="scroll-loadfinish" ng-show="finish">没有更多了</div>
+	    </div>
+	  </rd-widget-body>
+	</rd-widget>
+</div>

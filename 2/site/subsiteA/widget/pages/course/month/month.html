@@ -1,0 +1,120 @@
+<!--
+    @require "month.css"
+-->
+
+<div class="month-container">
+	<div class="header clearfix">
+		<div class="pull-left">
+			<a href="javascript:;" ng-click="prevMonth()">
+				<i class="fa fa-chevron-left"></i>
+				前一月
+			</a>
+		</div>
+		<div class="pull-right">
+			<a href="javascript:;" ng-click="nextMonth()">
+				后一月
+				<i class="fa fa-chevron-right"></i>
+			</a>
+		</div>
+		<div class="text-center">{{date|monthFormat}}</div>
+	</div>
+	<div class="table-responsive">
+		<table class="table" style="table-layout:fixed;">
+			<thead>
+				<tr>
+					<th>一</th>
+					<th>二</th>
+					<th>三</th>
+					<th>四</th>
+					<th>五</th>
+					<th>六</th>
+					<th>日</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="item in items">
+					<td ng-repeat="one in item">
+						<table class="oneday" ng-class="{active:one.todayFlag, in:one.currentFlag}" ng-if="one.showFlag">
+							<tr>
+								<td>
+									<a href="javascript:;" ng-click="getCurrent(one)">{{one.day}}</a>
+									<div class="course-flag course-flag-color-1 course-flag-pos" ng-if="one.scheduleCourseFlag"></div>
+									<div class="course-flag course-flag-color-2 course-flag-pos" ng-if="one.reserveCourseFlag"></div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="help-block clearfix">
+		<div class="pull-left">
+			<table class="table" style="height:34px;">
+				<tr>
+					<td style="padding:0;">
+						<div class="course-flag course-flag-color-1"></div>
+					</td>
+					<td style="padding:0;">有课</td>
+				</tr>
+			</table>
+		</div>
+		<div class="pull-left" style="margin-left:10px;">
+			<table class="table" style="height:34px;">
+				<tr>
+					<td style="padding:0;">
+						<div class="course-flag course-flag-color-2"></div>
+					</td>
+					<td style="padding:0;">上课</td>
+				</tr>
+			</table>
+		</div>
+		<div class="pull-right">
+			<button class="btn btn-success" ng-click="getToday()">今天</button>
+		</div>
+	</div>
+	<div class="content">
+		<ul>
+			<li class="list-group-item" ng-repeat="course in currentDay.scheduleCourses">
+				<table class="table">
+					<tbody>
+						<tr>
+							<td>
+								{{course.course_name}}<br>
+								{{course.schedule_course_time_start}}-{{course.schedule_course_time_stop}}<br>
+								{{course.schedule_course_classroom}}
+							</td>
+							<td>
+								<table class="table">
+									<tbody>
+										<tr>
+											<td>年龄：{{course.course_age_start}}-{{course.course_age_stop}}个月</td>
+										</tr>
+										<tr>
+											<td>主教：{{course.course_teacher}}</td>
+										</tr>
+										<tr>
+											<td>助教：{{course.course_assistant}}</td>
+										</tr>
+										<tr>
+											<td>剩余名额：<span class="left">{{course.reserve_course_left_num}}</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+							<td>
+								<button class="btn btn-success" ng-click="preorder(course)" ng-show="0 === course.reserve_course_status || 3 === course.reserve_course_status" ng-disabled="2 === course.schedule_course_status">约课</button>
+								<button class="btn btn-warning" ng-click="cancel(course)" ng-show="1 === course.reserve_course_status || 2 === course.reserve_course_status">取消</button>
+								<button class="btn btn-default" ng-if="4 === course.reserve_course_status" disabled>上课</button>
+								<button class="btn btn-default" ng-if="5 === course.reserve_course_status" disabled>补课</button>
+								<button class="btn btn-default" ng-if="6 === course.reserve_course_status" disabled>旷课</button>
+								<button class="btn btn-default" ng-if="7 === course.reserve_course_status" disabled>请假</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</li>
+			<li class="list-group-item text-center" style="border-bottom:0;" ng-if="0 === currentDay.scheduleCourses.length">没有课程</li>
+		</ul>
+	</div>
+</div>

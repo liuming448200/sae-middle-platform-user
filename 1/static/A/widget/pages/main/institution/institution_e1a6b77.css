@@ -1,0 +1,41 @@
+.institution-container .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.institution-container .list-group-item {
+  margin-bottom: 0;
+  border: 0;
+  border-bottom: 1px solid #dddddd;
+}
+
+.institution-container .media > .pull-left {
+  width: 100px;
+  height: 75px;
+}
+
+.institution-container .media-object {
+  width: 100%;
+  height: 100%;
+}
+
+.institution-container .media-body .service {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+
+.institution-container .media-body .service .label {
+  line-height: inherit;
+}
+
+.institution-container .media-body .address {
+  color: #737373;
+  font-size: 12px;
+  text-align: justify;
+  margin-bottom: 5px;
+}
+
+.institution-container .media-body .pos {
+  font-size: 14px;
+}

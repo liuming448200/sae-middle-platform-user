@@ -1,0 +1,41 @@
+.login-container {
+	height: 100%;
+	background-color: #5cb85c;
+}
+
+.login-container h1 {
+	font-size: 36px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	color: #FFFFFF;
+}
+
+.login-container > table {
+	height: 100%;
+	width: 100%;
+}
+
+.login-container > table td {
+	vertical-align: middle;
+	text-align: center;
+}
+
+.login-container > table .well {
+	display: inline-block;
+}
+
+.login-container .login-btn {
+	text-align: center;
+}
+
+.login-container .login-btn button {
+	width: 80%;
+}
+
+.login-container .down-container {
+	text-align: center;
+}
+
+.login-container .down-container button {
+	color: #5cb85c;
+}

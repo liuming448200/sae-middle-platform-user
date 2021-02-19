@@ -1,0 +1,18 @@
+<!--
+    @require "failure.css"
+-->
+
+<div class="failure-container">
+  <div class="tips-outer">
+    <img class="img-responsive" src="static/images/notice.png">
+    <h3 class="h3">支付失败</h3>
+  </div>
+  <p>
+    <a ui-sref="myorder.course.detail" ng-show="'instmore.product' === urlParams.from">
+      <button type="button" class="btn btn-info btn-lg btn-block">查看订单</button>
+    </a>
+    <a ui-sref="myorder.activity.detail" ng-show="'activity' === urlParams.from">
+      <button type="button" class="btn btn-info btn-lg btn-block">查看订单</button>
+    </a>
+  </p>
+</div>

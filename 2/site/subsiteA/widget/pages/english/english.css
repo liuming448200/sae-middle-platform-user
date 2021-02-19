@@ -1,0 +1,15 @@
+.english-detail-container h3 {
+  font-size: 24.5px;
+  line-height: 40px;
+  font-weight: 500;
+}
+
+.english-detail-container .inner-container {
+  margin: 5px 0;
+  border: 1px dashed #ddd;
+  padding: 5px;
+}
+
+.english-detail-container i.fa-volume-up {
+  color: #85b0ff;
+}

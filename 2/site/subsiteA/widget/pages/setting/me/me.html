@@ -1,0 +1,80 @@
+<!--
+    @require "me.css"
+-->
+
+<div class="me-container">
+  <header class="header-container navbar-fixed-top">
+    <a class="header-btn header-pos-left" href="javascript:;" ng-click="back()">
+      <i class="fa fa-chevron-left"></i>
+    </a>
+    <div class="title">个人资料</div>
+  </header>
+  <div class="container">
+    <div class="content-container">
+      <rd-widget>
+        <rd-widget-body classes="no-padding" loading="loading" failing="failing" empty="empty">
+          <div class="well">
+            <form class="form-horizontal" role="form" name="editUserInfoForm" novalidate ng-submit="editUserInfoSubmit()">
+              <div class="form-group">
+                <label for="inputpic" class="col-sm-2 control-label">头像</label>
+                <div class="col-sm-10">
+                  <input type="file" id="inputpic" rd-picupload="myPic" accept="image/*" style="display:none;">
+                  <a href="javascript:;" ng-click="upload()">
+                    <img class="img-responsive img-portrait" src="static/images/portrait.png" ng-src="{{head_portrait}}" alt="{{userInfo.picname}}">
+                  </a>
+                  <p class="help-block">备注：点击图片进行更换，最后点击页面底部的按钮使更换生效。</p>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="username" class="col-sm-2 control-label">用户名</label>
+                <div class="col-sm-10">
+                   <input type="text" class="form-control" id="username" name="username" ng-model="user.username" ng-trim="true" required ng-minlength="6" ng-maxlength="16" placeholder="请输入用户名" disabled>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="nickname" class="col-sm-2 control-label">昵称</label>
+                <div class="col-sm-10">
+                   <input type="text" class="form-control" id="nickname" name="nickname" ng-model="userInfo.nickname" ng-trim="true" required ng-maxlength="100" placeholder="请输入昵称，例如妈妈">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="realname" class="col-sm-2 control-label">姓名</label>
+                <div class="col-sm-10">
+                   <input type="text" class="form-control" id="realname" name="realname" ng-model="userInfo.realname" ng-trim="true" required ng-maxlength="50" placeholder="请输入姓名">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="gender" class="col-sm-2 control-label">性别</label>
+                <div class="col-sm-10">
+                   <label class="checkbox-inline" style="padding-left: 0;">
+                      <input type="radio" name="gender" id="gendermale" value="1" ng-model="userInfo.gender"> 男
+                   </label>
+                   <label class="checkbox-inline" style="padding-left: 0;">
+                      <input type="radio" name="gender" id="genderfemale" value="2" ng-model="userInfo.gender"> 女
+                   </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="birthday" class="col-sm-2 control-label">出生日期</label>
+                <div class="col-sm-10">
+                  <input type="date" class="form-control" id="birthday" name="birthday" ng-model="birthday" ng-change="changeBirthday($event)">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="address" class="col-sm-2 control-label">联系地址</label>
+                <div class="col-sm-10">
+                   <input type="text" class="form-control" id="address" name="address" ng-model="userInfo.address" ng-trim="true" required ng-maxlength="500" placeholder="请输入联系地址">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10" style="text-align: center;">
+                   <button type="submit" class="btn btn-success">确定</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </rd-widget-body>
+      </rd-widget>
+    </div>
+  </div>
+</div>

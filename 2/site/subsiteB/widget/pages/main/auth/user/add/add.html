@@ -1,0 +1,43 @@
+<!--
+    @require "add.css"
+-->
+
+<div class="add-container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="well">
+        <form role="form" name="addUserForm" novalidate ng-submit="addUserSubmit()">
+          <div class="form-group">
+            <label for="mobile">手机号</label>
+            <input type="text" class="form-control" id="mobile" name="mobile" ng-model="admin.mobile" ng-trim="true" required ng-minlength="11" ng-maxlength="11" placeholder="请输入手机号码">
+          </div>
+          <div class="form-group">
+            <label for="username">用户名</label>
+            <input type="text" class="form-control" id="username" name="username" ng-model="admin.username" ng-trim="true" required ng-minlength="6" ng-maxlength="16" placeholder="请输入用户名">
+          </div>
+          <div class="form-group">
+            <label for="password">密码</label>
+            <input type="password" class="form-control" id="password" name="password" ng-model="admin.password" ng-trim="true" required ng-minlength="6" ng-maxlength="16" placeholder="请输入密码">
+          </div>
+          <div class="form-group">
+            <label for="usergroups">所属用户组</label>
+            <div class="usergroups-container">
+              <label class="checkbox-inline" ng-repeat="usergroup in admin.allUsergroups">
+                <input type="checkbox" id="inlineCheckbox{{usergroup.group_id}}" name="usergroups" ng-model="usergroup.selected"> {{usergroup.group_name}}
+              </label>
+              <div ng-show="lazy" style="color: red;">加载用户组列表失败</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div style="text-align: center;">
+              <a ui-sref="main.auth.user">
+                <button type="button" class="btn btn-default">返回</button>
+              </a>
+              <button type="submit" class="btn btn-success">提交</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

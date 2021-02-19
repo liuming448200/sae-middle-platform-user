@@ -1,0 +1,28 @@
+<!--
+    @require "course.css"
+-->
+
+<div class="course-detail-container">
+	<header class="header-container navbar-fixed-top">
+    <a class="header-btn header-pos-left" ui-sref="institution.course">
+      <i class="fa fa-chevron-left"></i>
+    </a>
+    <a class="header-btn header-pos-right" href="javascript:;" ng-click="share()" ng-hide="weixinFlag">
+      <i class="fa fa-share"></i>
+    </a>
+    <div class="title">课程详情</div>
+  </header>
+  <div class="container">
+    <ul class="nav nav-tabs">
+      <li ui-sref-active="active">
+        <a ui-sref="course.week">按周</a>
+      </li>
+      <li ui-sref-active="active">
+        <a ui-sref="course.month">按月</a>
+      </li>
+    </ul>
+    <div class="content-container">
+      <div ui-view></div>
+    </div>
+  </div>
+</div>

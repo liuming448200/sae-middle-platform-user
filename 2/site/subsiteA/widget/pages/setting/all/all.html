@@ -1,0 +1,43 @@
+<!--
+    @require "all.css"
+-->
+
+<div class="all-container">
+  <header class="header-container navbar-fixed-top">
+    <a class="header-btn header-pos-left" href="javascript:;" ui-sref="main.user">
+      <i class="fa fa-chevron-left"></i>
+    </a>
+    <div class="title">设置</div>
+  </header>
+  <div class="container">
+    <div class="content-container">
+      <a href="javascript:;" ng-click="go()" class="list-group-item" ng-show="isLogin">
+        <span class="badge" style="background-color: #5cb85c;"><i class="fa fa-arrow-circle-right"></i></span>
+        个人资料
+      </a>
+      <a href="javascript:;" ui-sref="score.memberlevel" class="list-group-item" ng-show="isLogin">
+        <span class="badge" style="background-color: #5cb85c;"><i class="fa fa-arrow-circle-right"></i></span>
+        会员级别
+      </a>
+      <a href="javascript:;" ui-sref="setting.phone" class="list-group-item" ng-show="isLogin">
+        <span class="badge" style="background-color: #5cb85c;"><i class="fa fa-arrow-circle-right"></i></span>
+        手机号码
+      </a>
+      <a href="javascript:;" ui-sref="setting.password" class="list-group-item" ng-show="isLogin">
+        <span class="badge" style="background-color: #5cb85c;"><i class="fa fa-arrow-circle-right"></i></span>
+        修改密码
+      </a>
+      <a href="javascript:;" ui-sref="setting.suggestion" class="list-group-item">
+        <span class="badge" style="background-color: #5cb85c;"><i class="fa fa-arrow-circle-right"></i></span>
+        意见反馈
+      </a>
+      <a href="javascript:;" ui-sref="setting.aboutus" class="list-group-item">
+        <span class="badge" style="background-color: #5cb85c;"><i class="fa fa-arrow-circle-right"></i></span>
+        关于我们
+      </a>
+      <div class="exit-line" ng-show="isLogin">
+        <button type="button" class="btn btn-danger" ng-click="exit()">退出登录</button>
+      </div>
+    </div>
+  </div>
+</div>

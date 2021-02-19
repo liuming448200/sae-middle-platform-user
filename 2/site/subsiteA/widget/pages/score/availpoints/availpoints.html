@@ -1,0 +1,183 @@
+<!--
+    @require "availpoints.css"
+-->
+
+<div class="availpoints-container">
+	<header class="header-container navbar-fixed-top">
+    <a href="javascript:;" class="header-btn header-pos-left" ng-click="back()">
+      <i class="fa fa-chevron-left"></i>
+    </a>
+    <div class="title">可用积分</div>
+  </header>
+  <div class="container">
+  	<div class="head">
+      <div class="outer">
+    		<div class="rule-outer clearfix">
+    			<a ui-sref="score.pointrule({from:$state.current.name})" class="rule-link">
+    				<i class="fa fa-question-circle-o" aria-hidden="true"></i>
+    				<span>积分规则</span>
+    			</a>
+    		</div>
+    		<h3 class="h3">104</h3>
+    		<div class="other-link">
+    			<a ui-sref="score.pointdetail" class="btn btn-link">
+    				<i class="fa fa-list" aria-hidden="true"></i>
+    				积分明细
+    			</a>
+    			<a ui-sref="score.chargerecord({from:$stateParams.from})" class="btn btn-link">
+    				<i class="fa fa-history" aria-hidden="true"></i>
+    				兑换记录
+    			</a>
+    		</div>
+      </div>
+  	</div>
+    <div class="content">
+      <div class="title">限量兑换</div>
+      <div class="content-container">
+        <ul>
+          <rd-widget>
+            <rd-widget-body classes="no-padding" loading="loading" failing="failing" empty="empty">
+              <div scroll-trigger="loadMore()" trigger-run trigger-at-end trigger-persist trigger-active="!(loading || failing || empty || busy || lazy || finish || scrollDisabled)">
+                <li class="list-group-item">
+                  <a ui-sref="score.chargedetail" class="clearfix">
+                    <div class="quan-l">
+                      <table class="table-common">
+                        <tr>
+                          <td>
+                            <div class="circle">课</div>
+                          </td>
+                          <td>
+                            10元课时包券
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="quan-r">
+                      <table class="table-common">
+                        <tr>
+                          <td>
+                            <h5 class="h5">50积分</h5>
+                            <h4 class="h4">兑换</h4>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </a>
+                </li>
+                <li class="list-group-item">
+                  <a ui-sref="score.chargedetail" class="clearfix">
+                    <div class="quan-l">
+                      <table class="table-common">
+                        <tr>
+                          <td>
+                            <div class="circle">活</div>
+                          </td>
+                          <td>
+                            10元活动券
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="quan-r">
+                      <table class="table-common">
+                        <tr>
+                          <td>
+                            <h5 class="h5">50积分</h5>
+                            <h4 class="h4">兑换</h4>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </a>
+                </li>
+                <li class="list-group-item">
+                  <a ui-sref="score.chargedetail" class="clearfix">
+                    <div class="quan-l">
+                      <table class="table-common">
+                        <tr>
+                          <td>
+                            <div class="circle">课</div>
+                          </td>
+                          <td>
+                            10元课时包券
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="quan-r">
+                      <table class="table-common">
+                        <tr>
+                          <td>
+                            <h5 class="h5">50积分</h5>
+                            <h4 class="h4">兑换</h4>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </a>
+                </li>
+                <li class="list-group-item">
+                  <a ui-sref="score.chargedetail" class="clearfix">
+                    <div class="quan-l">
+                      <table class="table-common">
+                        <tr>
+                          <td>
+                            <div class="circle">课</div>
+                          </td>
+                          <td>
+                            10元课时包券
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="quan-r">
+                      <table class="table-common">
+                        <tr>
+                          <td>
+                            <h5 class="h5">50积分</h5>
+                            <h4 class="h4">兑换</h4>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </a>
+                </li>
+                <li class="list-group-item">
+                  <a ui-sref="score.chargedetail" class="clearfix">
+                    <div class="quan-l">
+                      <table class="table-common">
+                        <tr>
+                          <td>
+                            <div class="circle">课</div>
+                          </td>
+                          <td>
+                            10元课时包券
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="quan-r">
+                      <table class="table-common">
+                        <tr>
+                          <td>
+                            <h5 class="h5">50积分</h5>
+                            <h4 class="h4">兑换</h4>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </a>
+                </li>
+                <div class="scroll-loading" ng-show="busy">
+                  <i class="fa fa-spinner fa-pulse"></i><span>加载中...</span>
+                </div>
+                <div class="scroll-loadfail" ng-show="lazy">加载失败，请检查网络连接...</div>
+                <div class="scroll-loadfinish" ng-show="finish">没有更多了</div>
+              </div>
+            </rd-widget-body>
+          </rd-widget>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

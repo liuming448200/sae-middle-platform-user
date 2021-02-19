@@ -1,0 +1,13 @@
+.register-container table {
+  width: 100%;
+}
+
+.register-container .verifycode {
+  padding-left: 5px;
+  vertical-align: middle;
+}
+
+.register-container .verifycode button {
+  font-size: 14px;
+  width: 100%;
+}

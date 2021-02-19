@@ -1,0 +1,32 @@
+<!--
+    @require "login.css"
+-->
+
+<div class="login-container">
+	<table>
+		<td>
+			<h1>方向教育</h1>
+			<div class="well">
+				<form role="form" name="loginForm" novalidate ng-submit="loginSubmit()">
+					<div class="form-group">
+			      <input type="text" class="form-control" name="username" ng-model="username" ng-trim="true" required placeholder="请输入手机号码/用户名">
+			   	</div>
+			   	<div class="form-group">
+			      <input type="password" class="form-control" name="password" ng-model="password" ng-trim="true" required ng-minlength="6" ng-maxlength="16" 
+			         placeholder="请输入登录密码">
+			   	</div>
+			   	<div class="form-group">
+	          <div class="login-btn">
+	            <button type="submit" class="btn btn-success btn-lg">登录</button>
+	          </div>
+	        </div>
+				</form>
+				<div class="down-container">
+					<a ui-sref="reset">
+						<button type="button" class="btn btn-link">忘记密码</button>
+					</a>
+				</div>
+			</div>
+		</td>
+	</table>
+</div>

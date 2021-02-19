@@ -1,0 +1,27 @@
+<!--
+    @require "current.css"
+-->
+
+<div class="current-container">
+  <header class="header-container navbar-fixed-top">
+    <a class="header-btn header-pos-left" href="javascript:;" ui-sref="setting.all">
+      <i class="fa fa-chevron-left"></i>
+    </a>
+    <div class="title">手机号码</div>
+  </header>
+  <div class="container">
+    <div class="content-container">
+      <div class="well">
+        <div class="phone-line">
+          <span>手机号码</span>
+          <span>{{user.mobile}}</span>
+        </div>
+        <div class="next-line">
+          <a href="javascript:;" ui-sref="setting.phone.newphone">
+            <button type="submit" class="btn btn-success">更换手机号码</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

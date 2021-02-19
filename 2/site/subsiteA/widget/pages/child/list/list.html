@@ -1,0 +1,69 @@
+<!--
+    @require "list.css"
+-->
+
+<div class="list-container">
+  <header class="header-container navbar-fixed-top">
+    <a class="header-btn header-pos-left" ui-sref="main.user">
+      <i class="fa fa-chevron-left"></i>
+    </a>
+    <a class="header-btn header-pos-right" ui-sref="child.add({from: $state.current.name})">
+      <i class="fa fa-plus-square-o" aria-hidden="true"></i>
+    </a>
+    <div class="title">我的孩子</div>
+  </header>
+  <div class="container">
+    <div class="content-container">
+      <rd-widget>
+        <rd-widget-body classes="no-padding" loading="loading" failing="failing" empty="empty">
+          <ul scroll-trigger="loadMore()" trigger-run trigger-at-end trigger-persist trigger-active="!(loading || failing || empty || busy || lazy || finish || scrollDisabled)">
+            <li class="list-group-item" ng-repeat="item in list">
+              <a ui-sref="child.edit({cid:item.cid, from:$state.current.name})" class="media well">
+                <table style="width:100%;">
+                  <tr>
+                    <td>
+                      <table style="width:100%;">
+                        <tr>
+                          <td style="width:70px;">
+                            <div class="media-body">
+                              <img src="static/images/portrait.png" ng-src="{{item.head_portrait}}" class="media-object img-portrait">
+                            </div>
+                          </td>
+                          <td>
+                            <div class="media-body">
+                              <h4 class="media-heading">
+                                {{item.realname}}
+                              </h4>
+                              <p>
+                                {{item.nickname}} {{item.birthday|birthdayFormat}}
+                              </p>
+                            </div>
+                          </td>
+                          <td style="width:50px;" ng-show="1 == item.current">
+                            <p class="text-center">
+                              默认
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td>
+                      <p class="arrow">
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </a>
+            </li>
+            <div class="scroll-loading" ng-show="busy">
+              <i class="fa fa-spinner fa-pulse"></i><span>加载中...</span>
+            </div>
+            <div class="scroll-loadfail" ng-show="lazy">加载失败，请检查网络连接...</div>
+            <div class="scroll-loadfinish" ng-show="finish">没有更多了</div>
+          </ul>
+        </rd-widget-body>
+      </rd-widget>
+    </div>
+  </div>
+</div>

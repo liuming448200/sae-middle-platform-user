@@ -1,0 +1,14 @@
+define('A:widget/pages/myactivity/overview/overview', function(require, exports, module) {
+
+  module.exports = {
+    url: '/overview',
+    template: "<!--\r\n    @require \"A:widget/pages/myactivity/overview/overview.css\"\r\n-->\r\n\r\n<div class=\"overview-container\">\r\n\t<header class=\"header-container navbar-fixed-top\">\r\n    <a class=\"header-btn header-pos-left\" href=\"javascript:;\" ui-sref=\"main.user\">\r\n      <i class=\"fa fa-times\"></i>\r\n    </a>\r\n    <div class=\"title\">活动管理</div>\r\n  </header>\r\n  <div class=\"container\">\r\n    <div class=\"head\">\r\n      <div class=\"outer\">\r\n        <table class=\"table\">\r\n          <tr>\r\n            <td>\r\n              <a ui-sref=\"myactivity.review\" class=\"block\">\r\n                <table>\r\n                  <tr>\r\n                    <td>\r\n                      <h3>22</h3>\r\n                      <p>已完成活动</p>\r\n                    </td>\r\n                    <td>\r\n                      <i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i>\r\n                    </td>\r\n                  </tr>\r\n                </table>\r\n              </a>\r\n            </td>\r\n            <td>\r\n            \t<a ui-sref=\"institution.activity\">\r\n              \t<button class=\"btn btn-success\">活动报名</button>\r\n              </a>\r\n            </td>\r\n          </tr>\r\n        </table>\r\n      </div>\r\n    </div>\r\n    <div class=\"content-container\">\r\n      <h3 class=\"text-center\">已报名活动</h3>\r\n      <ul>\r\n        <li class=\"list-group-item\" ng-repeat=\"activity in reserveActivities\">\r\n          <table class=\"table\">\r\n            <tbody>\r\n              <tr>\r\n                <td>\r\n                  {{activity.activity_name}}\r\n                </td>\r\n                <td>\r\n                  <table class=\"table\">\r\n                    <tbody>\r\n                      <tr>\r\n                        <td>时间：{{activity.activity_date|timeDateFormat}}</td>\r\n                      </tr>\r\n                      <tr>\r\n                        <td>地点：{{activity.activity_address}}</td>\r\n                      </tr>\r\n                    </tbody>\r\n                  </table>\r\n                </td>\r\n                <td>\r\n                  <button class=\"btn btn-warning\" ng-click=\"cancel(activity)\">取消</button>\r\n                </td>\r\n              </tr>\r\n            </tbody>\r\n          </table>\r\n        </li>\r\n        <li class=\"list-group-item text-center\" style=\"border-bottom:0;\" ng-if=\"0 === reserveActivities.length\">没有活动</li>\r\n      </ul>\r\n    </div>\r\n  </div>\r\n</div>\r\n",
+    controller: ['$scope', '$injector', function ($scope, $injector) {
+    	require.async(['A:widget/pages/myactivity/overview/overview.async'], function(ctrl) {
+  			$injector.invoke(ctrl, this, {'$scope': $scope});
+  		});
+    }]
+  };
+  
+
+});

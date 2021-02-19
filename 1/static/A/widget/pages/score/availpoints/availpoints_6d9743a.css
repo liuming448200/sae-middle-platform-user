@@ -1,0 +1,115 @@
+.score-container .availpoints-container .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.score-container .availpoints-container .head {
+	text-align: center;
+	background-color: #f0eff5;
+	padding-bottom: 10px;
+}
+
+.score-container .availpoints-container .head .outer {
+	background: #ffffff;
+	padding: 10px;
+}
+
+.score-container .availpoints-container .head .rule-outer {
+  height: 30px;
+  overflow: hidden;
+}
+
+.score-container .availpoints-container .head .rule-link {
+	display: block;
+	float: right;
+	height: 30px;
+	color: #93939e;
+}
+
+.score-container .availpoints-container .head .rule-link i {
+	line-height: 30px;
+}
+
+.score-container .availpoints-container .head .rule-link span {
+	display: inline-block;
+  font-size: 12px;
+  line-height: 30px;
+  color: #93939e;
+}
+
+.score-container .availpoints-container .head h3 {
+	margin-top: 0;
+}
+
+.score-container .availpoints-container .head .other-link {
+	margin-bottom: 15px;
+}
+
+.score-container .availpoints-container .head .other-link a {
+	border: 1px solid #646464;
+	border-radius: 4px;
+	color: #646464;
+	text-decoration: none;
+}
+
+.score-container .availpoints-container .content {
+	padding: 0 10px;
+}
+
+.score-container .availpoints-container .content .title {
+	text-align: center;
+  margin-top: 10px;
+  color: #60606c;
+}
+
+.score-container .availpoints-container .list-group-item {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 0;
+	border-radius: 6px;
+}
+
+.score-container .availpoints-container .list-group-item > a {
+	display: block;
+	overflow: hidden;
+	border-radius: 6px;
+}
+
+.score-container .availpoints-container .circle {
+	width: 48px;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	border-radius: 50%;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #5cb85c;
+	color: #5cb85c;
+	margin: auto;
+}
+
+.score-container .availpoints-container .list-group-item .quan-l {
+	float: left;
+	width: 75%;
+	height: 68px;
+  background-color: #fff;
+}
+
+.score-container .availpoints-container .list-group-item .quan-l > table {
+	color: #5cb85c;
+}
+
+.score-container .availpoints-container .list-group-item .quan-l > table > tbody > tr > td:first-child {
+	width: 30%;
+}
+
+.score-container .availpoints-container .list-group-item .quan-r {
+	float: left;
+	width: 25%;
+	height: 68px;
+	background-color: #5cb85c;
+}
+
+.score-container .availpoints-container .list-group-item .quan-r > table {
+	color: #ffffff;
+}

@@ -1,0 +1,117 @@
+.container {
+	padding-top: 55px;
+}
+
+.main-container .container {
+  padding-bottom: 47px;
+}
+
+.header-container {
+  color: #5cb85c;
+  background-color: #ffffff;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.header-btn {
+  position: absolute;
+  width: 44px;
+  margin: 0 auto;
+  padding: 17px 0;
+}
+
+.header-btn > i {
+  font-size: 20px;
+}
+
+.header-pos-left {
+  left: 0;
+}
+
+.header-pos-right {
+  right: 0;
+}
+
+.header-container .title {
+  height: 54px;
+  line-height: 54px;
+}
+
+.container .content-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.widget {
+	-webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: 0;
+}
+
+.scroll-loading, .scroll-loadfail, .scroll-loadfinish {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.qzOpenerDiv {
+	display: inline-block;
+  text-align: center;
+  margin-right: 25px;
+}
+
+.qzOpenerDiv .share-icon {
+	background-size: 100%;
+  width: 50px;
+  height: 50px;
+}
+
+.qzOpenerDiv .qz-icon {
+	background-image: url(../images/qzshare.png);
+}
+
+.qzOpenerDiv .weibo-icon {
+	background-image: url(../images/weiboshare.png);
+}
+
+.qzOpenerDiv .qz-font {
+	font-size: 12px;
+}
+
+.web-content a:focus {
+  outline: 0;
+}
+
+.img-portrait {
+  border-radius: 50%;
+}
+
+.weixin-scan {
+  width: 307px;
+  height: 488px;
+  background-image: url(../images/weixinpay.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -30px;
+  left: -300px;
+}
+
+.img-weixin {
+  background-image: url(../images/weixin.png);
+}
+
+.img-alipay {
+  background-image: url(../images/alipay.png);
+}
+
+.img-unselected {
+  background-image: url(../images/unselected.png);
+}
+
+.img-selected {
+  background-image: url(../images/selected.png);
+}
+
+.img-more {
+  background-image: url(../images/more.png);
+}

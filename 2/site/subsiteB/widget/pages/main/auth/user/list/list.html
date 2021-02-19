@@ -1,0 +1,46 @@
+<!--
+    @require "list.css"
+-->
+
+<div class="list-container">
+  <div class="row">
+    <div class="col-xs-12">
+      <rd-widget>
+        <rd-widget-header icon="fa-tasks" title="用户列表">
+          <a href="javascript:;" ui-sref="main.auth.user.add">添加用户</a>
+        </rd-widget-header>
+        <rd-widget-body classes="no-padding" loading="loading" failing="failing" empty="empty">
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>用户名</th>
+                  <th>创建时间</th>
+                  <th>更新时间</th>
+                  <th>操作</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-repeat="item in list">
+                  <td>{{item.username}}</td>
+                  <td>{{item.create_time}}</td>
+                  <td>{{item.update_time}}</td>
+                  <td>
+                    <button type="button" class="btn btn-info" ng-click="goEdit(item)">编辑</button>
+                    <button type="button" class="btn btn-success" ng-hide="item.status == 0" ng-click="activate(item)">激活</button>
+                    <button type="button" class="btn btn-warning" ng-hide="item.status == 1" ng-click="forbid(item)">禁用</button>
+                    <button type="button" class="btn btn-danger" ng-hide="item.status == 2" ng-click="frozen(item)">冻结</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </rd-widget-body>
+        <rd-widget-footer>
+          <rd-pagination conf="paginationConf"></rd-pagination>
+          <div class="clearfix"></div>
+        </rd-widget-footer>
+      </rd-widget>
+    </div>
+  </div>
+</div>

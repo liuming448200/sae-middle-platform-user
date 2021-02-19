@@ -1,0 +1,39 @@
+<!--
+    @require "story.css"
+-->
+
+<div class="story-detail-container">
+  <header class="header-container navbar-fixed-top">
+    <a class="header-btn header-pos-left" ui-sref="main.teach.story">
+      <i class="fa fa-chevron-left"></i>
+    </a>
+    <a class="header-btn header-pos-right" href="javascript:;" ng-click="share()" ng-hide="weixinFlag">
+      <i class="fa fa-share"></i>
+    </a>
+    <div class="title">故事详情</div>
+  </header>
+  <div class="container">
+    <div class="content-container">
+      <rd-widget>
+        <rd-widget-body classes="no-padding" loading="loading" failing="failing" empty="empty">
+          <ul class="thumbnails">
+            <li class="span4">
+              <div class="thumbnail">
+                <img alt="{{story.name}}" src="static/images/default.jpg" ng-src="{{story.pic}}">
+                <div class="caption">
+                  <h3>{{story.name}}</h3>
+                  <p class="help-block text-center">来源：网络</p>
+                  <p class="story-content" ng-bind-html="story.content|unescapeHTMLFilter"></p>
+                  <p style="text-align: center; margin: 5px 0;">
+                    <a class="btn btn-success" href="javascript:;" data-toggle="collapse" data-target="#sense">寓意</a>
+                  </p>
+                  <p id="sense" class="collapse" ng-bind-html="story.implication|unescapeHTMLFilterNoSpace"></p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </rd-widget-body>
+      </rd-widget>
+    </div>
+  </div>
+</div>

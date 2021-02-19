@@ -1,0 +1,113 @@
+.coupon-container .coupon {
+	position: relative;
+	background: #FFFFFF;
+	border: 1px solid rgba(190,198,209,0.4);
+	border-radius: 8px;
+	margin: 10px auto;
+	color: #7884A0;
+	display: block;
+}
+
+.coupon-container .coupon .l-m-container {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	width: 90%;
+}
+
+.coupon-container .coupon .left {
+	width: 85%;
+	padding: 10px 0;
+}
+
+.coupon-container .coupon .right {
+	width: 15%;
+	padding: 10px 0;
+	color: #5cb85c;
+	background: #EFF9F8;
+	text-align: center;
+	border-left: 1px dashed rgba(190,198,209,0.4);
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.coupon-container .coupon .title {
+	color: #5D646E;
+	line-height: 100%;
+	margin: 10px 0;
+	border-left: 2px solid #5cb85c;
+	font-size: 0.9rem;
+}
+
+.coupon-container .coupon .name {
+	color: #5cb85c;
+	margin: 8px 0;
+	font-size: 1rem;
+}
+
+.coupon-container .coupon .desc {
+	margin: 5px 0;
+	font-size: 0.75rem;
+}
+
+.coupon-container .coupon .time {
+	font-size: 0.75rem;
+}
+
+.coupon-container .coupon .status {
+	width: 50%;
+	display: inline-block;
+	line-height: 150%;
+}
+
+.coupon-container .left-border {
+	content: " ";
+	display: block;
+	width: 16px;
+	height: 16px;
+	border: 1px solid rgba(190,198,209,0.4);
+	border-radius: 50%;
+	background: #ffffff;
+	position: absolute;
+	top: 45%;
+	left: -8px;
+}
+
+.coupon-container .left-border i {
+	display: block;
+	width: 9px;
+	height: 18px;
+	background: #ffffff;
+	width: 7px;
+	margin-left: -1px;
+}
+
+.coupon-container .coupon.disabled {
+	background: #EDEFF5;
+}
+
+.coupon-container .coupon.disabled .name,
+.coupon-container .coupon.disabled .title,
+.coupon-container .coupon.disabled .desc,
+.coupon-container .coupon.disabled .time {
+	color: #8B97B0;
+}
+
+.coupon-container .coupon.disabled .title {
+	border-left-color: rgba(190,198,209,1);
+}
+
+.coupon-container .coupon.disabled .right {
+	background: #EDEFF5;
+}
+
+.coupon-container .coupon.disabled .status {
+	color: #7884A0;
+	display: inline-block;
+}
+
+.coupon-container .check-old-coupon {
+	display: block;
+	text-align: center;
+	color: #7884A0;
+}

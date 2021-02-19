@@ -1,0 +1,74 @@
+<!--
+    @require "list.css"
+-->
+
+<div class="list-container">
+	<div class="row">
+		<div class="col-xs-12">
+			<rd-widget>
+				<rd-widget-header icon="fa-tasks" title="活动列表">
+	        <a href="javascript:;" ui-sref="main.activity.add">添加活动</a>
+	      </rd-widget-header>
+	      <rd-widget-body classes="no-padding" loading="loading" failing="failing" empty="empty">
+	      	<div class="table-responsive">
+	      		<table class="table">
+	      			<thead>
+	      				<tr>
+	      					<th>活动名称</th>
+	      					<th>开始时间</th>
+	      					<th>结束时间</th>
+	      					<th>活动状态</th>
+	      					<th>创建时间</th>
+	      					<th>更新时间</th>
+	      					<th>操作</th>
+	      				</tr>
+	      			</thead>
+	      			<tbody>
+	      				<tr>
+	      					<td>必胜客亲子披萨DIY</td>
+	      					<td>2016-11-14 00:00:00</td>
+	      					<td>2016-11-16 23:59:59</td>
+	      					<td>未开始</td>
+	      					<td>2016-11-15 11:39:58</td>
+	      					<td>2016-11-15 11:39:58</td>
+	      					<td>
+                    <button type="button" class="btn btn-info">编辑</button>
+                    <button type="button" class="btn btn-success">上架</button>
+                    <button type="button" class="btn btn-danger" disabled>下架</button>
+                  </td>
+	      				</tr>
+	      				<tr>
+	      					<td>必胜客亲子披萨DIY</td>
+	      					<td>2016-11-14 00:00:00</td>
+	      					<td>2016-11-16 23:59:59</td>
+	      					<!--进行中的活动不能修改和删除-->
+	      					<td>进行中</td>
+	      					<td>2016-11-15 11:39:58</td>
+	      					<td>2016-11-15 11:39:58</td>
+	      					<td>
+                    <button type="button" class="btn btn-info">编辑</button>
+                    <button type="button" class="btn btn-success" disabled>上架</button>
+                    <button type="button" class="btn btn-danger">下架</button>
+                  </td>
+	      				</tr>
+	      				<tr>
+	      					<td>必胜客亲子披萨DIY</td>
+	      					<td>2016-11-14 00:00:00</td>
+	      					<td>2016-11-16 23:59:59</td>
+	      					<td>已结束</td>
+	      					<td>2016-11-15 11:39:58</td>
+	      					<td>2016-11-15 11:39:58</td>
+	      					<td>
+                    <button type="button" class="btn btn-info">编辑</button>
+                    <button type="button" class="btn btn-success" disabled>上架</button>
+                    <button type="button" class="btn btn-danger" disabled>下架</button>
+                  </td>
+	      				</tr>
+	      			</tbody>
+	      		</table>
+	      	</div>
+	      </rd-widget-body>
+			</rd-widget>
+		</div>
+	</div>
+</div>

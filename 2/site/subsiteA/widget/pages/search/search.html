@@ -1,0 +1,74 @@
+<!--
+    @require "search.css"
+-->
+
+<div class="search-container">
+	<header class="header-container navbar-fixed-top">
+		<a class="header-btn header-pos-left" href="javascript:;" ng-click="back()">
+      <i class="fa fa-chevron-left"></i>
+    </a>
+    <a class="header-btn header-pos-right" style="width:48px; padding:14px 0;" href="javascript:;" ng-click="startSearch()">
+    	<button class="btn-link" href="javascript:;">搜索</button>
+    </a>
+    <form role="form" name="searchForm" novalidate ng-submit="startSearch()">
+	    <section id="search">
+	      <label for="search-input"><i class="fa fa-search" aria-hidden="true"></i><span class="sr-only">{{searchTips}}</span></label>
+	      <input id="search-input" class="form-control input-lg" placeholder="{{searchTips}}" autocomplete="off" spellcheck="false" autocorrect="off" tabindex="1" ng-model="keyword">
+	      <a id="search-clear" href="javascript:;" class="fa fa-times-circle" ng-class="{'hide': !keyword}" aria-hidden="true" ng-click="clearInput()">
+	      	<span class="sr-only">清空搜索</span>
+	      </a>
+	    </section>
+    </form>
+	</header>
+	<div class="container">
+		<div class="content-container">
+			<div class="panel panel-default" ng-show="">
+				<div class="panel-heading">
+		      <h3 class="panel-title">
+		        热门搜索
+		      </h3>
+		   	</div>
+		   	<ul class="list-group">
+		      <li class="list-group-item">种太阳</li>
+		      <li class="list-group-item">小蝌蚪找妈妈</li>
+		      <li class="list-group-item">ABC</li>
+		      <li class="list-group-item">mommy</li>
+		      <li class="list-group-item">Baebie Girl</li>
+	   		</ul>
+			</div>
+			<div class="panel panel-default" ng-show="showHistory">
+				<div class="panel-heading">
+		      <h3 class="panel-title">
+		        搜索历史
+		      </h3>
+		   	</div>
+		   	<ul class="list-group">
+		      <li class="list-group-item" ng-repeat="item in arr">
+		      	<a href="javascript:;" ng-click="setKeyword(item)">
+			      	<i class="fa fa-search" aria-hidden="true"></i>
+			      	<span>{{item}}</span>
+		      	</a>
+		      </li>
+	   		</ul>
+		   	<div class="panel-footer">
+		   		<button class="btn-link" ng-click="clearHistory()">清除历史纪录</button>
+		   	</div>
+			</div>
+			<rd-widget ng-show="showData">
+				<rd-widget-body classes="no-padding" loading="loading" failing="failing" empty="empty">
+					<div scroll-trigger="loadMore()" trigger-run trigger-at-end trigger-persist trigger-active="!(loading || failing || empty || busy || lazy || finish || scrollDisabled)">
+            <a href="javascript:;" class="list-group-item" ng-repeat="item in list" ng-click="go(item)">
+              <span class="badge" style="background-color: #5cb85c;"><i class="fa fa-arrow-circle-right"></i></span>
+              {{item.name}}
+            </a>
+            <div class="scroll-loading" ng-show="busy">
+              <i class="fa fa-spinner fa-pulse"></i><span>加载中...</span>
+            </div>
+            <div class="scroll-loadfail" ng-show="lazy">加载失败，请检查网络连接...</div>
+            <div class="scroll-loadfinish" ng-show="finish">没有更多了</div>
+          </div>
+				</rd-widget-body>
+			</rd-widget>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,18 @@
+<!--
+    @require "course.css"
+-->
+
+<div class="course-container">
+	<header class="header-container navbar-fixed-top">
+    <a href="javascript:;" class="header-btn header-pos-left" ng-click="back()">
+      <i class="fa fa-times"></i>
+    </a>
+    <a class="header-btn header-pos-right" href="javascript:;" ng-click="share()" ng-hide="weixinFlag">
+      <i class="fa fa-share"></i>
+    </a>
+    <div class="title">课程介绍</div>
+  </header>
+  <div class="container">
+  	<div ui-view></div>
+  </div>
+</div>

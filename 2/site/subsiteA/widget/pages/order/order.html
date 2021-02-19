@@ -1,0 +1,142 @@
+<!--
+    @require "order.css"
+-->
+
+<div class="order-container">
+	<header class="header-container navbar-fixed-top">
+    <a class="header-btn header-pos-left" href="javascript:;" ng-click="back()">
+      <i class="fa fa-chevron-left"></i>
+    </a>
+    <div class="title">确认订单</div>
+  </header>
+  <div class="container">
+		<div class="order-info">
+      <ul ng-show="'activity' === $stateParams.from">
+        <li class="list-group-item">
+          纽约国际儿童俱乐部西红门鸿坤中心
+        </li>
+        <li class="list-group-item">
+          活动：风度小骑士
+        </li>
+        <li class="list-group-item">
+          时间：2017-05-20 周六 9:00-10:45
+        </li>
+        <li class="list-group-item">
+          地点：南宫风度马会
+        </li>
+        <li class="list-group-item">
+          <p>
+            <span>
+              消课：<strong class="price">3</strong>节
+            </span>
+            <span style="margin-left:10px;">
+              材料费：<i class="fa fa-jpy" aria-hidden="true"></i><strong class="price">100</strong>
+            </span>
+          </p>
+        </li>
+      </ul>
+      <ul ng-show="'instmore.product' === $stateParams.from">
+        <li class="list-group-item">
+          纽约国际儿童俱乐部西红门鸿坤中心
+        </li>
+        <li class="list-group-item">
+          课程：早教36课时包
+        </li>
+        <li class="list-group-item">
+          有效期：2017-05-20 至 2018-05-19
+        </li>
+        <li class="list-group-item">
+          <p>
+            <span>价格：<i class="fa fa-jpy" aria-hidden="true"></i><strong class="price">12300</strong></span>
+            <small class="price-origin"><i class="fa fa-jpy" aria-hidden="true"></i>14400</small>
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="coupon-info">
+      <ul>
+        <a class="list-group-item" ui-sref="coupon.select({from:$stateParams.from})">
+          <table>
+            <tr>
+              <td>优惠券<span class="coupon-tip" ng-show="">0张可用</span></td>
+              <td class="text-right">50元课时包券</td>
+              <td><i class="fa fa-angle-right" aria-hidden="true"></i></td>
+            </tr>
+          </table>
+        </a>
+      </ul>
+    </div>
+    <div class="pay-info">
+      <div class="pay-item">
+        <h2>请选择支付方式：</h2>
+      </div>
+      <a href="javascript:;" class="pay-item reset-item" ng-click="weixinPay()" ng-show="upHasWeixin">
+        <div class="clearfix">
+          <div class="img-common img-weixin pull-left"></div>
+          <div class="img-common pull-right" ng-class="selectWeixin?'img-selected':'img-unselected'"></div>
+          <h1 class="pay-text">微信支付</h1>
+        </div>
+      </a>
+      <a href="javascript:;" class="pay-item reset-item" ng-click="Alipay()" ng-show="upHasAlipay">
+        <div class="clearfix">
+          <div class="img-common img-alipay pull-left"></div>
+          <div class="img-common pull-right" ng-class="selectAlipay?'img-selected':'img-unselected'"></div>
+          <h1 class="pay-text">支付宝</h1>
+        </div>
+      </a>
+      <a href="javascript:;" class="reset-item collapsed" data-toggle="collapse" data-target="#collapseOne" ng-show="showMore">
+        <div class="more clearfix">
+          <div class="img-common img-more pull-left"></div>
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+          <h1 class="pay-text">更多</h1>
+        </div>
+      </a>
+      <div id="collapseOne" class="collapse">
+        <a href="javascript:;" class="reset-item" ng-click="weixinPay()" ng-show="downHasWeixin">
+          <div class="clearfix">
+            <div class="img-common img-weixin pull-left"></div>
+            <div class="img-common pull-right" ng-class="selectWeixin?'img-selected':'img-unselected'"></div>
+            <h1 class="pay-text">微信支付</h1>
+          </div>
+        </a>
+        <a href="javascript:;" class="reset-item" ng-click="Alipay()" ng-show="downHasAlipay">
+          <div class="clearfix">
+            <div class="img-common img-alipay pull-left"></div>
+            <div class="img-common pull-right" ng-class="selectAlipay?'img-selected':'img-unselected'"></div>
+            <h1 class="pay-text">支付宝</h1>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="pay">
+      <table>
+        <tr>
+          <td width="50%">
+            <table style="margin:auto;" ng-show="'activity' === $stateParams.from">
+              <tr>
+                <td>消课：</td>
+                <td><span>3</span>节</td>
+              </tr>
+              <tr>
+                <td>支付：</td>
+                <td><span>100</span>元</td>
+              </tr>
+            </table>
+            <table style="margin:auto;" ng-show="'instmore.product' === $stateParams.from">
+              <tr>
+                <td>支付：</td>
+                <td><span>12300</span>元</td>
+              </tr>
+            </table>
+          </td>
+          <td width="50%">
+            <button type="button" class="btn btn-warning btn-lg" ng-click="goPay()">立即支付</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

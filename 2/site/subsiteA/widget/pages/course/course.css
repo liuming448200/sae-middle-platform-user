@@ -1,0 +1,119 @@
+.course-detail-container > .container > ul {
+  margin-top: 10px;
+  border-bottom: inherit !important;
+}
+
+.course-detail-container .container > ul > li {
+  margin-bottom: 0 !important;
+  width: 50%;
+  text-align: center;
+}
+
+.course-detail-container .container > ul > li:first-child > a {
+  border-top-left-radius: 4px !important;
+  border-bottom-left-radius: 4px !important;
+}
+
+.course-detail-container .container > ul > li > a {
+  margin-right: 0 !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  border: 1px solid #5cb85c !important;
+}
+
+.course-detail-container .container > ul > li:last-child > a {
+  border-top-right-radius: 4px !important;
+  border-bottom-right-radius: 4px !important;
+}
+
+.course-detail-container .container > ul > li.active > a {
+  color: white !important;
+  background-color: #5cb85c !important;
+}
+
+.course-detail-container .content-container {
+  margin-bottom: 0;
+}
+
+.course-detail-container .header {
+  padding: 15px 0;
+}
+
+.course-detail-container .table {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.course-detail-container .table > tbody > tr > td {
+  border-top: 0;
+  vertical-align: middle;
+}
+
+.course-detail-container .table > tbody > tr > td > .left {
+  color: #ff6969;
+}
+
+.course-detail-container .table-responsive > .table > thead > tr > th {
+  text-align: center;
+  border-bottom-width: 0;
+}
+
+.course-detail-container .content {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.course-detail-container .content .list-group-item {
+  margin-bottom: 0;
+  border: 0;
+  border-bottom: 1px solid #dddddd;
+}
+
+.course-detail-container .content .list-group-item:first-child {
+  border-top: 1px solid #dddddd;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.course-detail-container .content .list-group-item > table table {
+  text-align: left;
+}
+
+.course-detail-container .content .list-group-item .table > tbody > tr > td {
+  padding: 0;
+}
+
+.course-detail-container .course-flag {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.course-detail-container .help-block .course-flag {
+  margin-right: 2px;
+}
+
+.course-detail-container .course-flag-color-1 {
+  background-color: #d9534f;
+}
+
+.course-detail-container .course-flag-color-2 {
+  background-color: #f0ad4e;
+}
+
+.course-detail-container .course-flag-pos {
+  position: absolute;
+  left: 50%;
+}
+
+.course-detail-container .course-flag-pos:first-of-type {
+  margin-left: -7px;
+}
+
+.course-detail-container .course-flag-pos:last-of-type {
+  margin-left: 1px;
+}
+
+.course-detail-container .course-flag-pos:only-of-type {
+  margin-left: -3px;
+}

@@ -1,0 +1,47 @@
+<!--
+    @require "list.css"
+-->
+
+<div class="list-container">
+  <div class="row">
+  	<div class="col-xs-12">
+  		<rd-widget>
+  			<rd-widget-header icon="fa-tasks" title="权限列表">
+          <a href="javascript:;" ui-sref="main.auth.action.add">添加权限</a>
+        </rd-widget-header>
+        <rd-widget-body classes="no-padding" loading="loading" failing="failing" empty="empty">
+        	<div class="table-responsive">
+        		<table class="table">
+              <thead>
+                <tr>
+                  <th>权限名称</th>
+                  <th>创建时间</th>
+                  <th>更新时间</th>
+                  <th>操作人</th>
+                  <th>操作</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-repeat="item in list">
+                  <td>{{item.action_name}}</td>
+                  <td>{{item.create_time}}</td>
+                  <td>{{item.update_time}}</td>
+                  <td>{{item.operator_name}}</td>
+                  <td>
+                    <a href="javascript:;" ui-sref="main.auth.action.edit({action_id: item.action_id})">
+                      <button type="button" class="btn btn-info">编辑</button>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+        	</div>
+        </rd-widget-body>
+        <rd-widget-footer>
+          <rd-pagination conf="paginationConf"></rd-pagination>
+          <div class="clearfix"></div>
+        </rd-widget-footer>
+  		</rd-widget>
+  	</div>
+  </div>
+</div>
